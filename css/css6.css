@@ -127,7 +127,7 @@
                 display: inline-block;
                 width: 2.5rem;
                 height: 2.5rem;
-                background-image: url("./images/task5-2_雪碧.jpg");
+                background-image: url("../images/src/task5-2_雪碧.jpg");
                 background-repeat: no-repeat;
                 margin: 1rem;
             }
@@ -201,7 +201,7 @@
             }
 
             .pic-first {
-                background: url("./images/task5-2_雪碧2.jpg");
+                background: url("../images/src/task5-2_雪碧2.jpg");
                 background-position: -3px -1px;
                 width: 4rem;
                 height: 4rem;
@@ -238,7 +238,7 @@
             }
 
             .pic-center {
-                background: url("./images/task5-2_雪碧2.jpg");
+                background: url("../images/src/task5-2_雪碧2.jpg");
                 background-position: -168px -15px;
                 width: 5.4rem;
                 height: 5.4rem;
@@ -249,7 +249,7 @@
             }
 
             .pic-last {
-                background: url("./images/task5-2_雪碧2.jpg");
+                background: url("../images/src/task5-2_雪碧2.jpg");
                 background-position: -344px -1px;
                 width: 4rem;
                 height: 4rem;
