@@ -1,0 +1,61 @@
+input[type=range] {
+    -webkit-appearance: none;
+    /* 隐藏滑块，以便自定义滑块样式 */
+    width: 100%;
+    /* Firefox下所需 */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+    /* 去掉默认蓝色边框 */
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    /* 隐藏滑块，以便自定义滑块样式 */
+    border-color: transparent;
+    color: transparent;
+}
+
+/* 设定WebKit浏览器下range */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -14px;
+    /* 在Chrome下你需要定义一个margin值, 但在Firefox和IE下，是自动的 */
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    /* 为滑块增加一个酷炫的特效 */
+}
+
+/* Firefox下 */
+input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+/* IE下 */
+input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+}

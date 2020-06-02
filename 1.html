@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>投票</title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            /**css样式**/
+            .tooltip-boxs {
+                height: 50px;
+                line-height: 50px;
+                background: #b9e9f5;
+                padding-left: 10vw;
+            }
+
+            .tooltip-triangle {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 8px;
+                border-color: #b9e9f5 transparent transparent transparent;
+            }
+
+            button {
+                background: url("./images/发言讨论结束，投票_03.png") no-repeat;
+                background-position: right;
+                zoom: 0.6;
+                position: absolute;
+                top: 12px;
+                right: 20px;
+                border: none;
+            }
+
+            audio {
+                /* 旋转 */
+                transform: rotate(180deg);
+                opacity: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        <!--html代码-->
+        <div class="tooltip-boxs">
+
+            <div class="tooltip-tittle">
+                <span>发言讨论结束，请大家投票</span>
+                <button class="">
+                    <audio src="./video/财富自由.mp3" controls="controls"></audio>
+                </button>
+            </div>
+
+            <div class="tooltip-triangle"></div>
+        </div>
+    </header>
+    </body>
+
+</html>

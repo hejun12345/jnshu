@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        /* header */
+        header {
+            height: 5rem;
+            line-height: 5rem;
+            color: #ffffff;
+            background-color: #5FC0CD;
+            text-align: center;
+            font-size: 1.6rem;
+        }
+
+        header a {
+            float: left;
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 1vw;
+        }
+
+        .one {
+            background: url("./images/task5-1_01.png") no-repeat;
+            background: fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            height: 18rem;
+            color: white;
+        }
+
+        /* main one */
+        .box1 {
+            background: url("./images/task5-1_02.png") no-repeat;
+            height: 8rem;
+            width: 8rem;
+            background-size: cover;
+            margin: 0 2rem 0 2rem;
+        }
+
+        .box2 {
+            font-size: 1.6rem;
+        }
+
+        .box3 {
+            font-size: 1.2rem;
+        }
+
+        .two {
+            font-size: 1.2rem;
+        }
+
+        .row1 {
+            padding-left: 1.5em;
+            border-bottom: 1px solid #e1e5e7;
+            height: 5em;
+            display: flex;
+            align-items: center;
+        }
+
+        .blue {
+            border-left: 4px solid #5FC0CD;
+            padding-left: 1em;
+        }
+
+        /* main two */
+        .xing {
+            margin-right: 1em;
+        }
+
+        p {
+            margin: 0 1em 0 1em;
+        }
+
+        .row3,
+        .row4 {
+            color: #999999;
+        }
+
+        .row2,
+        .row3,
+        .row4 {
+            margin-left: 1.5em;
+            border-bottom: 1px solid #e1e5e7;
+            display: flex;
+            align-items: center;
+            padding: 2.2rem 0 2.2rem 0;
+            word-break: keep-all;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .black {
+            color: black;
+        }
+
+        /* footer */
+        footer {
+            display: flex;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .text,
+        .phone {
+            width: 48%;
+            height: 4rem;
+            border: 1px solid #5FC0CD;
+            font-size: 100%;
+            border-radius: 5px;
+            margin: auto;
+        }
+
+        .text {
+            background-color: white;
+            color: #5FC0CD;
+            margin-left: 1vw;
+        }
+
+        .phone {
+            background-color: #5FC0CD;
+            color: #ffffff;
+            margin: 0 1vw 0 1vw;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#">&lt</a>
+        <span>个人主页</span>
+    </header>
+
+    <main class="one">
+        <div class="box1"></div>
+        <div>
+            <div class="box2"><span>徐士林 55岁</span></div>
+            <div class="box3">
+                <img src="./images/task5-1_03.png">
+                <span>京城&nbsp;·&nbsp;四方&nbsp;·&nbsp;报纸林</span>
+            </div>
+        </div>
+    </main>
+
+    <main class="two">
+        <div class="row1">
+            <a class="blue">专业技能</a>
+        </div>
+        <div class="row2">
+            <img src="./images/task5-1_04.png">
+            <div class="xing">住家</div>
+            <img src="./images/task5-1_04.png">
+            <div>不含餐</div>
+        </div>
+        <div class="row3">
+            <div>从业年限</div>
+            <p>|</p>
+            <div class="black">0~3年</div>
+        </div>
+        <div class="row3">
+            <div>工作时间</div>
+            <p>|</p>
+            <div class="black">全天</div>
+        </div>
+        <div class="row3">
+            <div>服务价格</div>
+            <p>|</p>
+            <div class="red">25元/小时</div>
+        </div>
+        <div class="row4">
+            <div class="no">自我介绍</div>
+            <p>|</p>
+            <div class="black">可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <button class="text">留言</button>
+        <button class="phone">电话联系</button>
+    </footer>
+
+</body>
+
+</html>

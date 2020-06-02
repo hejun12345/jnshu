@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>版本选择</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                font-size: 62.5%;
+            }
+            body {
+                background-color: #f0f0f0;
+            }
+
+            .box {
+                height: 5rem;
+                background-color: #29bde0;
+            }
+
+            img {
+                zoom: .7;
+                position: absolute;
+                top: 2rem;
+                left: 2rem;
+            }
+
+            .box1 {
+                float: right;
+                height: 6rem;
+                line-height: 6rem;
+                width: 90%;
+                background-color: #fff;
+                margin: 2rem 0 2rem 0;
+            }
+
+            .box1 div {
+                text-align: center;
+                align-items: center;
+                color: #b6b6b6;
+                font-size: 2rem;
+            }
+
+            .box1 span {
+                float: right;
+                margin-right: 1vw;
+                color: e7e7e7;
+                font-size: 4rem;
+            }
+
+            .box2 {
+                float: right;
+                width: 90%;
+                background-color: #fff;
+                text-align: center;
+            }
+
+            .box2 .one {
+                height: 5rem;
+                line-height: 5rem;
+                border-bottom: 1px solid #fdd793;
+                color: #fbb435;
+                font-size: 1.6rem;
+                text-align: center;
+            }
+
+            .button {
+                display: inline-block;
+                width: 70%;
+                height: 7rem;
+                line-height: 7rem;
+                background-color: #69d1e9;
+                color: #ffffff;
+                font-size: 1.6rem;
+                border: none;
+                text-align: center;
+                margin: 3rem 0;
+            }
+
+            .dot-right {
+                font-size: 0;
+                line-height: 0;
+                border-width: 10px;
+                border-color: #fbb435;
+                border-right-width: 0;
+                border-style: dashed;
+                border-left-style: solid;
+                border-top-color: transparent;
+                border-bottom-color: transparent;
+                position: absolute;
+                margin-top: 5.5rem;
+                margin-left: 1vw;
+            }
+
+            /* 设置导航点的样式 */
+            .pointer {
+                z-index: 9999;
+                display: flex;
+                justify-content: center;
+                margin: 1rem 0;
+            }
+
+            .pointer a {
+                /* display: block; 浮动，可以省略*/
+                float: left;
+                width: 1rem;
+                height: 1rem;
+                margin: 0 2px;
+                border-radius: 5rem;
+                background-color: #f0f0f0;
+            }
+
+            .pointer a:hover {
+                background-color: #69d1e9;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="box">
+                <img src="./images/首页_03.png" alt="">
+            </div>
+            <div class="box1">
+                <div>
+                    上次游戏：捉鬼猜词版
+                    <span>&gt;</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="box2">
+                <div class="one">捉鬼游戏</div>
+                <button class="button">简化版</button>
+                <p>有1133个用户在玩此游戏</p>
+                <div>
+                    <button class="button">猜词版</button>
+                    <span class="item dot-right"></span>
+                </div>
+                <p>有1233个用户在玩此游戏</p>
+                <button class="button">白痴版</button>
+                <p class="last">有1333个用户在玩此游戏</p>
+
+                <div class="pointer">
+                    <a href="#" class="active"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </main>
+    </body>
+
+</html>
