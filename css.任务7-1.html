@@ -11,9 +11,15 @@
                 padding: 0;
             }
 
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
             html {
                 font-size: 62.5%;
             }
+
             body {
                 background-color: #f0f0f0;
             }
@@ -32,9 +38,9 @@
 
             .box1 {
                 float: right;
-                height: 6rem;
-                line-height: 6rem;
-                width: 90%;
+                height: 8rem;
+                line-height: 8rem;
+                width: 95%;
                 background-color: #fff;
                 margin: 2rem 0 2rem 0;
             }
@@ -46,6 +52,10 @@
                 font-size: 2rem;
             }
 
+            .box1 div a {
+                color: #b6b6b6;
+            }
+
             .box1 span {
                 float: right;
                 margin-right: 1vw;
@@ -55,7 +65,7 @@
 
             .box2 {
                 float: right;
-                width: 90%;
+                width: 95%;
                 background-color: #fff;
                 text-align: center;
             }
@@ -75,7 +85,6 @@
                 height: 7rem;
                 line-height: 7rem;
                 background-color: #69d1e9;
-                color: #ffffff;
                 font-size: 1.6rem;
                 border: none;
                 text-align: center;
@@ -112,7 +121,7 @@
                 height: 1rem;
                 margin: 0 2px;
                 border-radius: 5rem;
-                background-color: #f0f0f0;
+                background-color: #a6a6a6;
             }
 
             .pointer a:hover {
@@ -124,12 +133,12 @@
     <body>
         <header>
             <div class="box">
-                <img src="./images/首页_03.png" alt="">
+                <a href=""><img src="./images/首页_03.png"></a>
             </div>
             <div class="box1">
                 <div>
                     上次游戏：捉鬼猜词版
-                    <span>&gt;</span>
+                    <a href=""><span>&gt;</span></a>
                 </div>
             </div>
         </header>
@@ -137,18 +146,20 @@
         <main>
             <div class="box2">
                 <div class="one">捉鬼游戏</div>
-                <button class="button">简化版</button>
+                <button class="button"><a href="./css.任务7-2.html">简化版</a></button>
                 <p>有1133个用户在玩此游戏</p>
                 <div>
-                    <button class="button">猜词版</button>
-                    <span class="item dot-right"></span>
+                    <button class="button"><a href="./css.任务7-2.html">猜词版</a></button>
+                    <a href="./css.任务7-2.html">
+                        <span class="item dot-right"></span>
+                    </a>
                 </div>
                 <p>有1233个用户在玩此游戏</p>
-                <button class="button">白痴版</button>
+                <button class="button"><a href="./css.任务7-2.html">白痴版</a></button>
                 <p class="last">有1333个用户在玩此游戏</p>
 
                 <div class="pointer">
-                    <a href="#" class="active"></a>
+                    <a href="#"></a>
                     <a href="#"></a>
                     <a href="#"></a>
                     <a href="#"></a>
