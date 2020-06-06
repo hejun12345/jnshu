@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+
+        <style>
+            html {
+                font-size: 62.5%;
+            }
+
+            /* 顶部页面设置 */
+            .carousel-inner img {
+                width: 100%;
+                height: 100%;
+            }
+
+            /* 轮播图部分样式 */
+            body {
+                font-size: 1.6rem;
+            }
+
+            /* 中心部分设置样式 */
+            main {
+                background-color: RGBA(250, 250, 250, 1);
+            }
+
+            /* 中间部分样式 */
+            .call {
+                width: 150px;
+                margin: auto;
+                margin-left: 0;
+                font-size: 7px;
+                color: green;
+            }
+
+            /* 顶部左边电话样式 */
+
+            .box-left {
+                line-height: 2rem;
+            }
+
+            /* 顶部盒子遍栅格布局样式 */
+            .box-right {
+                text-align: right;
+            }
+
+            /* 顶部栅格布局右边部分 */
+
+            .WX {
+                width: 25px;
+                height: 24px;
+                border: 0;
+                background: url(./css_sprites\ \(1\).png) no-repeat 97.896% 69.366%;
+                zoom: .9;
+                outline: none !important;
+            }
+
+            /* 头部栅格布局右边雪碧图1设置 */
+            .QQ {
+                width: 25px;
+                height: 24px;
+                border: 0;
+                margin-left: 9.5px;
+                margin-right: 9.5px;
+                background: url(./css_sprites\ \(1\).png) no-repeat 40.453% 55.106%;
+                zoom: .9;
+                outline: none !important;
+            }
+
+            /* 头部栅格布局右边雪碧图2设置 */
+            .WB {
+                width: 25px;
+                height: 24px;
+                border: 0;
+                background: url(./css_sprites\ \(1\).png) no-repeat 33.172% 55.106%;
+                zoom: .9;
+                outline: none !important;
+            }
+
+            /* 头部栅格布局右边雪碧图3设置 */
+            .box-right {
+                margin: auto;
+                margin-top: 6px;
+                text-align: right;
+                zoom: .8;
+            }
+
+            /* 栅格布局右边部分样式 */
+
+            .fluid {
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+            }
+
+            /* 导航栏上方样式 */
+            .button-box {
+                height: 5rem;
+                background-color: RGBA(41, 176, 120, 1);
+            }
+
+            /* 响应式布局下面部分 */
+            .box2-left {
+                margin-top: 5px;
+                text-align: center;
+            }
+
+            /* 顶部左边栅格盒子布局 */
+            .tdd {
+                background-color: RGBA(29, 177, 118, 1);
+            }
+
+            /* 导航栏样式 */
+            .navv {
+                padding-bottom: 0px;
+            }
+
+            /* 导航栏样式设置 */
+            .xiuzhenyuan {
+                display: inline-block;
+                width: 605px;
+                height: 114px;
+                background: url(./css_sprit00000es.png) 12.048% 1.98%;
+                ;
+                zoom: .3;
+            }
+
+            /* 修真院LOGO样式设置 */
+            .nbox {
+                justify-content: flex-end !important;
+            }
+
+            .nav-link {
+                height: 65px;
+                padding: 20px 25px 20px 25px !important;
+                border-bottom-width: 5px;
+                text-align: center;
+            }
+
+            /* 导航块下划线效果 */
+            .nav-link:hover {
+                border-bottom: 1px solid white;
+            }
+
+            /* 导航栏下划线效果设置 */
+            .carousel-indicators li {
+                width: 10px;
+                height: 10px;
+                border-radius: 50% !important;
+            }
+
+            /* 轮播图部分样式设置 */
+            .bll {
+                text-align: center;
+            }
+
+            /* 下面部分雪碧图火箭栅格布局样式 */
+            .fa {
+                display: inline-block;
+                width: 43px;
+                height: 62px;
+                margin: auto;
+                margin-top: 8.25rem;
+                background: url(./css_sprites\ \(1\).png) no-repeat 34.167% 73.396%;
+            }
+
+            /* 火箭部分雪碧图 */
+            h4 {
+                margin-top: 1.65rem;
+                font-size: 1.5rem;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            /* 雪碧图上方标题 */
+            .introduce {
+                margin-top: 0;
+                margin-bottom: 1rem;
+                color: RGBA(153, 153, 153, 1);
+                font-size: 8px;
+                text-align: left;
+            }
+
+            /* 介绍部分 */
+            @media(max-width:576px) {
+                .introduce {
+                    text-align: center;
+                }
+            }
+
+            /* 媒体查询部分 */
+            .book {
+                width: 60px;
+                height: 48px;
+                margin-top: 9.5rem;
+                margin-left: auto;
+                margin-right: auto;
+                background: url(./css_sprites\ \(1\).png) no-repeat 90.051% 72.426%;
+            }
+
+            /* 第二个雪碧图 */
+            .nce {
+                width: 52px;
+                height: 55px;
+                margin: auto;
+                margin-top: 8.9rem;
+                background: url(./css_sprites\ \(1\).png) no-repeat 67.682% 42.458%;
+            }
+
+            /* 人脉雪碧图 */
+            .ppp {
+                padding-top: 4rem;
+                padding-bottom: 2rem;
+                border-left: 1px dashed RGBA(222, 222, 222, 1) !important;
+                margin-top: 8.1rem;
+                text-align: center;
+            }
+
+            /* 下一个雪碧图 */
+            .person {
+                display: inline-block;
+                width: 13px;
+                height: 13px;
+                background: url(./css_sprites\ \(1\).png) no-repeat 46.825% 54.059%;
+            }
+
+            /* 下面的雪碧图部分 */
+            .im {
+                margin-top: 5rem;
+                margin-bottom: 5rem;
+            }
+
+            /* 下面如何学习方式样式 */
+            .circle {
+                display: inline-block;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 30px;
+                height: 30px;
+                border: 1px solid white;
+                border-radius: 50%;
+                box-shadow: 0 0 5px #888888;
+                color: RGBA(41, 176, 120, 1);
+            }
+
+            /* 如何学习部分左边圆形 */
+            .bid {
+                display: inline-block;
+                width: 7rem;
+                font-size: 7px;
+                color: RGBA(153, 153, 153, 1);
+            }
+
+            /* 中间部分 */
+            .ra {
+                display: inline-block;
+                width: 46px;
+                height: 30px;
+                background: url(./css_sprites\ \(1\).png) no-repeat 77.25% 40.569%;
+                zoom: .7;
+            }
+
+            /* 右边的雪碧图部分 */
+            .zx {
+                margin-top: 6.8rem !important;
+            }
+
+            /* 下面第一部分样式设置 */
+            .student {
+                margin-bottom: 3.6rem;
+                margin-top: 5rem;
+            }
+
+            /* 上方文字展示样式 */
+            .hpbox {
+                padding: .5rem .32rem .4rem .32rem;
+                background-color: white;
+                border: 1px solid RGBA(8, 1, 3, 0.15);
+                text-align: center;
+            }
+
+            /* 下方外部样式盒子 */
+            @media(max-width:576px) {
+                .hpbox {
+                    padding: 5rem;
+                    margin-bottom: 5rem;
+                }
+            }
+
+            /* 下方媒体查询 */
+            .hp {
+                display: inline-block;
+                width: 108px;
+                height: 108px;
+                background: url(./css_sprites\ \(1\).png) no-repeat 98.131% 28.512%;
+                zoom: .7;
+            }
+
+            /* 中间的雪碧图样式 */
+            .name {
+                font-size: 9px;
+                font-weight: 900;
+            }
+
+            /* 下方人名 */
+            .BAIDU {
+                color: RGBA(153, 153, 153, 1);
+                font-size: 8px;
+                text-align: left;
+            }
+
+            /* 下方人名背景介绍 */
+            .BAIDU-box {
+                margin-bottom: 2rem;
+            }
+
+            /* 外部盒子 */
+
+            .hp1 {
+                display: inline-block;
+                background: url(./css_sprites\ \(1\).png) no-repeat 98.131% 54.959%;
+                width: 108px;
+                height: 108px;
+                zoom: .7;
+            }
+
+            /* 下方部分的雪碧图 */
+            .hp2 {
+                display: inline-block;
+                width: 108px;
+                height: 108px;
+                background: url(./css_sprites\ \(1\).png) no-repeat 98.131% 2.066%;
+                zoom: .7;
+            }
+
+            /* 下方部分的第二个雪碧图 */
+            .hp3 {
+                display: inline-block;
+                width: 108px;
+                height: 108px;
+                background: url(./css_sprites\ \(1\).png) no-repeat 1.869% 97.934%;
+                zoom: .7;
+
+            }
+
+            /* 下方部分第三个雪碧图 */
+            .cb {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: .8rem;
+            }
+
+            /* 最下面的圆形部分外部盒子 */
+            .matching {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 0;
+            }
+
+            /* 学习岗位部分样式 */
+            .circle1 {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                box-shadow: 0 0 5px #888888;
+                border-radius: 50%;
+                margin-left: .5rem;
+            }
+
+            /* 下方圆形HOVER效果 */
+            .circle1:hover {
+                background-color: RGBA(41, 176, 120, 1);
+            }
+
+            /* HOVER效果 */
+            .cp {
+                margin-top: 6.65rem;
+            }
+
+            /* 中间部分下方外部盒子 */
+            .eplogo {
+                margin-left: 0;
+                margin-right: 0;
+                background-color: white;
+            }
+
+            /* 下方雪碧图外部样式 */
+            .albb {
+                width: 184px;
+                height: 176px;
+                zoom: .7;
+                background: url(./css_sprites\ \(1\).png) no-repeat 67.981% 2.404%;
+            }
+
+            /* 下方雪碧图 */
+            .kcg {
+                width: 191px;
+                height: 141px;
+                zoom: .7;
+                background: url(./css_sprites\ \(1\).png) no-repeat 3.137% 51.554%;
+            }
+
+            /* 另外的雪碧图 */
+            .ci {
+                width: 216px;
+                height: 144px;
+                zoom: .7;
+                background: url(./css_sprit00000es.png) no-repeat 51.271% 30.316%;
+            }
+
+            /* 另外的雪碧图部分 */
+            .rlci {
+                width: 175px;
+                height: 65px;
+                zoom: .7;
+                background: url(./css_sprit00000es.png) no-repeat 77.973% 61.372%;
+            }
+
+            /* 另外的雪碧图部分 */
+            .storage {
+                width: 180px;
+                height: 78px;
+                zoom: .7;
+                background: url(./css_s8prites.png) no-repeat 50% 50%;
+            }
+
+            /* 最后的雪碧图部分 */
+            .box4 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20%;
+            }
+
+            /* 雪碧图外部盒子样式 */
+            @media(max-width:576px) {
+                .box4 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                }
+            }
+
+            /* 下方的媒体查询部分 */
+            .box4:hover {
+                box-shadow: 1px 1px 1px 1px #ccc;
+            }
+
+            /* 雪碧图的HONVER效果 */
+            .buttonbox {
+                margin-top: 4.65rem;
+                background-color: white;
+            }
+
+            /* 底下的按钮部分 */
+            .box5 {
+                font-size: 7px;
+            }
+
+            /* 底下按钮外部盒子部分 */
+            .list {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            /* 底部多个选项外部样式 */
+            .list li {
+                width: 10%;
+
+            }
+
+            /* 底部多个选项下方样式 */
+            @media only screen and (max-width: 1100px) {
+                .list li {
+                    width: 20%;
+                }
+            }
+
+            /* 下方变化媒体查询 */
+            @media only screen and (max-width: 767px) {
+                .list li {
+                    width: 50%;
+                }
+            }
+
+            /* 下方变化媒体查询2 */
+            .zoom {
+                width: 100%;
+            }
+
+            footer {
+                background-color: RGBA(27, 163, 109, 1);
+            }
+
+            /* 底部样式 */
+            .tdc {
+                background: url(./qrcode_for_gh_32213eeb65ba_1280.png) no-repeat;
+                width: 96px;
+                height: 96px;
+                background-size: cover;
+                display: inline-block;
+                zoom: .7;
+            }
+
+            /* 底部二维码图片 */
+            .por p {
+                border-top: 1px solid white;
+                margin-bottom: 0;
+                font-size: 8px;
+                text-align: center;
+            }
+
+            /* 底部中心部分样式 */
+            .irtxzy {
+                color: white;
+            }
+
+            .link1 {
+                line-height: 4rem;
+            }
+
+            .JNS {
+                font-size: 8px;
+            }
+
+            .irt {
+                display: block;
+                font-size: 8px;
+            }
+
+            .irtt {
+                display: block;
+                font-size: 8px;
+            }
+
+            .website {
+                display: block;
+                font-size: 8px;
+            }
+
+            .nameone {
+                display: inline-block;
+                font-size: 8px;
+            }
+
+            .PTTGAME {
+                font-size: 8px;
+                display: -webkit-inline-box;
+            }
+
+            .link2 {
+                line-height: 4rem;
+            }
+
+            .por {
+                color: white;
+            }
+
+            @media(min-width:768px) {
+                .link2 {
+                    text-align: right;
+                }
+            }
+
+            @media(min-width:768px) {
+                .irtt {
+                    margin-top: 3.4rem;
+                }
+            }
+
+            /* 上面都是底部样式 */
+        </style>
+        <!-- 自己外部引用css文件 -->
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <!-- 固定宽度，响应式布局 -->
+                <div class="row">
+                    <!-- 栅格布局列部分 -->
+                    <div class="col-6 box-left">
+                        <!-- 顶部盒子左边部分栅格布局 -->
+                        <p class="call">客服热线：010-594-78634</p>
+                    </div>
+                    <!-- 网格系统左边部分 -->
+                    <div class="col-6 box-right">
+                        <!-- 栅格布局右边部分 -->
+                        <button class="WX"></button>
+                        <button class="QQ"></button>
+                        <button class="WB"></button>
+                        <!-- 右边三个雪碧图 -->
+                    </div>
+                </div>
+            </div>
+            <div class="bg-green">
+                <div class="container">
+                    <!-- 导航栏上方 -->
+                    <div class="row right-zoom tdd">
+                        <!-- 导航栏样式 -->
+                        <div class="col-sm-12">
+                            <nav class="navbar navbar-expand-md bg-green navbar-dark navv">
+                                <!-- 导航栏 -->
+                                <a class="navbar-brand" href="./../task8-1/task8-1.html">
+                                    <span class="xiuzhenyuan"></span>
+                                </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#collapsibleNavbar">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse  nbox " id="collapsibleNavbar">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="">首页</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../task8-3/task8-3.html">职业</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../task8-2/task8-2.html">推荐</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="">关于</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <main>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- 指示符 -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <!-- 轮播图片 -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./0d9944f1-6aad-4894-b42e-72dadcfef058.png">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./3a15425b-c947-4222-8558-0bf01cc36513.png">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./87ae208e-8374-45a0-beb4-7ece0ec4f8be.jpg">
+                    </div>
+                </div>
+                <!-- 左右切换按钮 -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3  bll">
+                        <span class="fa"></span>
+                        <!-- fire arrow 火箭缩写 -->
+                        <!-- 雪碧图 -->
+                        <h4>高效</h4>
+                        <p class="introduce">将五到七年的成长时间，缩短 到一年到三年。</p>
+
+                    </div>
+                    <div class="col-sm-3 bll">
+                        <div>
+                            <div class="book"></div>
+                            <!-- 雪碧图 -->
+                            <h4>规范</h4>
+                            <p class="introduce introduce">标准的实战教程，不会走弯路</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 bll ">
+                        <div class="nce">
+                            <!-- n. connection人脉的缩写 -->
+                        </div>
+                        <!-- 雪碧图 -->
+                        <h4>人脉</h4>
+                        <p class="introduce">同班好友，同院学长，技术大师，
+                            入学就混入职脉圈</p>
+                    </div>
+                    <div class="col-sm-3 ppp">
+                        <div class="person"></div>
+                        <!-- 雪碧图 -->
+                        <span>12400</span>
+                        <p class="introduce">累计在线学习人数</p>
+                        <div class="person"></div>
+                        <!-- 雪碧图 -->
+                        <span>12400</span>
+                        <p class="introduce">学员已经找到满意工作</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 上边部分 -->
+            <h3 class="text-center im">如何学习</h3>
+            <!-- learning method学习方法的缩写 -->
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 matching ">
+                        <span class="circle ">1</span>
+                        <p class="bid">匹配你现在的个人情况寻找适合自己的岗位</p>
+                        <!-- brief introduction 简单介绍的缩写 -->
+                        <div class="ra"></div>
+                        <!-- 雪碧图right arrow右箭头 -->
+
+                    </div>
+                    <div class="col-md-3 col-sm-6 matching ">
+                        <span class="circle">2</span>
+                        <p class="bid">了解职业前景薪金待遇竞争压力等 </p>
+
+                        <div class="ra"></div>
+                        <!-- 雪碧图 -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 matching ">
+                        <span class="circle">3</span>
+                        <p class="bid">掌握行业内顶级技能</p>
+                        <div class="ra"></div>
+                        <!-- 雪碧图 -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 matching ">
+                        <span class="circle">4</span>
+                        <p class="bid">查看职业目标任务</p>
+                        <div class="ra"></div>
+                        <!-- 雪碧图 -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 matching ">
+                        <span class="circle">5</span>
+                        <p class="bid">参考学习资源，掌握
+                            技能点，逐个完成任务</p>
+                        <div class="ra"></div>
+                        <!-- 雪碧图 -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 matching ">
+                        <span class="circle">6</span>
+                        <p class="bid">加入班级，和小伙伴们
+                            互帮互助，一块学习</p>
+                        <div class="ra"></div>
+                        <!-- 雪碧图 -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 matching ">
+                        <span class="circle">7</span>
+                        <p class="bid">选择导师，一路引导，
+                            加速自己成长</p>
+                        <div class="ra"></div>
+                        <!-- 雪碧图 -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 matching ">
+                        <span class="circle">8</span>
+                        <p class="bid">完成职业技能，升
+                            级业界大牛</p>
+                        <div class="ra"></div>
+                        <!-- 雪碧图 -->
+                    </div>
+                </div>
+            </div>
+            <!-- 中间第一部分 -->
+            <h3 class="text-center student">优秀学员展示</h3>
+            <div class="container zx">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 col-12 BAIDU-box">
+                        <div class="hpbox">
+                            <span class="hp"></span>
+                            <p class="name">技术顾问：罗大佑</p>
+                            <p class="BAIDU">百度技术总监：互联网基础
+                                服务领域，从事虚拟主机、
+                                云服务器、域名。曾任新网
+                                高级技术经理，负责技术研
+                                发、团队管理与建设
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-12">
+                        <div class="hpbox">
+                            <span class="hp1"></span>
+                            <p class="name">技术顾问：罗大佑</p>
+                            <p class="BAIDU">百度技术总监：互联网基础
+                                服务领域，从事虚拟主机、
+                                云服务器、域名。曾任新网
+                                高级技术经理，负责技术研
+                                发、团队管理与建设
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-12">
+                        <div class="hpbox">
+                            <span class="hp2"></span>
+                            <p class="name">技术顾问：罗大佑</p>
+                            <p class="BAIDU">百度技术总监：互联网基础
+                                服务领域，从事虚拟主机、
+                                云服务器、域名。曾任新网
+                                高级技术经理，负责技术研
+                                发、团队管理与建设
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-12">
+                        <div class="hpbox">
+                            <span class="hp3"></span>
+                            <p class="name">技术顾问：罗大佑</p>
+                            <p class="BAIDU">百度技术总监：互联网基础
+                                服务领域，从事虚拟主机、
+                                云服务器、域名。曾任新网
+                                高级技术经理，负责技术研
+                                发、团队管理与建设
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cb">
+                    <!-- circle1外部盒子 -->
+                    <span class="circle1"></span>
+                    <span class="circle1"></span>
+                    <span class="circle1"> </span>
+                    <span class="circle1"></span>
+                </div>
+                <!-- 底部圆形样式 -->
+            </div>
+            <div class="container cp">
+                <!-- cooperation合作 -->
+                <h3 class="text-center">战略合作企业</h3>
+                <div class="row eplogo">
+                    <div class="col-20 box4">
+                        <div class="albb"></div>
+                        <!-- 雪碧图 -->
+                    </div>
+                    <div class="col-20 box4">
+                        <div class="kcg"></div>
+                        <!-- 雪碧图 Kingsoft Cloud Group金山云 -->
+                    </div>
+                    <div class="col-20 box4">
+                        <div class="ci"></div>
+                        <!-- communication通讯 -->
+                    </div>
+                    <div class="col-20 box4">
+                        <div class="rlci"></div>
+                    </div>
+                    <div class="col-20 box4">
+                        <div class="storage"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container buttonbox">
+                <h3 class="text-center">友情链接</h3>
+                <div class="row box5">
+                    <ul class="col-md-10% zoom list col-20%">
+                        <li>手机软件</li>
+                        <li>教师招聘</li>
+                        <li>找工作</li>
+                        <li>教师招聘</li>
+                        <li>找工作</li>
+                        <li>手机软件</li>
+                        <li>教师招聘</li>
+                        <li>手机软件</li>
+                        <li>手机软件</li>
+                        <li>找工作</li>
+                        <li>手机软件</li>
+                        <li>教师招聘</li>
+                        <li>找工作</li>
+                        <li>教师招聘</li>
+                        <li>找工作</li>
+                        <li>手机软件</li>
+                        <li>教师招聘</li>
+                        <li>手机软件</li>
+                        <li>手机软件</li>
+                        <li>找工作</li>
+                    </ul>
+                </div>
+                <!-- 中间下面部分 -->
+        </main>
+        <!-- 中心部分 -->
+        <footer>
+            <div class="container irtxzy">
+                <!-- in regard to关于修真院 -->
+                <div class="row">
+                    <div class="col-sm-4 link1">
+                        <span class="JNS">技能树 — 改变你我 </span>
+                        <a class="irtt">关于我们 | 联系我们 | 友情链接</a>
+                    </div>
+                    <div class="col-md-4 link1">
+                        <span class="website">旗下网站</span>
+                        <!-- 第一个名称 -->
+                        <a class="nameone">草船云孵化器</a>
+                        <a class="nameone">最强IT特训营</a>
+                        <!-- 第二个名称 -->
+                        <div>
+                            <a class="PTTGAME">葡萄藤轻游戏 </a>
+                            <a class="JNS">桌游精灵</a>
+                        </Div>
+
+                    </div>
+                    <div class="col-sm-4 link2">
+                        <span class="irt">微信公众平台</span>
+                        <!-- Official Accounts官方账号 -->
+                        <a class="tdc"></a>
+                        <!-- two-dimensional code二维码 -->
+                    </div>
+                </div>
+            </div>
+            <div class="por">
+                <p>Copyright © 2015技能树 www.jnshu.com All Rights Reserved | 京ICP备13005880号 </p>
+            </div>
+            <!-- put on records底部备案 -->
+        </footer>
+        <!-- 底部样式 -->
+    </body>
+
+</html>

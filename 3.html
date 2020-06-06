@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+
         <style>
             * {
                 margin: 0;
@@ -12,258 +13,354 @@
                 list-style: none;
             }
 
-            html {
-                font-size: 62.5%;
-            }
-
             body {
-                background-color: #29bde0;
-
+                background-color: #fafafa;
             }
 
-            .first-box {
-                height: 5rem;
+            .nav {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                color: #ffffff;
-                font-size: 2rem;
+                padding: 0 3vw;
+                height: 40px;
+                /* 
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                 */
             }
 
-            .box-one {
-                zoom: 0.5;
-                margin-left: 1vw;
+            .Navbar1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
-            .box-three {
-                zoom: 0.5;
-                margin-right: 1vw;
-            }
-
-            .tooltip-boxs {
-                height: 5rem;
-                line-height: 5rem;
-                background: #b9e9f5;
-                padding-left: 10vw;
-            }
-
-            .tooltip-triangle {
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 8px;
-                border-color: #b9e9f5 transparent transparent transparent;
-            }
-
-            .first {
-                background: url("./images/发言讨论结束，投票_03.png") no-repeat;
-                background-position: right;
-                zoom: 0.6;
-                position: absolute;
-                top: 1rem;
-                right: 2rem;
+            .Navbar1-b {
+                background: url("./images/技能树首页_01.jpg") repeat-x;
+                background-position: 0 1px;
+                height: 26px;
+                width: 26px;
                 border: none;
             }
 
-            audio {
-                /* 旋转 */
-                transform: rotate(180deg);
-                opacity: 0;
+            .Navbar2-b {
+                background: url("./images/技能树首页_01.jpg") repeat-x;
+                background-position: 67px 1px;
+                height: 26px;
+                width: 26px;
+                border: none;
+                margin: 0 2vw;
             }
 
-            main .boxa {
-                margin: 10px 0 20px 10vw;
+            .Navbar3-b {
+                background: url("./images/技能树首页_01.jpg") repeat-x;
+                background-position: 26px 1px;
+                height: 26px;
+                width: 26px;
+                border: none;
             }
 
-            .boxs {
+            .Navbar2 {
+                height: 100px;
+                background-color: #29b078;
                 display: flex;
-                flex-wrap: wrap;
-                align-content: space-between;
+                justify-content: flex-end;
+                padding-right: 17%;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
-            .box1 {
-                width: 24.9vw;
-                height: 24.9vw;
-                margin: 8vw 3vw 0 3vw;
-                background-color: orange;
-                border: 1vw solid white;
-            }
-
-            .one,
-            .two {
-                display: inline-block;
+            .Navbar2-li {
+                width: 6.3%;
+                height: 100px;
+                line-height: 100px;
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                width: 100%;
             }
 
-            .one {
+            a {
+                width: 100%;
+                text-align: center;
+                text-decoration: none;
+                color: white;
+            }
+
+            a:hover {
+                border-bottom: 4px solid white;
+            }
+
+            .nav-pic {
+                background: url("./images/技能树首页_02.jpg");
+                background-size: cover;
+                height: 600px;
+                /* 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+ */
+            }
+
+            .nav-content {
+                height: 600px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 15%;
+            }
+
+            .nav-c {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .p1,
+            .p2 {
+                text-align: right;
+                font-size: 30px;
+                margin: 0 5vw;
+                color: #ffc865;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            /* 设置导航点的样式 */
+            .nav-drop {
+                z-index: 9999;
+                display: flex;
+                justify-content: center;
+                margin-top: -50px;
+            }
+
+            .nav-drop a {
+                float: left;
+                width: 16px;
+                height: 16px;
+                margin: 0 4px;
+                border-radius: 5rem;
+                border: 1px solid white;
+            }
+
+            .nav-drop a:hover {
+                background-color: #69d1e9;
+            }
+
+            /*  */
+            main {
+                height: 500px;
+            }
+
+            .css-sprites {
+                width: 70%;
+                height: 350px;
+                margin: 0 auto;
+                padding-top: 100px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .part1 {
+                width: 100%;
                 height: 70%;
-                background-color: #f5c97b;
-            }
-
-            .two {
-                height: 30%;
-                background-color: #83b09a;
-            }
-
-            .box2 img {
-                margin-top: 2vw;
-                width: 25vw;
-                display: none;
-            }
-
-            .box1:hover img {
-                display: block;
-            }
-
-            footer,
-            footer div {
-                background-color: #29bde0;
-                height: 15vw;
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
+                justify-content: space-between;
                 align-items: center;
-                position: fixed;
-                bottom: 0;
+                margin: 0 5%;
             }
 
-            footer {
+            .part2 {
                 width: 100%;
-
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+                margin-right: 10%;
             }
 
-            footer div {
-                width: 92.5vw;
-                border-top: 1px solid white;
+            .photo1 {
+                background: url("./images/技能树首页_030.jpg");
+                background-position: 1px 0;
+                width: 60px;
+                height: 70px;
             }
 
-            .last {
-                width: 60vw;
-                height: 9vw;
-                background-color: #fbb435;
-                position: fixed;
-                bottom: 2vw;
+            .photo2 {
+                background: url("./images/技能树首页_030.jpg");
+                background-position: 382px 0;
+                width: 60px;
+                height: 70px;
+            }
+
+            .photo3 {
+                background: url("./images/技能树首页_030.jpg");
+                background-position: 60px 0;
+                width: 60px;
+                height: 70px;
+            }
+
+            .part2 {
+                border-left: 1px dashed #dedede;
+            }
+
+            img {
+                height: 20px;
+                width: 20px;
+            }
+
+            .word {
+                height: 30%;
+            }
+
+            .word-two2 {
+                margin-top: 30px;
+            }
+
+            /*  */
+            .boxs {
+                width: 70%;
+                height: 350px;
+                margin: 0 auto;
+                padding-top: 100px;
+                display: flex;
+                justify-content: space-between;
             }
         </style>
     </head>
 
     <body>
         <header>
-            <div class="first-box">
-                <img src="./images/发言讨论结束，投票_01.png" class="box-one">
-                <div>投票</div>
-                <img src="./images/发言讨论结束，投票_02.png" class="box-three">
+            <div class="nav">
+                <div>客服热线：010-594-78634</div>
+                <div class="Navbar1">
+                    <button class="Navbar1-b"></button>
+                    <button class="Navbar2-b"></button>
+                    <button class="Navbar3-b"></button>
+                </div>
             </div>
 
-            <div class="tooltip-boxs">
-                <div class="tooltip-tittle">
-                    <span>发言讨论结束，请大家投票</span>
-                    <button class="first">
-                        <audio src="./video/财富自由.mp3" controls="controls"></audio>
-                    </button>
+            <ul class="Navbar2">
+                <li class="Navbar2-li"><a href="">首页</a></li>
+                <li class="Navbar2-li"><a href="">职业</a></li>
+                <li class="Navbar2-li"><a href="">推荐</a></li>
+                <li class="Navbar2-li"><a href="">关于</a></li>
+            </ul>
+            <!--
+                <div class="d1">首页</div>
+                <div class="d1">职业</div>
+                <div class="d1">推荐</div>
+                <div class="d1">关于</div>  -->
+
+            <div class="nav-pic">
+                <div class="nav-content">
+                    <div class="sign"><a href="">&lt;</a></div>
+                    <div class="nav-c">
+                        <p class="p1">作为一个菜鸟程序员，你是否想了解</p>
+                        <p class="p2"><span style="color: red;font-size: 50px;">50万</span>年薪的程序员，都会那些技能呢？</p>
+                    </div>
+                    <div class="b1"><a href="">&gt;</a></div>
                 </div>
-                <div class="tooltip-triangle"></div>
+
+                <div class="nav-drop">
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
             </div>
         </header>
 
         <main>
-            <div class="boxs">
-                <div class="box1">
-                    <p class="one">水民</p>
-                    <p class="two">1号</p>
-                    <div class="box2">
-                        <img src="./images//发言讨论结束，投票_04.png">
+            <div class="css-sprites">
+                <div class="part1">
+                    <div class="photo1"></div>
+                    <h3>高效</h3>
+                    <div class="word">将五到七年成长时间，缩短到一年到三年</div>
+                </div>
+                <div class="part1">
+                    <div class="photo2"></div>
+                    <h3>规范</h3>
+                    <div class="word">标准的实战教程，不会走弯路</div>
+                </div>
+                <div class="part1">
+                    <div class="photo3"></div>
+                    <h3>人脉</h3>
+                    <div class="word">同班好友，同院学长，技术大师，入学就入职脉圈，为以后铺平道路</div>
+                </div>
+                <div class="part2">
+                    <div></div>
+                    <div class="word-two1">
+                        <img src="./images//技能树首页_06.jpg" alt=""></a>
+                        <span>12400</span>
+                        <p class="">累计学习人数</p>
+                    </div>
+                    <div class="word-two2">
+                        <img src="./images/技能树首页_06.jpg" alt="">
+                        <span>12400</span>
+                        <p class="">累计学习人数</p>
                     </div>
                 </div>
-                <div class="box1">
-                    <p class="one">水民</p>
-                    <p class="two">2号</p>
-                    <div class="box2">
-                        <img src="./images//发言讨论结束，投票_04.png">
-                    </div>
-                </div>
-                <div class="box1">
-                    <p class="one">警察</p>
-                    <p class="two">3号</p>
-                    <div class="box2">
-                        <img src="./images//发言讨论结束，投票_04.png">
-                    </div>
-                </div>
-
-                <div class="box1">
-                    <p class="one">法官</p>
-                    <p class="two">4号</p>
-                    <div class="box2">
-                        <img src="./images//发言讨论结束，投票_04.png">
-                    </div>
-                </div>
-                <div class="box1">
-                    <p class="one">狙击手</p>
-                    <p class="two">5号</p>
-                    <div class="box2">
-                        <img src="./images//发言讨论结束，投票_04.png">
-                    </div>
-                </div>
-                <div class="box1">
-                    <p class="one">医生</p>
-                    <p class="two">6号</p>
-                    <div class="box2">
-                        <img src="./images//发言讨论结束，投票_04.png">
-                    </div>
-                </div>
-
-                <div class="box1">
-                    <p class="one">杀手</p>
-                    <p class="two">7号</p>
-                    <div class="box2">
-                        <img src="./images//发言讨论结束，投票_04.png">
-                    </div>
-                </div>
-                <div class="box1">
-                    <p class="one">水民</p>
-                    <p class="two">8号</p>
-                    <div class="box2">
-                        <img src="./images//发言讨论结束，投票_04.png">
-                    </div>
-                </div>
-                <div class="box1">
-                    <p class="one">水民</p>
-                    <p class="two">9号</p>
-                    <div class="box2">
-                        <img src="./images//发言讨论结束，投票_04.png">
-                    </div>
-                </div>
-
-                <div class="box1">
-                    <p class="one">杀手</p>
-                    <p class="two">7号</p>
-                    <div class="box2">
-                        <img src="./images//发言讨论结束，投票_04.png">
-                    </div>
-                </div>
-                <div class="box1">
-                    <p class="one">水民</p>
-                    <p class="two">8号</p>
-                    <div class="box2">
-                        <img src="./images//发言讨论结束，投票_04.png">
-                    </div>
-                </div>
-                <div class="box1">
-                    <p class="one">水民</p>
-                    <p class="two">9号</p>
-                    <div class="box2">
-                        <img src="./images//发言讨论结束，投票_04.png">
-                    </div>
-                </div>
-        </main>
-
-        <footer>
-            <div>
-                <button class="last">投死</button>
             </div>
-        </footer>
+
+            <h3>如何学习</h3>
+            <div>
+                <div class="boxs">
+                    <div class="boxa">
+                        <div>
+                            <span>1</span>
+                            <p>匹配</p>
+                            <img src="./images/技能树首页_07.jpg" alt="">
+                        </div>
+                        <div>
+                            <span>2</span>
+                            <span>匹配</span>
+                            <img src="./images/技能树首页_07.jpg" alt="">
+                        </div>
+                        <div>
+                            <span>3</span>
+                            <span>匹配</span>
+                            <img src="./images/技能树首页_07.jpg" alt="">
+                        </div>
+                        <div>
+                            <span>4</span>
+                            <span>匹配</span>
+                            <img src="./images/技能树首页_07.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="boxb">
+                        <div>
+                            <span>1</span>
+                            <span>匹配</span>
+                            <img src="./images/技能树首页_07.jpg" alt="">
+                        </div>
+                        <div>
+                            <span>2</span>
+                            <span>匹配</span>
+                            <img src="./images/技能树首页_07.jpg" alt="">
+                        </div>
+                        <div>
+                            <span>3</span>
+                            <span>匹配</span>
+                            <img src="./images/技能树首页_07.jpg" alt="">
+                        </div>
+                        <div>
+                            <span>4</span>
+                            <span>匹配</span>
+                            <img src="./images/技能树首页_07.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
     </body>
 
 </html>
