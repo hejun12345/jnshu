@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #29bde0;
+
+}
+
+.first-box {
+    height: 7rem;
+    line-height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-size: 3rem;
+    padding: 0 1vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tooltip-boxs {
+    height: 8rem;
+    line-height: 8rem;
+    background: #b9e9f5;
+    padding-left: 10vw;
+}
+
+.tooltip-tittle {
+    height: 100%;
+    line-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.tool {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.first {
+    background: url("../images/src/发言讨论结束，投票_03.png") no-repeat;
+    padding-right: 20px;
+    height: 55px;
+    height: 55px;
+    zoom: .8;
+    border: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+audio {
+    zoom: 0.3;
+    opacity: .3;
+}
+
+.boxa {
+    margin: 1vw 0 1vw 10vw;
+    font-size: 1.8rem;
+    color: white;
+}
+
+/*  */
+
+.boxs {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.box1 {
+    width: 20%;
+    height: 20vw;
+    margin: 0vw 7% 6% 7%;
+    background-color: orange;
+    border: 0.3vw solid white;
+}
+
+.box1:nth-child(3n-1) {
+    margin: 0 5% 6% 5%;
+}
+
+.one,
+.two {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+}
+
+.one {
+    height: 80%;
+    background-color: #f5c97b;
+}
+
+.two {
+    height: 20%;
+    background-color: #83b09a;
+    color: white;
+}
+
+.box2 img {
+    margin-top: 1vw;
+    width: 20vw;
+    display: none;
+}
+
+.box1:last-child {
+    margin-bottom: 10vw;
+}
+
+.box1:hover img {
+    display: block;
+}
+
+/* footer */
+footer,
+footer div {
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #29bde0;
+    position: fixed;
+    bottom: 0;
+}
+
+footer {
+    width: 100%;
+}
+
+footer div {
+    margin: 0 auto;
+    width: 86%;
+    border-top: 1px solid white;
+}
+
+.last {
+    width: 78%;
+    height: 9vw;
+    position: fixed;
+    bottom: 2vw;
+    border: none;
+    background-color: #fbb435;
+    font-size: 4vw;
+}

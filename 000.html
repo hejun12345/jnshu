@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <title>Document</title>
+        <style>
+            .company1,
+            .company2,
+            .company3,
+            .company4,
+            .company5 {
+                width: 175px;
+                height: 60px;
+                zoom: .8;
+            }
+
+            .company1 {
+                background: url("./images/技能树首页雪碧_04.jpg") no-repeat -2%;
+            }
+
+            .company2 {
+                background: url("./images/技能树首页雪碧_04.jpg") no-repeat 23%;
+            }
+
+            .company3 {
+                background: url("./images/技能树首页雪碧_04.jpg") no-repeat 50%;
+            }
+
+            .company4 {
+                background: url("./images/技能树首页雪碧_04.jpg") no-repeat 77%;
+            }
+
+            .company5 {
+                background: url("./images/技能树首页雪碧_04.jpg") no-repeat 102%;
+            }
+
+            .main-four {
+                background-color: white;
+                padding: 2px;
+            }
+
+            .main-four a {
+                width: 100%;
+                padding: 55px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .main-four a:hover {
+                box-shadow: 0 0 10px 2px #f1f1f1;
+            }
+
+            @media (min-width: 768px) {
+                .main-four {
+                    width: 20%;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .main-four {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h4 style="text-align: center;font-size: 2.4rem;">战略合作企业</h4>
+        <div class="container four">
+            <div class="row">
+                <div class="main-four">
+                    <a href="">
+                        <div class="company1"></div>
+                    </a>
+                </div>
+                <div class="main-four">
+                    <a href="">
+                        <div class="company2"></div>
+                    </a>
+                </div>
+                <div class="main-four">
+                    <a href="">
+                        <div class="company3"></div>
+                    </a>
+                </div>
+                <div class="main-four">
+                    <a href="">
+                        <div class="company4"></div>
+                    </a>
+                </div>
+                <div class="main-four">
+                    <a href="">
+                        <div class="company5"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

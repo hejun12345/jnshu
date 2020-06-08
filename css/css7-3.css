@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 4%
+}
+
+body {
+    background-color: #29bde0;
+}
+
+header {
+    height: 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #74d4eb;
+    color: white;
+    margin-bottom: 1vw;
+    padding: 0 1vw;
+    font-size: 3vw;
+}
+
+.photo {
+    background: url("../images/src/结果页_03.png") no-repeat;
+    background-size: 35%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    height: 25vw;
+    padding: 1vw 0;
+
+}
+
+.duiqi {
+    text-align: center;
+
+}
+
+.result {
+    display: inline-block;
+    text-align: left;
+    font-size: 30px;
+    margin: 0 5vw;
+    color: #ffc865;
+}
+
+.boxs {
+    margin: 50px 0 0 5vw;
+    padding: 10px 0;
+    font-size: 20px;
+    color: white;
+}
+
+.last-p {
+    margin-bottom: 10px;
+}
+
+/*  */
+.time {
+    background-color: white;
+    padding-left: 5vw;
+    height: 150px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.box1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one,
+.two {
+    display: inline-block;
+    margin-top: 20px;
+    /*  */
+    font-size: 30px;
+}
+
+.two {
+    margin-right: 5vw;
+    font-size: 15px;
+    color: #d6d6d6;
+
+}
+
+.time1 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #a6a6a6;
+}
+
+/*  */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 10vw;
+    background-color: rgba(41, 189, 244, .5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.b1,
+.b2 {
+    width: 40%;
+    margin: 0 5vw;
+    height: 60%;
+    border: none;
+    border-radius: 10px;
+    font-size: 3vw;
+}
+
+.b1 {
+    background-color: #f66f6f;
+}
+
+.b2 {
+    background-color: #fbb425;
+}
