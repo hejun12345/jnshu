@@ -101,7 +101,7 @@
 
             .navbar1-li {
                 position: absolute;
-                top: 70px;
+                top: 80px;
                 margin-left: 15%;
             }
 
@@ -141,13 +141,13 @@
             .company li {
                 width: 100%;
                 padding: 10px 0;
+                border: 1px solid skyblue;
             }
 
             .company .first-li {
                 border-bottom: 1px solid #e6e6e6;
                 padding-bottom: 20px;
                 font-size: 16px;
-                text-align: center;
             }
 
             li:hover span {
@@ -159,18 +159,12 @@
                 color: #ff640c;
             }
 
-            li div {
-                border: 1px solid red;
-            }
-
             .company li a {
-                width: 100%;
                 color: #29b078;
-                /* 居中 */
                 display: flex;
-                /* a垂直居中 */
-                align-items: center;
                 justify-content: center;
+                /* a居中 */
+                align-items: center;
             }
 
             .dot {
@@ -220,7 +214,7 @@
                 margin-bottom: 100px;
             }
 
-            .pic-3 {
+            img {
                 height: 40px;
                 width: 150px;
                 zoom: 0.7;
@@ -232,71 +226,6 @@
                 width: 80%;
                 margin: 20px 0;
                 text-align: left;
-            }
-
-            /*  */
-            footer {
-                background-color: #26a26f;
-                color: white;
-
-            }
-
-            .row-last {
-                /* text-align: center; */
-                padding: 30px;
-            }
-
-            .word-left {
-                display: flex;
-                justify-content: flex-start;
-            }
-
-            .web1,
-            .web2 {
-                padding-top: 30px;
-            }
-
-            .web1 {
-                display: flex;
-                justify-content: flex-start;
-            }
-
-            .web1 a {
-                /* padding: 0 10px; */
-                text-align: left;
-                margin: 0 10px;
-                color: white;
-            }
-
-            .web1 a:nth-child(1) {
-                margin-left: 0;
-            }
-
-            .web2 {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
-
-            .web2 div {
-                margin-bottom: 10px;
-            }
-
-            .web2 a {
-                margin-right: 10px;
-                color: white;
-            }
-
-            .web2 a:hover {
-                border-bottom: 1px solid white;
-            }
-
-            .web3 {
-                text-align: center;
-            }
-
-            .last {
-                text-align: center;
             }
         </style>
 
@@ -313,7 +242,7 @@
                     <a href=""><button class="Navbar3-b"></button></a>
                 </div>
             </div>
-            <div class="navbar1-li"><img src="./images/战略合作企业_01.jpg" class="pic-1"></div>
+            <div class="navbar1-li"><img src="./images/战略合作企业_01.jpg"></div>
             <div class="Navbar2">
                 <div class="Navbar2-li"><a href="">首页</a></div>
                 <div class="Navbar2-li"><a href="">职业</a></div>
@@ -415,7 +344,7 @@
                     <div class="col-md-9 two">
                         <div class="cont">
                             <div class="contect1">
-                                <img src="./images/战略合作企业_3.jpg" class="pic-3">
+                                <img src="./images/战略合作企业_3.jpg">
                                 <p class="history">
                                     土豆网公司成立于1998年11月，是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一，成立10多年以来，腾讯一直秉承一切以用户价值为依归的经营理念，始终处于稳健，高速发展的状态。2004年6月16日，腾讯公司在香港联交所主板公开上市（股票代号700）
                                 </p>
@@ -454,37 +383,7 @@
         </main>
 
         <footer>
-            <div class="container six">
-                <div class="row row-last">
-                    <div class="col-md-3">
-                        <span class="word-left">技能树——改变你我</span>
-                        <div class="web1">
-                            <a href="">关于我们</a>|
-                            <a href="" class="touch">联系我们</a>|
-                            <a href="">合作企业</a>
-                        </div>
-                    </div>
 
-                    <div class="col-md-4">
-                        <span class="word-left">旗下网站</span>
-                        <div class="web2">
-                            <div>
-                                <a href="">草船云孵化器</a>
-                                <a href="">最强IT训练营</a>
-                            </div>
-                            <div>
-                                <a href="">葡萄藤轻游戏</a>
-                                <a href="">桌游精灵</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 web3">
-                        <p>微信公众平台</p>
-                        <img src="./images/技能树首页_17.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <p class="last">Copyright © 2015技能树 www.jnshu.com All Rights Reserved | 京ICP备13005880号</p>
         </footer>
     </body>
 
