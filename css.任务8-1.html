@@ -8,497 +8,9 @@
         <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-        <title>Document</title>
+        <title>技能树首页</title>
+        <link rel="stylesheet" href="./css/css8-1.css">
 
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
-
-            html {
-                font-size: 62.5%;
-            }
-
-            body {
-                background-color: #fafafa;
-            }
-
-            a {
-                text-decoration: none !important;
-            }
-
-            a:hover {
-                color: white;
-            }
-
-            /* head */
-            .nav {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                height: 40px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-
-            .n1 {
-                margin-left: 15%;
-                color: #29b078;
-            }
-
-            .Navbar1 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding-right: 17%;
-                margin-right: 1%;
-            }
-
-            .Navbar1-b {
-                background: url("./images/技能树首页雪碧_01.jpg") no-repeat 0%;
-                height: 26px;
-                width: 26px;
-                border: none;
-            }
-
-            .Navbar2-b {
-                background: url("./images/技能树首页雪碧_01.jpg") no-repeat 50%;
-                height: 26px;
-                width: 26px;
-                border: none;
-                margin: 0 2vw;
-            }
-
-            .Navbar3-b {
-                background: url("./images/技能树首页雪碧_01.jpg") no-repeat 100%;
-                height: 26px;
-                width: 26px;
-                border: none;
-            }
-
-            /* 导航栏 */
-            .Navbar2 {
-                height: 100px;
-                background-color: #29b078;
-                display: flex;
-                justify-content: flex-end;
-                padding-right: 17%;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-
-            .Navbar2-li {
-                width: 6.3%;
-                height: 100px;
-                line-height: 100px;
-                font-size: 1.6rem;
-                display: flex;
-                justify-content: center;
-            }
-
-            .Navbar2-li a {
-                width: 100%;
-                text-align: center;
-                text-decoration: none;
-                color: white;
-            }
-
-            .Navbar2-li a:hover {
-                border-bottom: 4px solid white;
-            }
-
-            /* 轮播图 */
-            .img-responsive {
-                width: 100%;
-                height: 600px;
-            }
-
-            .carousel-caption {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 200px;
-            }
-
-            .carousel-indicators li {
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-            }
-
-            .p1,
-            .p2 {
-                text-align: right;
-                font-size: 30px;
-                margin: 0 5vw;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-
-            .p2 {
-                font-size: 40px;
-            }
-
-            /* main one */
-            .one {
-                margin-top: 150px;
-                margin-bottom: 70px;
-            }
-
-            .two {
-                margin-top: 30px;
-                margin-bottom: 70px;
-            }
-
-            .three {
-                margin-top: 60px;
-                margin-bottom: 120px;
-            }
-
-            .four {
-                margin-top: 70px;
-                margin-bottom: 90px;
-            }
-
-            /*  */
-            .pic-1,
-            .pic-2,
-            .pic-3 {
-                width: 60px;
-                height: 60px;
-                zoom: .8;
-            }
-
-            .pic-1 {
-                background: url("./images/技能树首页雪碧_02.jpg") no-repeat 0;
-            }
-
-            .pic-2 {
-                background: url("./images/技能树首页雪碧_02.jpg") no-repeat 50%;
-            }
-
-            .pic-3 {
-                background: url("./images/技能树首页雪碧_02.jpg") no-repeat 100%;
-            }
-
-            .part1,
-            .part2 {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                /* 撑大盒子边框 */
-                padding: 20px 0;
-            }
-
-            .part2 {
-                border-left: 1px dashed #dedede;
-            }
-
-
-            .box1 {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            .box1 h5 {
-                font-size: 1.6rem;
-                margin: 20px 0;
-            }
-
-            .box2 {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-            }
-
-            .box2 span {
-                color: #29b078;
-            }
-
-            .word-two1 {
-                margin: 40px 0 20px 0;
-            }
-
-            /* main two */
-            .process {
-                display: flex;
-                align-items: center;
-                margin: 20px 0;
-            }
-
-            .b1 {
-                /* 使内容居中 */
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                /* padding撑开圆框，防止变形 */
-                padding: 20px;
-                margin: 10px;
-                width: 20px;
-                height: 20px;
-                border: 1px solid #eeeeee;
-                border-radius: 50%;
-                box-shadow: 0 0 5px #888888;
-            }
-
-            .b2 {
-                /* 设置100%时，b3图像右对齐，原理不明 */
-                width: 100%;
-                text-align: left;
-                margin: auto 0;
-                font-size: 12px;
-            }
-
-            .b3 {
-                background: url("./images/技能树首页_07.jpg") no-repeat;
-                background-position: center;
-                width: 30px;
-                height: 30px;
-                zoom: .7;
-                padding: 1px;
-            }
-
-            /* main three */
-            .photo1,
-            .photo2,
-            .photo3,
-            .photo4 {
-                height: 110px;
-                width: 110px;
-                zoom: .7;
-                margin-bottom: 30px;
-            }
-
-            .photo1 {
-                background: url("./images/技能树首页雪碧_03.jpg") no-repeat 0 -6px;
-            }
-
-            .photo2 {
-                background: url("./images/技能树首页雪碧_03.jpg") no-repeat 33% 0;
-            }
-
-            .photo3 {
-                background: url("./images/技能树首页雪碧_03.jpg") no-repeat 66% 0;
-            }
-
-            .photo4 {
-                background: url("./images/技能树首页雪碧_03.jpg") no-repeat 100% 0;
-            }
-
-            .box3 {
-                padding: 30px;
-                margin: 10px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-color: white;
-                box-shadow: 0 0 1px 1px #eeeded;
-            }
-
-            .working {
-                margin: 10px;
-                color: #999999;
-            }
-
-            .name {
-                font-size: 1.6rem;
-            }
-
-            .last-drop {
-                z-index: 9999;
-                display: flex;
-                justify-content: center;
-                align-items: flex-end;
-                margin-top: 1vw;
-            }
-
-            .last-drop a {
-                float: left;
-                width: 12px;
-                height: 12px;
-                margin: 0 3px;
-                border-radius: 5rem;
-                background-color: white;
-                border: 1px solid #eeeded;
-                box-shadow: 0 0 1px 1px #eeeded;
-            }
-
-            .last-drop a:hover {
-                background-color: #29b078;
-            }
-
-
-            /* main four */
-            .company1,
-            .company2,
-            .company3,
-            .company4,
-            .company5 {
-                width: 175px;
-                height: 60px;
-                zoom: .8;
-            }
-
-            .company1 {
-                background: url("./images/技能树首页雪碧_04.jpg") no-repeat -2%;
-            }
-
-            .company2 {
-                background: url("./images/技能树首页雪碧_04.jpg") no-repeat 23%;
-            }
-
-            .company3 {
-                background: url("./images/技能树首页雪碧_04.jpg") no-repeat 50%;
-            }
-
-            .company4 {
-                background: url("./images/技能树首页雪碧_04.jpg") no-repeat 77%;
-            }
-
-            .company5 {
-                background: url("./images/技能树首页雪碧_04.jpg") no-repeat 102%;
-            }
-
-            .main-four {
-                background-color: white;
-                padding: 2px;
-            }
-
-            .main-four a {
-                width: 100%;
-                padding: 55px 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .main-four a:hover {
-                box-shadow: 0 0 10px 2px #f1f1f1;
-            }
-
-            @media (min-width: 768px) {
-                .main-four {
-                    width: 20%;
-                }
-            }
-
-            @media (max-width: 768px) {
-                .main-four {
-                    width: 100%;
-                }
-            }
-
-            /* main five */
-            .foot {
-                background-color: white;
-            }
-
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                /* align-content: space-between; */
-            }
-
-            li {
-                width: 10%;
-                margin-bottom: 10px;
-                color: #999999;
-            }
-
-            li a {
-                color: #999999;
-            }
-
-            li a:hover {
-                color: black;
-                border-bottom: 1px solid #26a26f;
-            }
-
-            @media (max-width: 768px) {
-                li {
-                    width: 20%;
-                }
-            }
-
-            @media (max-width: 468px) {
-                li {
-                    text-align: center;
-                    width: 100%;
-                }
-            }
-
-            /* footer */
-            footer {
-                background-color: #26a26f;
-                color: white;
-
-            }
-
-            .row-last {
-                /* text-align: center; */
-                padding: 30px;
-            }
-
-            .word-left {
-                display: flex;
-                justify-content: flex-start;
-            }
-
-            .web1,
-            .web2 {
-                padding-top: 30px;
-            }
-
-            .web1 {
-                display: flex;
-                justify-content: flex-start;
-            }
-
-            .web1 a {
-                /* padding: 0 10px; */
-                text-align: left;
-                margin: 0 10px;
-                color: white;
-            }
-
-            .web1 a:nth-child(1) {
-                margin-left: 0;
-            }
-
-            .web2 {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
-
-            .web2 div {
-                margin-bottom: 10px;
-            }
-
-            .web2 a {
-                margin-right: 10px;
-                color: white;
-            }
-
-            .web2 a:hover {
-                border-bottom: 1px solid white;
-            }
-
-            .web3 {
-                text-align: center;
-            }
-
-            .last {
-                text-align: center;
-            }
-        </style>
     </head>
 
     <body>
@@ -538,26 +50,27 @@
                 <div class="carousel-inner" style="width: 100%;height: 100%;">
                     <div class="carousel-item active">
                         <a href="">
-                            <img class="img-responsive" src="./images/技能树首页_背景0.jpg" />
+                            <img class="img-responsive" src="./images/src/技能树首页_背景0.jpg" />
                         </a>
                         <div class="carousel-caption">
                             <p class="p1">作为一个菜鸟程序员，你是否想了解</p>
-                            <p class="p2"><span style="color: red;font-size: 60px;">50万</span>年薪的程序员，都会那些技能呢？</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="javascript:void(0)">
-                            <img class="img-responsive" src="./images/风景1.jpg" />
-                        </a>
-                        <div class="carousel-caption">
-                            <p class="p1">作为一个菜鸟程序员，你是否想了解</p>
-                            <p class="p2"><span style="color: red;font-size: 60px;">50万</span>年薪的程序员，都会那些技能呢？</p>
+                            <p class="p2"><span style="color: red;font-size: 6rem;">50万</span>年薪的程序员，都会那些技能呢？</p>
                         </div>
                     </div>
 
                     <div class="carousel-item">
                         <a href="javascript:void(0)">
-                            <img class="img-responsive" src="./images/飞机.jpg" />
+                            <img class="img-responsive" src="./images/src/风景1.jpg" />
+                        </a>
+                        <div class="carousel-caption">
+                            <p class="p1">作为一个菜鸟程序员，你是否想了解</p>
+                            <p class="p2"><span style="color: red;font-size: 6rem;">50万</span>年薪的程序员，都会那些技能呢？</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="javascript:void(0)">
+                            <img class="img-responsive" src="./images/src/飞机.jpg" />
                         </a>
                         <div class="carousel-caption">
                             <p class="p1">作为一个菜鸟程序员，你是否想了解</p>
@@ -573,8 +86,8 @@
                 <a class="carousel-control-next" href="#carouselContainer" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </a>
-
             </div>
+            
         </header>
 
         <main>
@@ -605,12 +118,12 @@
                     <div class="col-md-3 part2">
                         <div class="box2">
                             <div class="word-two1">
-                                <img src="./images/技能树首页_06.jpg"></a>
+                                <img src="./images/src/技能树首页_06.jpg">
                                 <span>12400</span>
                                 <p class="">累计学习人数</p>
                             </div>
                             <div class="word-two2">
-                                <img src="./images/技能树首页_06.jpg">
+                                <img src="./images/src/技能树首页_06.jpg">
                                 <span>12400</span>
                                 <p class="">累计学习人数</p>
                             </div>
@@ -775,7 +288,7 @@
         <footer>
             <div class="container six">
                 <div class="row row-last">
-                    <div class="col-md-3">
+                    <div class="col-sm-5 col-xs-12">
                         <span class="word-left">技能树——改变你我</span>
                         <div class="web1">
                             <a href="">关于我们</a>|
@@ -784,7 +297,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-sm-5 col-xs-12">
                         <span class="word-left">旗下网站</span>
                         <div class="web2">
                             <div>
@@ -797,9 +310,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5 web3">
+                    <div class="col-sm-2 col-xs-12 web3">
                         <p>微信公众平台</p>
-                        <img src="./images/技能树首页_17.jpg" alt="">
+                        <img src="./images/src/技能树首页_17.jpg" alt="">
                     </div>
                 </div>
             </div>

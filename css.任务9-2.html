@@ -9,7 +9,7 @@
         <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-        <title>Document</title>
+        <title>响应式合作企业</title>
         <style>
             * {
                 margin: 0;
@@ -29,103 +29,99 @@
                 background-color: #fafafa;
             }
 
-            a {
-                text-decoration: none !important;
+            /*  */
+            .img-wrap {
+                margin: 10px 0;
             }
 
-            /* header */
-            .nav {
+            .ff {
+                margin-left: -20px;
+            }
+
+            .first {
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
                 align-items: center;
-                height: 40px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-
-            .n1 {
-                margin-left: 15%;
-                color: #29b078;
-            }
-
-            .Navbar1 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding-right: 17%;
-                margin-right: 1%;
             }
 
             .Navbar1-b {
-                background: url("./images/技能树首页雪碧_01.jpg") no-repeat 0%;
-                height: 26px;
-                width: 26px;
+                background: url("./images/src/技能树首页雪碧_01.jpg") no-repeat 0%;
+                height: 2.6rem;
+                width: 2.6rem;
                 border: none;
             }
 
             .Navbar2-b {
-                background: url("./images/技能树首页雪碧_01.jpg") no-repeat 50%;
-                height: 26px;
-                width: 26px;
+                background: url("./images/src/技能树首页雪碧_01.jpg") no-repeat 50%;
+                height: 2.6rem;
+                width: 2.6rem;
                 border: none;
-                margin: 0 2vw;
             }
 
             .Navbar3-b {
-                background: url("./images/技能树首页雪碧_01.jpg") no-repeat 100%;
-                height: 26px;
-                width: 26px;
+                background: url("./images/src/技能树首页雪碧_01.jpg") no-repeat 100%;
+                height: 2.6rem;
+                width: 2.6rem;
                 border: none;
             }
 
             /* 导航栏 */
-            .Navbar2 {
-                height: 100px;
+            .header-nav-wrap {
                 background-color: #29b078;
-                display: flex;
-                justify-content: flex-end;
-                padding-right: 17%;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                line-height: 100%;
             }
 
-            .Navbar2-li {
-                width: 6.3%;
-                height: 100px;
-                line-height: 100px;
-                font-size: 1.6rem;
-                display: flex;
-                justify-content: center;
-            }
-
-            .navbar1-li {
-                position: absolute;
-                top: 70px;
-                margin-left: 15%;
-            }
-
-            .Navbar2-li a {
+            .navbar {
+                margin: 0;
+                padding: 0;
+                background-color: #29b078;
                 width: 100%;
-                text-align: center;
-                text-decoration: none;
-                color: white;
+                line-height: 100%;
             }
 
-            .Navbar2-li a:hover {
+            #navbarSupportedContent {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+
+            .navbar-toggler {
+                border: none;
+            }
+
+            .navbar-nav {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .nav-item {
+                display: inline-block;
+                white-space: nowrap;
+            }
+
+            .nav-link {
+                height: 100%;
+                line-height: 100%;
+                padding: 3rem 0;
+                border-top: 4px solid #29b078;
+                border-bottom: 4px solid #29b078;
+                font-size: 2rem;
+            }
+
+            .nav-link:hover {
                 border-bottom: 4px solid white;
             }
 
-            .nav-pic {
-                background: url("./images/战略合作企业_02.jpg");
-                background-size: cover;
-                height: 250px;
+            @media (max-width: 250px) {
+                .navbar-brand img {
+                    display: none;
+                }
             }
 
             /* main */
             .boxa {
-                margin: 20px 0;
-                font-size: 16px;
+                margin: 2rem 0;
+                font-size: 1.6rem;
             }
 
             /* main one */
@@ -135,18 +131,18 @@
                 justify-content: space-between;
                 align-items: center;
                 border: 1px solid #e6e6e6;
-                padding: 20px 0;
+                padding: 2rem 0;
             }
 
             .company li {
                 width: 100%;
-                padding: 10px 0;
+                padding: 1rem 0;
             }
 
             .company .first-li {
                 border-bottom: 1px solid #e6e6e6;
-                padding-bottom: 20px;
-                font-size: 16px;
+                padding-bottom: 2rem;
+                font-size: 1.6rem;
                 text-align: center;
             }
 
@@ -160,15 +156,13 @@
             }
 
             li div {
-                border: 1px solid red;
+                width: 8rem;
             }
 
             .company li a {
                 width: 100%;
                 color: #29b078;
-                /* 居中 */
                 display: flex;
-                /* a垂直居中 */
                 align-items: center;
                 justify-content: center;
             }
@@ -179,13 +173,8 @@
                 height: 5px;
                 border: 1px solid #ff640c;
                 border-radius: 50px;
-                margin-right: 5px;
-                padding: 5px;
-                /*  使内容居中
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                 */
+                margin-right: 0.5rem;
+                padding: 0.5rem;
             }
 
             /* main two */
@@ -196,7 +185,7 @@
 
             .contect1 {
                 width: 100%;
-                text-indent: 2em;
+                text-indent: 2rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -205,7 +194,7 @@
 
             .contect2 {
                 width: 100%;
-                text-indent: 2em;
+                text-indent: 2rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -213,28 +202,28 @@
             }
 
             .contect2 p:nth-child(1) {
-                margin-top: 40px;
+                margin-top: 4rem;
             }
 
             .contect2 p:nth-child(6) {
-                margin-bottom: 100px;
+                margin-bottom: 10rem;
             }
 
             .pic-3 {
-                height: 40px;
-                width: 150px;
+                height: 4rem;
+                width: 15rem;
                 zoom: 0.7;
-                margin-right: 20px;
-                margin-left: 20px;
+                margin-right: 2rem;
+                margin-left: 2rem;
             }
 
             .history {
                 width: 80%;
-                margin: 20px 0;
+                margin: 2rem 0;
                 text-align: left;
             }
 
-            /*  */
+            /* footer */
             footer {
                 background-color: #26a26f;
                 color: white;
@@ -242,8 +231,7 @@
             }
 
             .row-last {
-                /* text-align: center; */
-                padding: 30px;
+                padding: 3rem;
             }
 
             .word-left {
@@ -253,7 +241,7 @@
 
             .web1,
             .web2 {
-                padding-top: 30px;
+                padding-top: 3rem;
             }
 
             .web1 {
@@ -262,9 +250,8 @@
             }
 
             .web1 a {
-                /* padding: 0 10px; */
                 text-align: left;
-                margin: 0 10px;
+                margin: 0 1rem;
                 color: white;
             }
 
@@ -272,18 +259,12 @@
                 margin-left: 0;
             }
 
-            .web2 {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
-
             .web2 div {
-                margin-bottom: 10px;
+                margin-bottom: 1rem;
             }
 
             .web2 a {
-                margin-right: 10px;
+                margin-right: 1rem;
                 color: white;
             }
 
@@ -298,29 +279,57 @@
             .last {
                 text-align: center;
             }
-        </style>
 
+            div.carousel-item img {
+                width: 100%;
+            }
         </style>
     </head>
 
     <body>
         <header>
-            <div class="nav">
-                <div class="n1">客服热线：010-594-78634</div>
-                <div class="Navbar1">
-                    <a href=""><button class="Navbar1-b"></button></a>
-                    <a href=""><button class="Navbar2-b"></button></a>
-                    <a href=""><button class="Navbar3-b"></button></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="tel-word">咨询电话：000000000000000</span>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="img-wrap" style="text-align: right;">
+                            <a href=""><button class="Navbar1-b"></button></a>
+                            <a href=""><button class="Navbar2-b"></button></a>
+                            <a href=""><button class="Navbar3-b"></button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="navbar1-li"><img src="./images/战略合作企业_01.jpg" class="pic-1"></div>
-            <div class="Navbar2">
-                <div class="Navbar2-li"><a href="">首页</a></div>
-                <div class="Navbar2-li"><a href="">职业</a></div>
-                <div class="Navbar2-li"><a href="">推荐</a></div>
-                <div class="Navbar2-li"><a href="">关于</a></div>
+            <div class="header-nav-wrap nav">
+                <div class="container">
+                    <div class="row" style="width: 100%;">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="#"><img src="./images/src/战略合作企业_01.jpg"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <img src="./images/jnshu按钮.jpg" alt="">
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="mr-auto"></div>
+                                <ul class="navbar-nav mr-right">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">职业</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">推荐</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">关于</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
             </div>
-            <div class="nav-pic"></div>
         </header>
 
         <main>
@@ -365,13 +374,13 @@
                             <li>
                                 <a href="">
                                     <span class="dot"></span>
-                                    <div>阿里巴巴</div>
+                                    <div>bilibili</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="">
                                     <span class="dot"></span>
-                                    <div>阿里巴巴</div>
+                                    <div>抖音</div>
                                 </a>
                             </li>
                             <li>
@@ -415,7 +424,7 @@
                     <div class="col-md-9 two">
                         <div class="cont">
                             <div class="contect1">
-                                <img src="./images/战略合作企业_3.jpg" class="pic-3">
+                                <img src="./images/src/战略合作企业_3.jpg" class="pic-3">
                                 <p class="history">
                                     土豆网公司成立于1998年11月，是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一，成立10多年以来，腾讯一直秉承一切以用户价值为依归的经营理念，始终处于稳健，高速发展的状态。2004年6月16日，腾讯公司在香港联交所主板公开上市（股票代号700）
                                 </p>
@@ -454,33 +463,35 @@
         </main>
 
         <footer>
-            <div class="container six">
-                <div class="row row-last">
-                    <div class="col-md-3">
-                        <span class="word-left">技能树——改变你我</span>
-                        <div class="web1">
-                            <a href="">关于我们</a>|
-                            <a href="" class="touch">联系我们</a>|
-                            <a href="">合作企业</a>
+            <div class="footer-six">
+                <div class="container" style="padding-top: 30px;">
+                    <div class="row">
+                        <div class="col-sm-5 col-xs-12">
+                            <span class="word-left">技能树——改变你我</span>
+                            <div class="web1">
+                                <a href="">关于我们</a>|
+                                <a href="" class="touch">联系我们</a>|
+                                <a href="">合作企业</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-4">
-                        <span class="word-left">旗下网站</span>
-                        <div class="web2">
-                            <div>
-                                <a href="">草船云孵化器</a>
-                                <a href="">最强IT训练营</a>
-                            </div>
-                            <div>
-                                <a href="">葡萄藤轻游戏</a>
-                                <a href="">桌游精灵</a>
+                        <div class="col-sm-5 col-xs-12">
+                            <span class="word-left">旗下网站</span>
+                            <div class="web2">
+                                <p>
+                                    <a href="">草船云孵化器</a>
+                                    <a href="">最强IT训练营</a>
+                                </p>
+                                <p>
+                                    <a href="">葡萄藤轻游戏</a>
+                                    <a href="">桌游精灵</a>
+                                </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-5 web3">
-                        <p>微信公众平台</p>
-                        <img src="./images/技能树首页_17.jpg" alt="">
+                        <div class="col-sm-2 col-xs-12 web3">
+                            <p>微信公众平台</p>
+                            <img src="./images/src/技能树首页_17.jpg">
+                        </div>
                     </div>
                 </div>
             </div>

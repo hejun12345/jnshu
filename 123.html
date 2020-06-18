@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <title>Document</title>
+        <style>
+            .process-line {
+                height: 4px;
+                background: #eee;
+                position: relative;
+                top: 30px;
+                width: 95%;
+            }
+
+            .progress-points {
+                position: relative;
+                padding: 0;
+                list-style: none;
+                height: 85px;
+            }
+
+            .progress-point {
+                text-align: center;
+                position: absolute;
+                display: block;
+                -webkit-border-radius: 100px;
+                -moz-border-radius: 100px;
+                -ms-border-radius: 100px;
+                -o-border-radius: 100px;
+                border-radius: 100px;
+                width: 55px;
+                height: 55px;
+                background: #2589ff;
+                color: #fff;
+                font-size: 25px;
+            }
+
+            .noactivated {
+                background: #eee;
+            }
+
+            .label {
+                position: relative;
+                top: 6px;
+                white-space: nowrap;
+                color: #000000;
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            .progress-num {
+                margin-top: 7px;
+            }
+
+            .content-main-con .main-con-forPaw-process {
+                width: 885px;
+                margin: 0 auto;
+                display: block;
+                overflow: hidden;
+                padding-top: 104px;
+            }
+
+            .active-line {
+                background: #2589ff;
+            }
+
+            .process-line-active {
+                width: 50%;
+                background: #2589ff;
+                height: 4px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="main-con-forPaw-con">
+            <div class="main-con-forPaw-process">
+                <!--线-->
+                <div class="process-line">
+                    <div class="process-line-active"></div>
+                </div>
+                <!--圈和字-->
+                <ol class="progress-points">
+                    <li class="progress-point" data-point="1" style="left: 0%;">
+                        <div class="progress-num">
+                            1
+                        </div>
+                        <span class="label">安全验证</span>
+                    </li>
+
+                    <li class="progress-point" data-point="2" style="left: 30%;">
+                        <div class="progress-num">
+                            2
+                        </div>
+                        <span class="label">重置密码</span>
+                    </li>
+
+                    <li class="progress-point noactivated" data-point="3" style="left: 60%;">
+                        <div class="progress-num">
+                            3
+                        </div>
+                        <span class="label">完&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成</span>
+                    </li>
+
+                    <li class="progress-point noactivated" data-point="4" style="left: 90%;">
+                        <div class="progress-num">
+                            4
+                        </div>
+                        <span class="label">重新开始</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+    </body>
+
+</html>

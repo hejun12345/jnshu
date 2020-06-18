@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>定制箱</title>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+        <style>
+            html {
+                font-size: 312.5%;
+            }
+
+            body {
+                margin: 0;
+                font-size: initial;
+                background-color: #FFFFFF;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+
+            li {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+
+            header {
+
+                background-color: #F9F9F9;
+            }
+
+            .top-bg {
+                background-color: #1D7AD9;
+            }
+
+            .left-col {
+                line-height: .8rem;
+                font-size: .14rem;
+                color: #FFFFFF;
+            }
+
+            .top-btn {
+                padding: 0 .45rem;
+                line-height: .8rem;
+                font-size: .16rem;
+                border: none;
+                outline: none !important;
+                color: #FFFFFF;
+                background-color: #1D7AD9;
+            }
+
+            .top-btn:hover {
+                color: black;
+                background: #FFFFFF;
+            }
+
+            @media (max-width:575px) {
+                .header-btn {
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+
+            .header-btnn {
+                text-align: right;
+            }
+
+            .dropdown {
+                margin: 20px 20px 20px auto;
+                padding: 6px;
+                display: none;
+                outline: none !important;
+                border-radius: 6%;
+                border: none;
+                background-color: #1D7AD9;
+            }
+
+            .line {
+                padding: 6px 0;
+                width: 22px;
+                height: 21px;
+                border-top: 3px solid #FFFFFF;
+                border-bottom: 3px solid #FFFFFF;
+                background: #FFFFFF content-box;
+            }
+
+            @media (max-width:575px) {
+                .end {}
+
+                .navv {}
+
+                .dropdown {
+                    display: block;
+                }
+
+                .header-btnn {
+                    display: none;
+                }
+
+                .bottom-btn {
+                    margin: .4rem 0 !important;
+                    border-radius: 0% !important;
+                }
+
+                .navv:hover .header-btnn {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            .bottom-btn {
+                margin: .4rem 0 .4rem .6rem;
+                padding: 0 .45rem;
+                line-height: .8rem;
+                font-size: .16rem;
+                border: none;
+                border-radius: 6%;
+                outline: none !important;
+                color: black;
+                background-color: #FFFFFF;
+                box-shadow: 0 1px 1px -1px;
+            }
+
+            .bottom-btn:hover {
+                color: #FFFFFF;
+                background: #1D7AD9;
+            }
+
+            .main-top {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .carton-box {
+                position: relative;
+                margin-top: .48rem;
+                border-top: .06rem solid #CCCCCC;
+                font-size: .18rem;
+                color: #CCCCCC;
+            }
+
+            .carton-box::before {
+                position: absolute;
+                content: "1";
+                top: -.18rem;
+                left: 50%;
+                margin-left: -.15rem;
+                text-align: center;
+                line-height: .3rem;
+                font-size: .14rem;
+                color: #FFFFFF;
+                width: .3rem;
+                border-radius: 50%;
+                background: #CCCCCC;
+            }
+
+            .carton {
+                margin: .5rem .38rem;
+            }
+
+            .carton-box:hover {
+                color: #FF7F02 !important;
+                border-color: #FF7F02 !important;
+            }
+
+            .carton-box:hover::before {
+                background-color: #FF7F02 !important;
+            }
+
+            .title-bottom {
+                margin-bottom: .3rem;
+            }
+
+            .main-title {
+                padding-left: .09rem;
+                font-size: .22rem;
+                color: #333333;
+                border-left: .04rem solid #1D7AD9;
+            }
+
+            .bg-box {
+                display: flex;
+                align-items: center;
+                line-height: .8rem;
+                font-size: .18rem;
+                color: #1D7AD9;
+                background: #F4F4F4;
+                border: .01rem solid #E7E7E7;
+            }
+
+            .box {
+                margin: 0 .2rem;
+                width: .38rem;
+                height: .32rem;
+                background: url(../img/666.png) no-repeat 0 1px;
+            }
+
+            label {
+                margin-bottom: 0 !important;
+            }
+
+            .main-option {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 .2rem 0 .46rem;
+                border: .01rem solid #E7E7E7;
+                border-top: none;
+                border-bottom: none;
+                background: #FBFCFF;
+            }
+
+            .option-left {
+                display: flex;
+                line-height: 1.2rem;
+            }
+
+            .radio {
+                display: flex;
+                align-items: center;
+                margin-right: .6rem;
+                font-size: .18rem;
+                color: #666666;
+            }
+
+            .radio-left {
+                margin-right: .2rem;
+            }
+
+            .option-button {
+                display: flex;
+                position: relative;
+                align-items: center;
+                height: .7rem;
+                font-size: .14rem;
+                color: #999999;
+                background-color: #FFFFFF;
+                border: .01rem solid #E8E8E8;
+                outline: none !important;
+            }
+
+            .rectangle {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: .3rem;
+                width: .4rem;
+                height: .45rem;
+                background-color: #1D7AD9;
+            }
+
+            .triangle {
+                width: 0;
+                height: 0;
+                border-top: .15rem solid #FFFFFF;
+                border-left: .13rem solid transparent;
+                border-right: .13rem solid transparent;
+            }
+
+            .item {
+                line-height: .7rem;
+                padding-left: .12rem;
+
+            }
+
+            .item:hover {
+                background: #1D7AD9;
+            }
+
+            .dropdown-xq {
+                display: none;
+                position: absolute;
+                top: .7rem;
+                left: 0;
+                right: 0;
+                text-align: left;
+                font-size: .14rem;
+                color: #FFFFFF;
+                background-color: #999999;
+                z-index: 1;
+            }
+
+            .option-button:hover .dropdown-xq {
+                display: block;
+            }
+
+            .mg {
+                padding: .3rem .2rem .3rem .46rem;
+            }
+
+            .second-box {
+                margin: 0 .1rem;
+                width: .45rem;
+                height: .45rem;
+                background: url(../img/666.png) no-repeat 1px -33px;
+            }
+
+            .size-left {
+                display: flex;
+            }
+
+            .io {
+                margin-right: 0;
+                padding: 1px 0;
+            }
+
+            .ox {
+                padding: 5px 0;
+            }
+
+            .number {
+                width: 70px;
+                height: 30px;
+                font-size: .26rem;
+                outline: none;
+            }
+
+            .dd {
+                display: block;
+                font-size: .32rem;
+                color: #666666;
+            }
+
+            .number-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-right: .4rem;
+                height: 1.4rem;
+            }
+
+            .third {
+                background: url(../img/666.png) no-repeat 5px -74px;
+            }
+
+            .on {
+                line-height: 2rem;
+            }
+
+            .main-bottom {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 2.86rem;
+                border: .01rem solid #E8E8E8;
+            }
+
+            .red-button {
+                width: 2rem;
+                height: .6rem;
+                border: none;
+                border-radius: .2rem;
+                outline: none !important;
+                font-size: .32rem;
+                color: #FFFFFF;
+                background: #E15053;
+            }
+
+            footer {
+                margin-top: 1rem;
+                padding-top: .6rem;
+                background: #F9F9F9;
+            }
+
+            .footer-word {
+                font-size: .28rem;
+                font-weight: 600;
+                color: #999999;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="top-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <p class="left-col">客服热线：010-594-78634</p>
+                        </div>
+                        <div class="col-md-6  col-sm-6 text-right">
+                            <div class="header-btn">
+                                <button class="top-btn">登录</button>
+                                <button class="top-btn">注册</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 end">
+                        <nav class="navv">
+                            <button class="dropdown">
+                                <div class="line"></div>
+                            </button>
+                            <div class="header-btnn">
+                                <button class="bottom-btn">首页</button>
+                                <button class="bottom-btn">在线定制</button>
+                                <button class="bottom-btn">标准箱</button>
+                                <button class="bottom-btn">品质保障</button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 main-top">
+                        <div class="carton-box">
+                            <p class="carton">1.定制纸箱</p>
+                        </div>
+                        <div class="carton-box">
+                            <p class="carton">2.选择数量</p>
+                        </div>
+                        <div class="carton-box">
+                            <p class="carton">3.上传附件</p>
+
+                        </div>
+                        <div class="carton-box">
+                            <p class="carton">4.确认下单</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 title-bottom">
+                        <strong class="main-title">请您按照以下步骤来定制您的纸箱</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bg-box">
+                            <span class="box"></span>
+                            <strong>选择箱型</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-option">
+                            <div class="option-left">
+                                <label class="radio"><input class="radio-left" type="radio" name="optradio">对口箱</label>
+                                <label class="radio"><input class="radio-left" type="radio" name="optradio">飞机盒</label>
+                                <label class="radio"><input class="radio-left" type="radio" name="optradio">天地盖</label>
+                            </div>
+                            <button class="option-button">
+                                <p class="button-word">查看详情</p>
+                                <div class="rectangle">
+                                    <div class="triangle"></div>
+                                </div>
+                                <ul class="dropdown-xq">
+                                    <li class="item">对口箱</li>
+                                    <li class="item">飞机盒</li>
+                                    <li class="item">天地盖</li>
+                                </ul>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bg-box">
+                            <span class="second-box"></span>
+                            <strong>确定尺寸</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-option mg">
+                            <div class="size-left">
+                                <div class="number-box ox">
+                                    <label class="radio io"><input class="radio-left" type="radio"
+                                            name="optradio">外径</label>
+                                    <label class="radio io"><input class="radio-left" type="radio"
+                                            name="optradio">内径</label>
+                                </div>
+                                <div class="number-box">
+                                    <label class="dd">长<input type="number" class="number" placeholder="输入数字"
+                                            oninput="if(value.length>5)value=value.slice(0,5)">mm</label>
+                                    <label class="dd">长<input type="number" class="number" placeholder="输入数字"
+                                            oninput="if(value.length>5)value=value.slice(0,5)">mm</label>
+                                </div>
+                                <div class="number-box">
+                                    <label class="dd">宽<input type="number" class="number" placeholder="输入数字"
+                                            oninput="if(value.length>5)value=value.slice(0,5)">mm</label>
+                                    <label class="dd">宽<input type="number" class="number" placeholder="输入数字"
+                                            oninput="if(value.length>5)value=value.slice(0,5)">mm</label>
+                                </div>
+                                <div class="number-box">
+                                    <label class="dd">高<input type="number" class="number" placeholder="输入数字"
+                                            oninput="if(value.length>5)value=value.slice(0,5)">mm</label>
+                                    <label class="dd">高<input type="number" class="number" placeholder="输入数字"
+                                            oninput="if(value.length>5)value=value.slice(0,5)">mm</label>
+                                </div>
+                            </div>
+                            <button class="option-button">
+                                <p class="button-word">查看详情</p>
+                                <div class="rectangle">
+                                    <div class="triangle"></div>
+                                </div>
+                                <ul class="dropdown-xq">
+                                    <li class="item">外径</li>
+                                    <li class="item">内径</li>
+                                </ul>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bg-box">
+                            <span class="second-box third"></span>
+                            <strong>选择材质</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-option">
+                            <div class="option-left on">
+                                <label class="radio"><input class="radio-left" type="radio"
+                                        name="optradio">三层A瓦优质</label>
+                                <label class="radio"><input class="radio-left" type="radio"
+                                        name="optradio">三层A瓦优质</label>
+                                <label class="radio"><input class="radio-left" type="radio"
+                                        name="optradio">三层A瓦优质</label>
+                                <label class="radio"><input class="radio-left" type="radio"
+                                        name="optradio">三层A瓦优质</label>
+                                <label class="radio"><input class="radio-left" type="radio"
+                                        name="optradio">三层A瓦优质</label>
+                            </div>
+                            <button class="option-button">
+                                <p class="button-word">查看详情</p>
+                                <div class="rectangle">
+                                    <div class="triangle"></div>
+                                </div>
+                                <ul class="dropdown-xq">
+                                    <li class="item">三层A瓦优质</li>
+                                    <li class="item">三层A瓦优质</li>
+                                    <li class="item">三层A瓦优质</li>
+                                    <li class="item">三层A瓦优质</li>
+                                    <li class="item">三层A瓦优质</li>
+                                </ul>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-bottom">
+                            <button class="red-button">
+                                下一步
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="footer-word">51包装网——纸箱包装首选服务平台</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                            <a class="about">关于我们</a>  
+                            <a class="about">配送流程</a>  
+                            <a class="about">联系我们</a>
+                        </p>
+                        <p>
+                            <a class="about">下单指南</a>  
+                            <a class="about">媒体介绍</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <p>TEL:400-0000-000</p>
+                            <p>企业QQ：123456789</p>
+                            <p>微信号：XXXXXXX</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

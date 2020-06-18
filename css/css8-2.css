@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* header */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.n1 {
+    margin-left: 15%;
+    color: #29b078;
+}
+
+.Navbar1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 17%;
+    margin-right: 1%;
+}
+
+.Navbar1-b {
+    background: url("../images/src/技能树首页雪碧_01.jpg") no-repeat 0%;
+    height: 26px;
+    width: 26px;
+    border: none;
+}
+
+.Navbar2-b {
+    background: url("../images/src/技能树首页雪碧_01.jpg") no-repeat 50%;
+    height: 26px;
+    width: 26px;
+    border: none;
+    margin: 0 2vw;
+}
+
+.Navbar3-b {
+    background: url("../images/src/技能树首页雪碧_01.jpg") no-repeat 100%;
+    height: 26px;
+    width: 26px;
+    border: none;
+}
+
+/* 导航栏 */
+.Navbar2 {
+    height: 100px;
+    background-color: #29b078;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 17%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Navbar2-li {
+    width: 6.3%;
+    height: 100px;
+    line-height: 100px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar1-li {
+    position: absolute;
+    top: 70px;
+    margin-left: 15%;
+}
+
+.Navbar2-li a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.Navbar2-li a:hover {
+    border-bottom: 4px solid white;
+}
+
+.nav-pic {
+    background: url("../images/src/战略合作企业_02.jpg");
+    background-size: cover;
+    height: 250px;
+}
+
+/* main */
+.boxa {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+/* main one */
+.company {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e6e6e6;
+    padding: 20px 0;
+}
+
+.company li {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.company .first-li {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+li:hover span {
+    background: #f9a372;
+
+}
+
+li:hover div {
+    color: #ff640c;
+}
+
+li div {
+    width: 80px;
+}
+
+.company li a {
+    width: 100%;
+    color: #29b078;
+    /* 居中 */
+    display: flex;
+    /* a垂直居中 */
+    align-items: center;
+    justify-content: center;
+}
+
+.dot {
+    float: left;
+    width: 5px;
+    height: 5px;
+    border: 1px solid #ff640c;
+    border-radius: 50px;
+    margin-right: 5px;
+    padding: 5px;
+    /*  使内容居中
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     */
+}
+
+/* main two */
+.cont {
+    border: 1px solid #e6e6e6;
+    color: #999999;
+}
+
+.contect1 {
+    width: 100%;
+    text-indent: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.contect2 {
+    width: 100%;
+    text-indent: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contect2 p:nth-child(1) {
+    margin-top: 40px;
+}
+
+.contect2 p:nth-child(6) {
+    margin-bottom: 100px;
+}
+
+.pic-3 {
+    height: 40px;
+    width: 150px;
+    zoom: 0.7;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.history {
+    width: 80%;
+    margin: 20px 0;
+    text-align: left;
+}
+
+/*  */
+footer {
+    background-color: #26a26f;
+    color: white;
+
+}
+
+.row-last {
+    /* text-align: center; */
+    padding: 30px;
+}
+
+.word-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.web1,
+.web2 {
+    padding-top: 30px;
+}
+
+.web1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.web1 a {
+    /* padding: 0 10px; */
+    text-align: left;
+    margin: 0 10px;
+    color: white;
+}
+
+.web1 a:nth-child(1) {
+    margin-left: 0;
+}
+
+.web2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.web2 div {
+    margin-bottom: 10px;
+}
+
+.web2 a {
+    margin-right: 10px;
+    color: white;
+}
+
+.web2 a:hover {
+    border-bottom: 1px solid white;
+}
+
+.web3 {
+    text-align: center;
+}
+
+.last {
+    text-align: center;
+}
