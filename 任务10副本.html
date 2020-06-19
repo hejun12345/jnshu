@@ -263,17 +263,15 @@
             }
 
             /* five */
+            /* 
             .box-five {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 background-color: #fbfcff;
-                /* padding: 6px 0; */
-                /* padding-left: 40px; */
             }
 
             .big-box {
-                /* height: 100%; */
                 display: flex;
             }
 
@@ -294,6 +292,26 @@
                 margin-bottom: 10px;
             }
 
+            .number {
+                width: 70px;
+                height: 30px;
+                margin: 8px 0;
+            }
+ */
+            .box-five {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #fbfcff;
+            }
+
+            .number-one {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 10px 0;
+            }
+            
             .number {
                 width: 70px;
                 height: 30px;
@@ -517,11 +535,46 @@
                 </div>
             </div>
 
+            <div class="container fifth">
+                <div class="row">
+                    <div class="col-12 box-five">
+                        <div>
+                            <div class="number-two">
+                                <input type="radio" name="size" id="A" class="radio"><label for="A"
+                                    class="radio">内经</label>
+                                <label for="">长&nbsp;<input type="number" class="number">&nbsp;mm</label>
+                                <label for="">宽&nbsp;<input type="number" class="number">&nbsp;mm</label>
+                                <label for="">高&nbsp;<input type="number" class="number">&nbsp;mm</label>
+                            </div>
+                            <div class="number-two">
+                                <input type="radio" name="size" id="A" class="radio"><label for="A"
+                                    class="radio">内经</label>
+                                <label for="">长&nbsp;<input type="number" class="number">&nbsp;mm</label>
+                                <label for="">宽&nbsp;<input type="number" class="number">&nbsp;mm</label>
+                                <label for="">高&nbsp;<input type="number" class="number">&nbsp;mm</label>
+                            </div>
+                        </div>
+                        <div class="ui-select">
+                            <p class="word-down">
+                                <span>查看详情</span>
+                                <i class="icon-down">
+                                    <i class="down"></i>
+                                </i>
+                            </p>
+                            <select name="" id="">
+                                <option value="1">对口箱</option>
+                                <option value="2">飞机盒</option>
+                                <option value="3">天地盖</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
             <div class="container">
                 <div class="row">
                     <div class="col-12 box-five">
                         <div class="big-box">
-                            <!--
                             <div class="number-one radios">
                                 <div class="custom-control custom-radio custom-control-inline">
                                     <input type="radio" id="customRadioInline4" name="customRadioInline2"
@@ -534,8 +587,6 @@
                                     <label class="custom-control-label" for="customRadioInline5">外经</label>
                                 </div>
                             </div>
-                              -->
-                            <!-- 
                             <div class="number-one">
                                 <label for="A" class="radio"><input type="radio" name="size" id="A"
                                         class="radio">内经</label>
@@ -543,6 +594,8 @@
                                         class="radio">外经</label>
                             </div>
                              -->
+            <!-- 
+
                             <div class="number-one">
                                 <input type="radio" name="size" id="A" class="radio"><label for="A"
                                     class="radio">内经</label>
@@ -578,7 +631,7 @@
                     </div>
                 </div>
             </div>
-
+ -->
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 box-six">
