@@ -1,4 +1,98 @@
-span {
-    color: red;
-    font-size: 20px;
+$bgcolor1: #eff0f4;
+$bgcolor2: #68cdd5;
+$textcolor: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $bgcolor1;
+    a {
+        text-decoration: none;
+    }
+}
+
+
+header {
+    background-color: $bgcolor2;
+    font-size: 3.6rem;
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    line-height: 5rem;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    p {
+        margin: 0 1vw 0 1vw;
+        a {
+            color: $textcolor;
+        }
+    }
+    .one,
+    .two {
+        font-size: 3.2rem;
+    }
+}
+
+main {
+    .top {
+        margin-bottom: 1.5rem;
+    }
+    
+    .buttom {
+        margin-bottom: 7rem;
+    }
+
+    div {
+        background-color: $textcolor;
+
+        img {
+            vertical-align: middle;
+            border-right: 1px solid $bgcolor1;
+            padding: 0 1rem 0 1rem;
+            zoom: 2;
+        }
+
+        input {
+            outline: none;
+            height: 10rem;
+            line-height: 10rem;
+            margin-left: 10px;
+            font-size: 3.2rem;
+            border: none;
+            width: calc(100% - 10vw);
+        }
+    }
+
+    button {
+        width: 100%;
+        height: 10rem;
+        background-color: $bgcolor2;
+        border: none;
+        font-size: 3.6rem;
+        color: $textcolor;
+        margin-bottom: 1.5rem;
+        a {
+            color: $textcolor;
+        }
+    }
+
+    .footer {
+        float: right;
+        font-size: 3.2rem;
+        margin-right: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        display: none;
+    }
+
 }

@@ -102,6 +102,10 @@ a:hover {
     /* height: 600px; */
 }
 
+.carousel-caption {
+    bottom: 30%;
+}
+
 .title {
     font-size: 16px;
 }
