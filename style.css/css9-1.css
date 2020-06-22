@@ -1,0 +1,503 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+a {
+    text-decoration: none !important;
+    color: white;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/*  */
+.img-wrap {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+
+.img-wrap a {
+    margin-right: 1rem;
+}
+
+.ff {
+    margin-left: -2rem;
+}
+
+.first {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Navbar1-b {
+    background: url("../images/src/技能树首页雪碧_01.jpg") no-repeat 0%;
+    height: 2.6rem;
+    width: 2.6rem;
+    border: none;
+}
+
+.Navbar2-b {
+    background: url("../images/src/技能树首页雪碧_01.jpg") no-repeat 50%;
+    height: 2.6rem;
+    width: 2.6rem;
+    border: none;
+}
+
+.Navbar3-b {
+    background: url("../images/src/技能树首页雪碧_01.jpg") no-repeat 100%;
+    height: 2.6rem;
+    width: 2.6rem;
+    border: none;
+}
+
+/* 导航栏 */
+.header-nav-wrap {
+    background-color: #29b078;
+    line-height: 100%;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    background-color: #29b078;
+    width: 100%;
+    line-height: 100%;
+}
+
+#navbarSupportedContent {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.nav-link {
+    height: 100%;
+    line-height: 100%;
+    padding: 3rem 3rem;
+    border-top: 4px solid #29b078;
+    border-bottom: 4px solid #29b078;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.nav-link:hover {
+    border-bottom: 4px solid white;
+}
+
+@media (max-width: 250px) {
+    .navbar-brand img {
+        display: none;
+    }
+}
+
+/*  */
+.one {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.two {
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+}
+
+.three {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.four {
+    margin-top: 7rem;
+    margin-bottom: 9rem;
+}
+
+/* 轮播图 */
+.container-fluid {
+    padding: 0;
+}
+
+.carousel-indicators li {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.pic-1,
+.pic-2,
+.pic-3,
+.pic-4 {
+    width: 6rem;
+    height: 6rem;
+    zoom: .8;
+}
+
+.pic-1 {
+    background: url("../images/src/jnshu_雪碧.jpg") no-repeat -1%;
+}
+
+.pic-2 {
+    background: url("../images/src/jnshu_雪碧.jpg") no-repeat 33%;
+}
+
+.pic-3 {
+    background: url("../images/src/jnshu_雪碧.jpg") no-repeat 67%;
+}
+
+.pic-4 {
+    background: url("../images/src/jnshu_雪碧.jpg") no-repeat 101%;
+}
+
+/* main one */
+.part1,
+.part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.box1 h5 {
+    font-size: 1.8rem;
+    margin: 2rem 0;
+}
+
+.part2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.box2 span {
+    color: #29b078;
+}
+
+.col {
+    width: 20%;
+}
+
+@media (max-width: 768px) {
+    .part1 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 468px) {
+    .part1 {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* main-two */
+.process {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.b1 {
+    /* 使内容居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding撑开圆框，防止变形 */
+    padding: 2rem;
+    margin: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #eeeeee;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #888888;
+}
+
+.b2 {
+    /* 设置100%时，b3图像右对齐，原理不明 */
+    width: 100%;
+    text-align: left;
+    margin: auto 0;
+    font-size: 1.4rem;
+}
+
+.b3 {
+    background: url("../images/src/技能树首页_07.jpg") no-repeat;
+    background-position: center;
+    width: 3rem;
+    height: 3rem;
+    zoom: .7;
+    padding: 1px;
+}
+
+/* main three */
+.photo1,
+.photo2,
+.photo3,
+.photo4 {
+    height: 11rem;
+    width: 11rem;
+    zoom: .7;
+    margin-bottom: 3rem;
+}
+
+.photo1 {
+    background: url("../images/src/技能树首页雪碧_03.jpg") no-repeat 0 -6px;
+}
+
+.photo2 {
+    background: url("../images/src/技能树首页雪碧_03.jpg") no-repeat 33% 0;
+}
+
+.photo3 {
+    background: url("../images/src/技能树首页雪碧_03.jpg") no-repeat 66% 0;
+}
+
+.photo4 {
+    background: url("../images/src/技能树首页雪碧_03.jpg") no-repeat 100% 0;
+}
+
+.box3 {
+    padding: 3rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 1px 1px #eeeded;
+}
+
+.name {
+    font-size: 1.8rem;
+}
+
+.working {
+    /* margin: 0.5rem; */
+    color: #999999;
+    font-size: 1.6rem;
+}
+
+.last-drop {
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 1vw;
+}
+
+.last-drop a {
+    float: left;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 3px;
+    border-radius: 5rem;
+    background-color: white;
+    border: 1px solid #eeeded;
+    box-shadow: 0 0 1px 1px #eeeded;
+}
+
+.last-drop a:hover {
+    background-color: #29b078;
+}
+
+/* main four */
+.company1,
+.company2,
+.company3,
+.company4,
+.company5 {
+    width: 17.5rem;
+    height: 6rem;
+    zoom: .8;
+}
+
+.company1 {
+    background: url("../images/src/技能树首页雪碧_04.jpg") no-repeat -2%;
+}
+
+.company2 {
+    background: url("../images/src/技能树首页雪碧_04.jpg") no-repeat 23%;
+}
+
+.company3 {
+    background: url("../images/src/技能树首页雪碧_04.jpg") no-repeat 50%;
+}
+
+.company4 {
+    background: url("../images/src/技能树首页雪碧_04.jpg") no-repeat 77%;
+}
+
+.company5 {
+    background: url("../images/src/技能树首页雪碧_04.jpg") no-repeat 102%;
+}
+
+.main-four {
+    background-color: white;
+    padding: 2px;
+}
+
+.main-four a {
+    width: 100%;
+    padding: 5.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-four a:hover {
+    box-shadow: 0 0 10px 2px #f1f1f1;
+}
+
+@media (min-width: 768px) {
+    .main-four {
+        width: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-four {
+        width: 100%;
+    }
+}
+
+/* main five */
+.foot {
+    background-color: white;
+}
+
+.box-five {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: space-between; */
+}
+
+.dizhi {
+    width: 10%;
+    color: #999999;
+}
+
+.dizhi a {
+    color: #999999;
+}
+
+.dizhi a:hover {
+    color: black;
+    border-bottom: 1px solid #26a26f;
+}
+
+@media (max-width: 768px) {
+    .dizhi {
+        width: 20%;
+    }
+}
+
+@media (max-width: 468px) {
+    .dizhi {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* footer */
+footer {
+    background-color: #26a26f;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.row-last {
+    padding: 3rem;
+}
+
+.word-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.web1,
+.web2 {
+    padding-top: 3rem;
+    font-size: 1.4rem;
+}
+
+/*  
+.web1 {
+    display: flex;
+    justify-content: flex-start;
+}
+*/
+.web1 a {
+    text-align: left;
+    margin: 0 1rem;
+    color: white;
+}
+
+.web1 a:nth-child(1) {
+    margin-left: 0;
+}
+
+.web2 div {
+    margin-bottom: 1rem;
+}
+
+.web2 a {
+    margin-right: 2rem;
+    color: white;
+}
+
+.web2 a:hover {
+    border-bottom: 1px solid white;
+}
+
+.web3 {
+    text-align: center;
+}
+
+.last {
+    text-align: center;
+}
+
+div.carousel-item img {
+    width: 100%;
+}
