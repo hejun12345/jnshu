@@ -28,7 +28,7 @@ header a {
   position: relative;
   height: 0px;
   width: 0px;
-  border-top: 19px solid transparent;
+  border-top: 20px solid transparent;
   border-right: 20px solid white;
   border-bottom: 20px solid transparent;
   margin-left: 1vw;
@@ -37,9 +37,9 @@ header a {
 header a:after {
   content: '';
   position: absolute;
-  top: -18px;
+  top: -19px;
   left: 4px;
-  border-top: 18px solid transparent;
+  border-top: 19px solid transparent;
   border-right: 19px solid #5FC0CD;
   border-bottom: 19px solid transparent;
 }

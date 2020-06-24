@@ -1,0 +1,11 @@
+.myArticle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myNotes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
