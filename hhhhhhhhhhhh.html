@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>流式布局</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                font-weight: normal;
+                font-size: 62.5%;
+            }
+
+            body {
+                background-color: #fafafa;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            h2 {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            /* box-sprites */
+            .box-sprites {
+                width: 80%;
+                margin: 5rem auto;
+                display: flex;
+                flex-flow: row wrap;
+                align-content: flex-start;
+            }
+
+            .box-part {
+                box-sizing: border-box;
+                flex: 0 0 25%;
+                width: 100%;
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .final {
+                border-left: 1px dashed #dedede;
+                color: #29b078;
+            }
+
+            .pic1,
+            .pic2,
+            .pic3 {
+                width: 6rem;
+                height: 7rem;
+            }
+
+            .pic1 {
+                background: url("./images/src/技能树首页雪碧_02.jpg") no-repeat -1%;
+            }
+
+            .pic2 {
+                background: url("./images/src/技能树首页雪碧_02.jpg") no-repeat 50%;
+            }
+
+            .pic3 {
+                background: url("./images/src/技能树首页雪碧_02.jpg") no-repeat 100%;
+            }
+
+            .word {
+                height: 30%;
+            }
+
+            h3 {
+                font-size: 1.6rem;
+                padding: 2rem;
+            }
+
+            .word-two1 {
+                padding-top: 6rem;
+            }
+
+
+            .word-two2 {
+                padding: 3rem;
+            }
+
+            .word-three {
+                color: black;
+            }
+
+            @media (max-width: 800px) {
+                .box-part {
+                    flex: 0 0 50%;
+                }
+            }
+
+            @media (max-width: 800px) {
+                .box-part {
+                    flex: 0 0 100%;
+                }
+            }
+
+            /* box-center */
+            .box-center {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                flex-flow: row wrap;
+                align-content: flex-start;
+            }
+
+            .process {
+                box-sizing: border-box;
+                flex: 0 0 25%;
+                width: 25%;
+                display: flex;
+                align-items: center;
+                /* margin: 2rem 0; */
+            }
+
+            .b1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem;
+                margin: 1rem;
+                width: 1rem;
+                height: 1rem;
+                border: 1px solid #eeeeee;
+                border-radius: 50%;
+                box-shadow: 0 0 5px #888888;
+                background-color: white;
+            }
+
+            .b2 {
+                width: 100%;
+                text-align: left;
+                margin: auto 0;
+                font-size: 1.4rem;
+            }
+
+            .b3 {
+                background: url("./images/src/技能树首页_07.jpg") no-repeat;
+                background-position: center;
+                width: 3rem;
+                height: 3rem;
+                zoom: .7;
+                padding: 1px;
+            }
+
+            @media (max-width: 800px) {
+                .process {
+                    flex: 0 0 50%;
+                }
+            }
+
+            @media (max-width: 800px) {
+                .process {
+                    flex: 0 0 100%;
+                }
+            }
+
+            /* box-next */
+            .box-next {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                flex-flow: row wrap;
+                align-content: flex-start;
+            }
+
+            .resume {
+                box-sizing: border-box;
+                flex: 0 0 25%;
+            }
+
+            .photo1,
+            .photo2,
+            .photo3,
+            .photo4 {
+                height: 11rem;
+                width: 11rem;
+                zoom: .7;
+                margin-bottom: 3rem;
+            }
+
+            .photo1 {
+                background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 0 -6px;
+            }
+
+            .photo2 {
+                background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 33% 0;
+            }
+
+            .photo3 {
+                background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 66% 0;
+            }
+
+            .photo4 {
+                background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 100% 0;
+            }
+
+            .box {
+                padding: 3rem;
+                margin: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: white;
+                box-shadow: 0 0 1px 1px #eeeded;
+            }
+
+            .name {
+                font-size: 1.8rem;
+            }
+
+            .working {
+                color: #999999;
+                font-size: 1.6rem;
+            }
+
+            .last-drop {
+                z-index: 9999;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                margin-top: 1vw;
+            }
+
+            .last-drop a {
+                float: left;
+                width: 1.2rem;
+                height: 1.2rem;
+                margin: 0 3px;
+                border-radius: 5rem;
+                background-color: white;
+                border: 1px solid #eeeded;
+                box-shadow: 0 0 1px 1px #eeeded;
+            }
+
+            .last-drop a:hover {
+                background-color: #29b078;
+            }
+
+            @media (max-width: 800px) {
+                .resume {
+                    flex: 0 0 50%;
+                }
+            }
+
+            @media (max-width: 800px) {
+                .resume {
+                    flex: 0 0 100%;
+                }
+            }
+
+            /* box-logo */
+            .box-logo {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                flex-flow: row wrap;
+                align-content: flex-start;
+            }
+
+            .main-four {
+                box-sizing: border-box;
+                flex: 0 0 20%;
+            }
+
+            .company1,
+            .company2,
+            .company3,
+            .company4,
+            .company5 {
+                width: 17.5rem;
+                height: 6rem;
+                zoom: .8;
+            }
+
+            .company1 {
+                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat -2%;
+            }
+
+            .company2 {
+                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat 23%;
+            }
+
+            .company3 {
+                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat 50%;
+            }
+
+            .company4 {
+                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat 77%;
+            }
+
+            .company5 {
+                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat 102%;
+            }
+
+            .main-four {
+                width: 100%;
+                background-color: white;
+                padding: 2px;
+            }
+
+            .main-four a {
+                width: 100%;
+                padding: 5.5rem 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .main-four a:hover {
+                box-shadow: 0 0 10px 2px #999999;
+            }
+
+            @media (max-width: 800px) {
+                .main-four {
+                    flex: 0 0 100%;
+                }
+            }
+
+            /* box-last */
+            .box-last {
+                margin-top: 90px;
+                padding: 1rem;
+                background-color: white;
+            }
+
+            .box-list {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                flex-flow: row wrap;
+                align-content: flex-start;
+                /* align-content: space-between; */
+            }
+
+            .hot {
+                width: 10%;
+                margin: 0.5rem 0;
+                color: #999999;
+            }
+
+            .hot a {
+                color: #999999;
+            }
+
+            .hot a:hover {
+                color: black;
+                border-bottom: 1px solid #26a26f;
+            }
+
+            @media (max-width: 800px) {
+                .hot {
+                    width: 25%;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .hot {
+                    width: 50%;
+                }
+            }
+
+            @media (max-width: 450px) {
+                .hot {
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+
+            /* footer */
+            footer {
+                background-color: #26a26f;
+                color: white;
+                font-size: 1.6rem;
+            }
+
+            .foot {
+                width: 80%;
+                margin: 0 auto;
+                padding: 30px;
+                display: flex;
+                flex-flow: row wrap;
+                align-content: flex-start;
+            }
+
+            .foot-box {
+                box-sizing: border-box;
+                flex: 0 0 33%;
+            }
+
+            .foot-left {
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .web1,
+            .web2 {
+                padding-top: 3rem;
+                font-size: 1.4rem;
+            }
+
+            .web1 a {
+                text-align: left;
+                margin: 0 1rem;
+                color: white;
+            }
+
+            .web1 a:nth-child(1) {
+                margin-left: 0;
+            }
+
+            .web2 div {
+                margin-bottom: 1rem;
+            }
+
+            .web2 a {
+                margin-right: 2rem;
+                color: white;
+            }
+
+            .web2 a:hover {
+                border-bottom: 1px solid white;
+            }
+
+            .web3 {
+                text-align: center;
+            }
+
+            @media (max-width: 800px) {
+                .foot-box {
+                    flex: 0 0 100%;
+                }
+            }
+
+            .copyright {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <div class="box-sprites">
+                <div class="box-part">
+                    <div class="pic1"></div>
+                    <h3>高效</h3>
+                    <div class="word">将五到七年成长时间，缩短到一年到三年</div>
+                </div>
+                <div class="box-part">
+                    <div class="pic2"></div>
+                    <h3>规范</h3>
+                    <div class="word">标准的实战教程，不会走弯路</div>
+                </div>
+                <div class="box-part">
+                    <div class="pic3"></div>
+                    <h3>人脉</h3>
+                    <div class="word">同班好友，同院学长，技术大师，入学就入职脉圈，为以后铺平道路</div>
+                </div>
+                <div class="box-part final">
+                    <div class="word-two1">
+                        <img src="./images/src/技能树首页_06.jpg"></a>
+                        <span>12400</span>
+                        <p class="word-three">累计学习人数</p>
+                    </div>
+                    <div class="word-two2">
+                        <img src="./images/src/技能树首页_06.jpg">
+                        <span>12400</span>
+                        <p class="word-three">累计学习人数</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="padding: 5rem 0;">如何学习</h2>
+
+            <div class="box-center">
+                <div class="process">
+                    <span class="b1">1</span>
+                    <p class="b2">匹配你现在的个人情况寻找适合自己的岗位</p>
+                    <div class="b3"></div>
+                </div>
+                <div class="process">
+                    <span class="b1">2</span>
+                    <p class="b2">了解职业的前景薪资待遇.金证压力等</p>
+                    <div class="b3"></div>
+                </div>
+                <div class="process">
+                    <span class="b1">3</span>
+                    <p class="b2">掌握行业内顶级技能</p>
+                    <div class="b3"></div>
+                </div>
+                <div class="process">
+                    <span class="b1">4</span>
+                    <p class="b2">查看职业任务目标</p>
+                    <div></div>
+                </div>
+            </div>
+            <div class="box-center">
+                <div class="process">
+                    <span class="b1">5</span>
+                    <p class="b2">参考学习资料，掌握技能点，逐个完成任务</p>
+                    <div class="b3"></div>
+                </div>
+                <div class="process">
+                    <span class="b1">6</span>
+                    <p class="b2">加入班级，和小伙伴们，互帮互助，一起学习</p>
+                    <div class="b3"></div>
+                </div>
+                <div class="process">
+                    <span class="b1">7</span>
+                    <p class="b2">选择导师，一路引导，加速自己的成长</p>
+                    <div class="b3"></div>
+                </div>
+                <div class="process">
+                    <span class="b1">8</span>
+                    <p class="b2">完成职业技能，升级业界大牛</p>
+                    <div></div>
+                </div>
+            </div>
+
+            <h2 style="padding: 7rem 0;">如何学习</h2>
+
+            <div class="box-next">
+                <div class="resume">
+                    <div class="box">
+                        <div class="photo1"></div>
+                        <h5 class="name">技术顾问：罗大佑</h5>
+                        <p class="working">百度技术总监：互联网基础服务领域，从事虚拟主机，云服务器，域名曾任新网高级技术经理，负责技术研发，团队管理与建设</p>
+                    </div>
+                </div>
+                <div class="resume">
+                    <div class="box">
+                        <div class="photo2"></div>
+                        <h5 class="name">技术顾问：罗大佑</h5>
+                        <p class="working">百度技术总监：互联网基础服务领域，从事虚拟主机，云服务器，域名曾任新网高级技术经理，负责技术研发，团队管理与建设</p>
+                    </div>
+                </div>
+                <div class="resume">
+                    <div class="box">
+                        <div class="photo3"></div>
+                        <h5 class="name">技术顾问：罗大佑</h5>
+                        <p class="working">百度技术总监：互联网基础服务领域，从事虚拟主机，云服务器，域名曾任新网高级技术经理，负责技术研发，团队管理与建设</p>
+                    </div>
+                </div>
+                <div class="resume">
+                    <div class="box">
+                        <div class="photo4"></div>
+                        <h5 class="name">技术顾问：罗大佑</h5>
+                        <p class="working">百度技术总监：互联网基础服务领域，从事虚拟主机，云服务器，域名曾任新网高级技术经理，负责技术研发，团队管理与建设</p>
+                    </div>
+                </div>
+            </div>
+            <div class="last-drop">
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+
+            <h2 style="padding: 7rem 0;">战略合作企业</h2>
+
+            <div class="box-logo">
+                <div class="main-four">
+                    <a href="">
+                        <div class="company1"></div>
+                    </a>
+                </div>
+                <div class="main-four">
+                    <a href="">
+                        <div class="company2"></div>
+                    </a>
+                </div>
+                <div class="main-four">
+                    <a href="">
+                        <div class="company3"></div>
+                    </a>
+                </div>
+                <div class="main-four">
+                    <a href="">
+                        <div class="company4"></div>
+                    </a>
+                </div>
+                <div class="main-four">
+                    <a href="">
+                        <div class="company5"></div>
+                    </a>
+                </div>
+            </div>
+            <!--  -->
+            <div class="box-last">
+                <h2 style="padding: 2rem 0;">友情链接</h2>
+                <ul class="box-list">
+                    <li class="hot"><a href="">手机软件</a></li>
+                    <li class="hot"><a href="">教师招聘</a></li>
+                    <li class="hot"><a href="">找工作</a></li>
+                    <li class="hot"><a href="">教师招聘</a></li>
+                    <li class="hot"><a href="">找工作</a></li>
+                    <li class="hot"><a href="">手机软件</a></li>
+                    <li class="hot"><a href="">教师招聘</a></li>
+                    <li class="hot"><a href="">手机软件</a></li>
+                    <li class="hot"><a href="">手机软件</a></li>
+                    <li class="hot"><a href="">找工作</a></li>
+                    <li class="hot"><a href="">手机软件</a></li>
+                    <li class="hot"><a href="">教师招聘</a></li>
+                    <li class="hot"><a href="">找工作</a></li>
+                    <li class="hot"><a href="">教师招聘</a></li>
+                    <li class="hot"><a href="">找工作</a></li>
+                    <li class="hot"><a href="">手机软件</a></li>
+                    <li class="hot"><a href="">教师招聘</a></li>
+                    <li class="hot"><a href="">手机软件</a></li>
+                    <li class="hot"><a href="">手机软件</a></li>
+                    <li class="hot"><a href="">找工作</a></li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <div class="foot">
+                <div class="foot-box">
+                    <span class="foot-left">技能树——改变你我</span>
+                    <div class="web1">
+                        <a href="">关于我们</a>|
+                        <a href="" class="touch">联系我们</a>|
+                        <a href="">合作企业</a>
+                    </div>
+                </div>
+                <div class="foot-box">
+                    <span class="foot-left">旗下网站</span>
+                    <div class="web2">
+                        <p>
+                            <a href="">草船云孵化器</a>
+                            <a href="">最强IT训练营</a>
+                        </p>
+                        <p>
+                            <a href="">葡萄藤轻游戏</a>
+                            <a href="">桌游精灵</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="foot-box web3">
+                    <p>微信公众平台</p>
+                    <img src="./images/src/技能树首页_17.jpg">
+                </div>
+            </div>
+            <p class="copyright">Copyright © 2015技能树 www.jnshu.com All Rights Reserved | 京ICP备13005880号</p>
+        </footer>
+    </body>
+
+</html>
+
+
+<!-- 
+            @media (min-width: 800px) {
+                .box-logo {
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+            .box-logo {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .company1,
+            .company2,
+            .company3,
+            .company4,
+            .company5 {
+                width: 17.5rem;
+                height: 6rem;
+                zoom: .8;
+            }
+
+            .company1 {
+                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat -2%;
+            }
+
+            .company2 {
+                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat 23%;
+            }
+
+            .company3 {
+                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat 50%;
+            }
+
+            .company4 {
+                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat 77%;
+            }
+
+            .company5 {
+                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat 102%;
+            }
+
+            .main-four {
+                width: 100%;
+                background-color: white;
+                padding: 2px;
+            }
+
+            .main-four a {
+                width: 100%;
+                padding: 5.5rem 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .main-four a:hover {
+                box-shadow: 0 0 10px 2px #999999;
+            }
+ -->

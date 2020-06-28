@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                font-weight: normal;
+                font-size: 62.5%;
+            }
+
+            body {
+                background-color: #fafafa;
+            }
+
+            /* 
+            @media (min-width: 800px) {
+                .box-next {
+                    width: 80%;
+                    margin: 0 auto;
+                    padding-top: 100px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .resume {
+                    padding: 3rem;
+                    margin: 0.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: white;
+                    box-shadow: 0 0 1px 1px #eeeded;
+                }
+
+                .photo1,
+                .photo2,
+                .photo3,
+                .photo4 {
+                    height: 11rem;
+                    width: 11rem;
+                    zoom: .7;
+                    margin-bottom: 3rem;
+                }
+
+                .photo1 {
+                    background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 0 -6px;
+                }
+
+                .photo2 {
+                    background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 33% 0;
+                }
+
+                .photo3 {
+                    background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 66% 0;
+                }
+
+                .photo4 {
+                    background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 100% 0;
+                }
+
+                .name {
+                    font-size: 1.8rem;
+                }
+
+                .working {
+                    color: #999999;
+                    font-size: 1.6rem;
+                }
+
+                .last-drop {
+                    z-index: 9999;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    margin-top: 1vw;
+                }
+
+                .last-drop a {
+                    float: left;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    margin: 0 3px;
+                    border-radius: 5rem;
+                    background-color: white;
+                    border: 1px solid #eeeded;
+                    box-shadow: 0 0 1px 1px #eeeded;
+                }
+
+                .last-drop a:hover {
+                    background-color: #29b078;
+                }
+            }
+
+            @media (max-width: 800px) {
+                .resume {
+                    padding: 3rem;
+                    margin: 0.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: white;
+                    box-shadow: 0 0 1px 1px #eeeded;
+                }
+
+                .photo1,
+                .photo2,
+                .photo3,
+                .photo4 {
+                    height: 11rem;
+                    width: 11rem;
+                    zoom: .7;
+                    margin-bottom: 3rem;
+                }
+
+                .photo1 {
+                    background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 0 -6px;
+                }
+
+                .photo2 {
+                    background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 33% 0;
+                }
+
+                .photo3 {
+                    background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 66% 0;
+                }
+
+                .photo4 {
+                    background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 100% 0;
+                }
+
+                .name {
+                    font-size: 1.8rem;
+                }
+
+                .working {
+                    color: #999999;
+                    font-size: 1.6rem;
+                }
+
+                .last-drop {
+                    z-index: 9999;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    margin-top: 1vw;
+                }
+
+                .last-drop a {
+                    float: left;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    margin: 0 3px;
+                    border-radius: 5rem;
+                    background-color: white;
+                    border: 1px solid #eeeded;
+                    box-shadow: 0 0 1px 1px #eeeded;
+                }
+
+                .last-drop a:hover {
+                    background-color: #29b078;
+                }
+            }
+             */
+
+            /*  */
+            .box-next {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                flex-flow: row wrap;
+                align-content: flex-start;
+            }
+
+            .resume {
+                box-sizing: border-box;
+                flex: 0 0 25%;
+            }
+
+            .photo1,
+            .photo2,
+            .photo3,
+            .photo4 {
+                height: 11rem;
+                width: 11rem;
+                zoom: .7;
+                margin-bottom: 3rem;
+            }
+
+            .photo1 {
+                background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 0 -6px;
+            }
+
+            .photo2 {
+                background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 33% 0;
+            }
+
+            .photo3 {
+                background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 66% 0;
+            }
+
+            .photo4 {
+                background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 100% 0;
+            }
+
+            .box {
+                padding: 3rem;
+                margin: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: white;
+                box-shadow: 0 0 1px 1px #eeeded;
+            }
+
+            .name {
+                font-size: 1.8rem;
+            }
+
+            .working {
+                color: #999999;
+                font-size: 1.6rem;
+            }
+
+            .last-drop {
+                z-index: 9999;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                margin-top: 1vw;
+            }
+
+            .last-drop a {
+                float: left;
+                width: 1.2rem;
+                height: 1.2rem;
+                margin: 0 3px;
+                border-radius: 5rem;
+                background-color: white;
+                border: 1px solid #eeeded;
+                box-shadow: 0 0 1px 1px #eeeded;
+            }
+
+            .last-drop a:hover {
+                background-color: #29b078;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box-next">
+            <div class="resume">
+                <div class="box">
+                    <div class="photo1"></div>
+                    <h5 class="name">技术顾问：罗大佑</h5>
+                    <p class="working">百度技术总监：互联网基础服务领域，从事虚拟主机，云服务器，域名曾任新网高级技术经理，负责技术研发，团队管理与建设</p>
+                </div>
+            </div>
+
+            <div class="resume">
+                <div class="box">
+                    <div class="photo2"></div>
+                    <h5 class="name">技术顾问：罗大佑</h5>
+                    <p class="working">百度技术总监：互联网基础服务领域，从事虚拟主机，云服务器，域名曾任新网高级技术经理，负责技术研发，团队管理与建设</p>
+                </div>
+            </div>
+
+            <div class="resume">
+                <div class="box">
+                    <div class="photo3"></div>
+                    <h5 class="name">技术顾问：罗大佑</h5>
+                    <p class="working">百度技术总监：互联网基础服务领域，从事虚拟主机，云服务器，域名曾任新网高级技术经理，负责技术研发，团队管理与建设</p>
+                </div>
+            </div>
+
+            <div class="resume">
+                <div class="box">
+                    <div class="photo4"></div>
+                    <h5 class="name">技术顾问：罗大佑</h5>
+                    <p class="working">百度技术总监：互联网基础服务领域，从事虚拟主机，云服务器，域名曾任新网高级技术经理，负责技术研发，团队管理与建设</p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+</html>
