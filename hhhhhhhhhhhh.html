@@ -4,16 +4,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title>流式布局</title>
+        <title>Document</title>
         <style>
             * {
-                margin: 0;
                 padding: 0;
+                margin: 0;
+                list-style: none;
             }
 
             html {
-                font-weight: normal;
                 font-size: 62.5%;
             }
 
@@ -25,358 +24,275 @@
                 text-decoration: none;
             }
 
-            h2 {
-                font-size: 2rem;
-                text-align: center;
+            /* head */
+            .nav {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                flex-flow: row wrap;
+                align-content: flex-start;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
 
-            /* box-sprites */
-            .box-sprites {
+            .nav div {
+                box-sizing: border-box;
+                flex: 0 0 50%;
+                padding: 0.5rem;
+            }
+
+            .nav-word {
+                display: flex;
+                align-items: center;
+                color: #29b078;
+            }
+
+            .Navbar1 {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                padding-right: 1%;
+            }
+
+            .Navbar1-b,
+            .Navbar2-b,
+            .Navbar3-b {
+                background: url("./images/src/技能树首页雪碧_01.jpg") no-repeat -1%;
+                height: 2.6rem;
+                width: 2.6rem;
+                border: none;
+            }
+
+            .Navbar2-b {
+                background: url("./images/src/技能树首页雪碧_01.jpg") no-repeat 50%;
+                margin: 0 2vw;
+            }
+
+            .Navbar3-b {
+                background: url("./images/src/技能树首页雪碧_01.jpg") no-repeat 100%;
+            }
+
+            .nav-bg-pic {
+                background: url("./images/src/战略合作企业_02.jpg");
+                background-size: cover;
+                height: 250px;
+            }
+
+            /* 导航栏 */
+            .navbar {
+                background-color: #29b078;
+                padding: 0;
+            }
+
+            .nav-box {
+                text-align: right;
                 width: 80%;
-                margin: 5rem auto;
+                margin: 0 auto;
+                position: relative;
+            }
+
+            input {
+                display: none;
+            }
+
+            label {
+                display: none;
+            }
+
+            .pic {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            .nav-pic {
+                position: absolute;
+                top: 25px;
+            }
+
+            .nav-list {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                /* flex-direction: row-reverse; */
+                justify-content: flex-end;
+            }
+
+            .nav-list li {
+                font-size: 1.6rem;
+                list-style: none;
+                margin-bottom: 4px;
+                padding: 4rem 2rem;
+            }
+
+            .nav-list li a {
+                text-decoration-line: none;
+                color: white;
+            }
+
+            .nav-list li:hover {
+                border-bottom: 4px solid white;
+                margin-bottom: 0;
+            }
+
+            @media (max-width:768px) {
+                .nav-list {
+                    display: none;
+                }
+
+                input:checked~.nav-list {
+                    display: block;
+                }
+
+                label {
+                    display: inline-block;
+                    margin: 4rem 1rem;
+                }
+
+                input:checked~.nav-list li {
+                    clear: both;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .navbar {
+                    background-color: #29b078;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            @media (max-width: 250px) {
+                .nav-pic {
+                    display: none;
+                }
+            }
+
+            /* main */
+            .title {
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px 0;
+                font-size: 16px;
+            }
+
+            /* main box */
+            .big-box {
+                width: 80%;
+                margin: 0 auto;
                 display: flex;
                 flex-flow: row wrap;
                 align-content: flex-start;
             }
 
-            .box-part {
+            .company {
                 box-sizing: border-box;
-                flex: 0 0 25%;
+                flex: 0 0 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                /* align-items: center; */
+                border: 1px solid #e6e6e6;
+                padding: 20px 0;
+            }
+
+            .company li {
                 width: 100%;
-                height: 70%;
+                padding: 10px 0;
+            }
+
+            .company .first-li {
+                border-bottom: 1px solid #e6e6e6;
+                padding-bottom: 20px;
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .company li a {
+                width: 100%;
+                color: #29b078;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .dot {
+                border: 1px solid #ff640c;
+                border-radius: 50px;
+                margin-right: 5px;
+                padding: 5px;
+            }
+
+            li:hover span {
+                background: #f9a372;
+            }
+
+            li:hover p {
+                color: #ff640c;
+            }
+
+            li p {
+                width: 80px;
+            }
+
+            /* main two */
+            .cont {
+                box-sizing: border-box;
+                flex: 0 0 70%;
+                border: 1px solid #e6e6e6;
+                color: #999999;
+            }
+
+            .contect1 {
+                width: 100%;
+                text-indent: 2em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 1px solid #e6e6e6;
+            }
+
+            .contect2 {
+                width: 100%;
+                text-indent: 2em;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
             }
 
-            .final {
-                border-left: 1px dashed #dedede;
-                color: #29b078;
+            .contect2 p:nth-child(1) {
+                margin-top: 40px;
             }
 
-            .pic1,
-            .pic2,
-            .pic3 {
-                width: 6rem;
-                height: 7rem;
+            .contect2 p:nth-child(6) {
+                margin-bottom: 100px;
             }
 
-            .pic1 {
-                background: url("./images/src/技能树首页雪碧_02.jpg") no-repeat -1%;
+            .pic-3 {
+                height: 40px;
+                width: 150px;
+                zoom: 0.7;
+                margin-right: 20px;
+                margin-left: 20px;
             }
 
-            .pic2 {
-                background: url("./images/src/技能树首页雪碧_02.jpg") no-repeat 50%;
-            }
-
-            .pic3 {
-                background: url("./images/src/技能树首页雪碧_02.jpg") no-repeat 100%;
-            }
-
-            .word {
-                height: 30%;
-            }
-
-            h3 {
-                font-size: 1.6rem;
-                padding: 2rem;
-            }
-
-            .word-two1 {
-                padding-top: 6rem;
-            }
-
-
-            .word-two2 {
-                padding: 3rem;
-            }
-
-            .word-three {
-                color: black;
-            }
-
-            @media (max-width: 800px) {
-                .box-part {
-                    flex: 0 0 50%;
-                }
-            }
-
-            @media (max-width: 800px) {
-                .box-part {
-                    flex: 0 0 100%;
-                }
-            }
-
-            /* box-center */
-            .box-center {
+            .history {
                 width: 80%;
-                margin: 0 auto;
-                display: flex;
-                flex-flow: row wrap;
-                align-content: flex-start;
-            }
-
-            .process {
-                box-sizing: border-box;
-                flex: 0 0 25%;
-                width: 25%;
-                display: flex;
-                align-items: center;
-                /* margin: 2rem 0; */
-            }
-
-            .b1 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 2rem;
-                margin: 1rem;
-                width: 1rem;
-                height: 1rem;
-                border: 1px solid #eeeeee;
-                border-radius: 50%;
-                box-shadow: 0 0 5px #888888;
-                background-color: white;
-            }
-
-            .b2 {
-                width: 100%;
+                margin: 20px 0;
                 text-align: left;
-                margin: auto 0;
-                font-size: 1.4rem;
-            }
-
-            .b3 {
-                background: url("./images/src/技能树首页_07.jpg") no-repeat;
-                background-position: center;
-                width: 3rem;
-                height: 3rem;
-                zoom: .7;
-                padding: 1px;
             }
 
             @media (max-width: 800px) {
-                .process {
-                    flex: 0 0 50%;
-                }
-            }
-
-            @media (max-width: 800px) {
-                .process {
+                .company {
                     flex: 0 0 100%;
                 }
             }
 
-            /* box-next */
-            .box-next {
-                width: 80%;
-                margin: 0 auto;
-                display: flex;
-                flex-flow: row wrap;
-                align-content: flex-start;
-            }
-
-            .resume {
-                box-sizing: border-box;
-                flex: 0 0 25%;
-            }
-
-            .photo1,
-            .photo2,
-            .photo3,
-            .photo4 {
-                height: 11rem;
-                width: 11rem;
-                zoom: .7;
-                margin-bottom: 3rem;
-            }
-
-            .photo1 {
-                background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 0 -6px;
-            }
-
-            .photo2 {
-                background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 33% 0;
-            }
-
-            .photo3 {
-                background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 66% 0;
-            }
-
-            .photo4 {
-                background: url("./images/src/技能树首页雪碧_03.jpg") no-repeat 100% 0;
-            }
-
-            .box {
-                padding: 3rem;
-                margin: 0.5rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-color: white;
-                box-shadow: 0 0 1px 1px #eeeded;
-            }
-
-            .name {
-                font-size: 1.8rem;
-            }
-
-            .working {
-                color: #999999;
-                font-size: 1.6rem;
-            }
-
-            .last-drop {
-                z-index: 9999;
-                display: flex;
-                justify-content: center;
-                align-items: flex-end;
-                margin-top: 1vw;
-            }
-
-            .last-drop a {
-                float: left;
-                width: 1.2rem;
-                height: 1.2rem;
-                margin: 0 3px;
-                border-radius: 5rem;
-                background-color: white;
-                border: 1px solid #eeeded;
-                box-shadow: 0 0 1px 1px #eeeded;
-            }
-
-            .last-drop a:hover {
-                background-color: #29b078;
-            }
-
             @media (max-width: 800px) {
-                .resume {
-                    flex: 0 0 50%;
-                }
-            }
-
-            @media (max-width: 800px) {
-                .resume {
+                .cont {
                     flex: 0 0 100%;
-                }
-            }
-
-            /* box-logo */
-            .box-logo {
-                width: 80%;
-                margin: 0 auto;
-                display: flex;
-                flex-flow: row wrap;
-                align-content: flex-start;
-            }
-
-            .main-four {
-                box-sizing: border-box;
-                flex: 0 0 20%;
-            }
-
-            .company1,
-            .company2,
-            .company3,
-            .company4,
-            .company5 {
-                width: 17.5rem;
-                height: 6rem;
-                zoom: .8;
-            }
-
-            .company1 {
-                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat -2%;
-            }
-
-            .company2 {
-                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat 23%;
-            }
-
-            .company3 {
-                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat 50%;
-            }
-
-            .company4 {
-                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat 77%;
-            }
-
-            .company5 {
-                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat 102%;
-            }
-
-            .main-four {
-                width: 100%;
-                background-color: white;
-                padding: 2px;
-            }
-
-            .main-four a {
-                width: 100%;
-                padding: 5.5rem 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .main-four a:hover {
-                box-shadow: 0 0 10px 2px #999999;
-            }
-
-            @media (max-width: 800px) {
-                .main-four {
-                    flex: 0 0 100%;
-                }
-            }
-
-            /* box-last */
-            .box-last {
-                margin-top: 90px;
-                padding: 1rem;
-                background-color: white;
-            }
-
-            .box-list {
-                width: 80%;
-                margin: 0 auto;
-                display: flex;
-                flex-flow: row wrap;
-                align-content: flex-start;
-                /* align-content: space-between; */
-            }
-
-            .hot {
-                width: 10%;
-                margin: 0.5rem 0;
-                color: #999999;
-            }
-
-            .hot a {
-                color: #999999;
-            }
-
-            .hot a:hover {
-                color: black;
-                border-bottom: 1px solid #26a26f;
-            }
-
-            @media (max-width: 800px) {
-                .hot {
-                    width: 25%;
-                }
-            }
-
-            @media (max-width: 600px) {
-                .hot {
-                    width: 50%;
-                }
-            }
-
-            @media (max-width: 450px) {
-                .hot {
-                    text-align: center;
-                    width: 100%;
                 }
             }
 
@@ -390,7 +306,7 @@
             .foot {
                 width: 80%;
                 margin: 0 auto;
-                padding: 30px;
+                padding: 3rem;
                 display: flex;
                 flex-flow: row wrap;
                 align-content: flex-start;
@@ -452,177 +368,161 @@
     </head>
 
     <body>
+        <header>
+            <div class="nav">
+                <div class="nav-word">客服热线：010-594-78634</div>
+                <div class="Navbar1">
+                    <a href=""><button class="Navbar1-b"></button></a>
+                    <a href=""><button class="Navbar2-b"></button></a>
+                    <a href=""><button class="Navbar3-b"></button></a>
+                </div>
+            </div>
+            <nav class="navbar">
+                <div class="nav-box">
+                    <input type="checkbox" id="nav-toggle">
+                    <label for="nav-toggle">
+                        <img src="./images/src/jnshu按钮.jpg" class="pic">
+                    </label>
+                    <ul class="nav-pic">
+                        <img src="./images/src/战略合作企业_01.jpg">
+                    </ul>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#">首页</a>
+                        </li>
+                        <li>
+                            <a href="#">职业</a>
+                        </li>
+                        <li>
+                            <a href="#">推荐</a>
+                        </li>
+                        <li>
+                            <a href="#">关于</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav-bg-pic"></div>
+        </header>
+
         <main>
-            <div class="box-sprites">
-                <div class="box-part">
-                    <div class="pic1"></div>
-                    <h3>高效</h3>
-                    <div class="word">将五到七年成长时间，缩短到一年到三年</div>
-                </div>
-                <div class="box-part">
-                    <div class="pic2"></div>
-                    <h3>规范</h3>
-                    <div class="word">标准的实战教程，不会走弯路</div>
-                </div>
-                <div class="box-part">
-                    <div class="pic3"></div>
-                    <h3>人脉</h3>
-                    <div class="word">同班好友，同院学长，技术大师，入学就入职脉圈，为以后铺平道路</div>
-                </div>
-                <div class="box-part final">
-                    <div class="word-two1">
-                        <img src="./images/src/技能树首页_06.jpg"></a>
-                        <span>12400</span>
-                        <p class="word-three">累计学习人数</p>
-                    </div>
-                    <div class="word-two2">
-                        <img src="./images/src/技能树首页_06.jpg">
-                        <span>12400</span>
-                        <p class="word-three">累计学习人数</p>
-                    </div>
-                </div>
+            <div class="title">
+                <span>首页</span>
+                <span>&gt;</span>
+                <span style="color: #29b078;">合作企业</span>
             </div>
 
-            <h2 style="padding: 5rem 0;">如何学习</h2>
-
-            <div class="box-center">
-                <div class="process">
-                    <span class="b1">1</span>
-                    <p class="b2">匹配你现在的个人情况寻找适合自己的岗位</p>
-                    <div class="b3"></div>
-                </div>
-                <div class="process">
-                    <span class="b1">2</span>
-                    <p class="b2">了解职业的前景薪资待遇.金证压力等</p>
-                    <div class="b3"></div>
-                </div>
-                <div class="process">
-                    <span class="b1">3</span>
-                    <p class="b2">掌握行业内顶级技能</p>
-                    <div class="b3"></div>
-                </div>
-                <div class="process">
-                    <span class="b1">4</span>
-                    <p class="b2">查看职业任务目标</p>
-                    <div></div>
-                </div>
-            </div>
-            <div class="box-center">
-                <div class="process">
-                    <span class="b1">5</span>
-                    <p class="b2">参考学习资料，掌握技能点，逐个完成任务</p>
-                    <div class="b3"></div>
-                </div>
-                <div class="process">
-                    <span class="b1">6</span>
-                    <p class="b2">加入班级，和小伙伴们，互帮互助，一起学习</p>
-                    <div class="b3"></div>
-                </div>
-                <div class="process">
-                    <span class="b1">7</span>
-                    <p class="b2">选择导师，一路引导，加速自己的成长</p>
-                    <div class="b3"></div>
-                </div>
-                <div class="process">
-                    <span class="b1">8</span>
-                    <p class="b2">完成职业技能，升级业界大牛</p>
-                    <div></div>
-                </div>
-            </div>
-
-            <h2 style="padding: 7rem 0;">如何学习</h2>
-
-            <div class="box-next">
-                <div class="resume">
-                    <div class="box">
-                        <div class="photo1"></div>
-                        <h5 class="name">技术顾问：罗大佑</h5>
-                        <p class="working">百度技术总监：互联网基础服务领域，从事虚拟主机，云服务器，域名曾任新网高级技术经理，负责技术研发，团队管理与建设</p>
-                    </div>
-                </div>
-                <div class="resume">
-                    <div class="box">
-                        <div class="photo2"></div>
-                        <h5 class="name">技术顾问：罗大佑</h5>
-                        <p class="working">百度技术总监：互联网基础服务领域，从事虚拟主机，云服务器，域名曾任新网高级技术经理，负责技术研发，团队管理与建设</p>
-                    </div>
-                </div>
-                <div class="resume">
-                    <div class="box">
-                        <div class="photo3"></div>
-                        <h5 class="name">技术顾问：罗大佑</h5>
-                        <p class="working">百度技术总监：互联网基础服务领域，从事虚拟主机，云服务器，域名曾任新网高级技术经理，负责技术研发，团队管理与建设</p>
-                    </div>
-                </div>
-                <div class="resume">
-                    <div class="box">
-                        <div class="photo4"></div>
-                        <h5 class="name">技术顾问：罗大佑</h5>
-                        <p class="working">百度技术总监：互联网基础服务领域，从事虚拟主机，云服务器，域名曾任新网高级技术经理，负责技术研发，团队管理与建设</p>
-                    </div>
-                </div>
-            </div>
-            <div class="last-drop">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </div>
-
-            <h2 style="padding: 7rem 0;">战略合作企业</h2>
-
-            <div class="box-logo">
-                <div class="main-four">
-                    <a href="">
-                        <div class="company1"></div>
-                    </a>
-                </div>
-                <div class="main-four">
-                    <a href="">
-                        <div class="company2"></div>
-                    </a>
-                </div>
-                <div class="main-four">
-                    <a href="">
-                        <div class="company3"></div>
-                    </a>
-                </div>
-                <div class="main-four">
-                    <a href="">
-                        <div class="company4"></div>
-                    </a>
-                </div>
-                <div class="main-four">
-                    <a href="">
-                        <div class="company5"></div>
-                    </a>
-                </div>
-            </div>
-            <!--  -->
-            <div class="box-last">
-                <h2 style="padding: 2rem 0;">友情链接</h2>
-                <ul class="box-list">
-                    <li class="hot"><a href="">手机软件</a></li>
-                    <li class="hot"><a href="">教师招聘</a></li>
-                    <li class="hot"><a href="">找工作</a></li>
-                    <li class="hot"><a href="">教师招聘</a></li>
-                    <li class="hot"><a href="">找工作</a></li>
-                    <li class="hot"><a href="">手机软件</a></li>
-                    <li class="hot"><a href="">教师招聘</a></li>
-                    <li class="hot"><a href="">手机软件</a></li>
-                    <li class="hot"><a href="">手机软件</a></li>
-                    <li class="hot"><a href="">找工作</a></li>
-                    <li class="hot"><a href="">手机软件</a></li>
-                    <li class="hot"><a href="">教师招聘</a></li>
-                    <li class="hot"><a href="">找工作</a></li>
-                    <li class="hot"><a href="">教师招聘</a></li>
-                    <li class="hot"><a href="">找工作</a></li>
-                    <li class="hot"><a href="">手机软件</a></li>
-                    <li class="hot"><a href="">教师招聘</a></li>
-                    <li class="hot"><a href="">手机软件</a></li>
-                    <li class="hot"><a href="">手机软件</a></li>
-                    <li class="hot"><a href="">找工作</a></li>
+            <div class="big-box">
+                <ul class="company">
+                    <li class="first-li">合作企业</li>
+                    <li>
+                        <a href="">
+                            <span class="dot"></span>
+                            <p>阿里巴巴</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="dot"></span>
+                            <p>腾讯视频</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="dot"></span>
+                            <p>土豆网</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="dot"></span>
+                            <p>北京葡萄藤</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="dot"></span>
+                            <p>bilibili</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="dot"></span>
+                            <p>抖音</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="dot"></span>
+                            <p>腾讯视频</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="dot"></span>
+                            <p>北京葡萄藤</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="dot"></span>
+                            <p>土豆网</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="dot"></span>
+                            <p>阿里巴巴</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="dot"></span>
+                            <p>北京葡萄藤</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="dot"></span>
+                            <p>阿里巴巴</p>
+                        </a>
+                    </li>
                 </ul>
+                <div class="cont">
+                    <div class="contect1">
+                        <img src="./images/src/战略合作企业_3.jpg" class="pic-3">
+                        <p class="history">
+                            土豆网公司成立于1998年11月，是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一，成立10多年以来，腾讯一直秉承一切以用户价值为依归的经营理念，始终处于稳健，高速发展的状态。2004年6月16日，腾讯公司在香港联交所主板公开上市（股票代号700）
+                        </p>
+                    </div>
+
+                    <div class="contect2">
+                        <p class="history">
+                            土豆是中国最早和最具有影响力的网络视频平台，是中国网络视频行业的领军品牌。其前身土豆网于2005年4月15日正式上线，是全球最早上线的视频网站之一，2014年1月，“土豆网”正式更名为“土豆”，标准着土豆进入品牌发展的新阶段。
+                        </p>
+
+                        <p class="history">
+                            “每个人都是生活的导演”是土豆从创立第一天始的价值观。土豆相信年轻人的相信力，创造力，相信土豆的平台能帮助年轻人创造出更多，更好的影响作品，来表达对自己，对生活和这个时代的看法。同时，土豆提倡尊重“每个人”的个性，尊重每个人自主选择转自己的生活，成为自己成长的导演。
+                        </p>
+
+                        <p class="history">
+                            2012年3月12日，优酷股有限公司(NYSE:YOUK)("优酷")和土豆股份有限公司(nowrapSDAQ:TUDO)("土豆")共同宣布，优酷和土豆将以100%换股的方式合并。2012年8月20日，优酷土豆合并方案份获双方股东大会高票批准通过，优酷土豆集团公司正式诞生，2013年4月，优酷土豆集团宣布进入“集团BU化”运营阶段，提出“优酷更优酷，土豆更土豆”的发展战略
+                        </p>
+
+                        <p class="history">
+                            2013年2月，杨伟东成为土豆总裁，宣布打造土豆“成为中国年轻人最喜爱的视频网站”，并明确土豆“成为中国最具有影响力的青年文化品牌”的愿望，确立了土豆“青春，个性，自主，有趣”的品牌定位，土豆全面进入2.0阶段。通过年轻化的内容，年轻化的产品技术和年轻化的UGC/PGC生态三个方面来全面推动土豆2.0战略
+                        </p>
+
+                        <p class="history">
+                            2014年3月土豆推出“4+1”战略。其中“4”代表的是土豆在内容方面更专注动漫，音乐，韩国娱乐，时尚四个垂直文化领域。而代表土豆推出的“一个频道”战略，基于“频道主”和“订阅者”两个视角全方位构架屏障和线上线下体验系统，并结合用户体验，商业模式，运营机制等环节，提出了5个“一”规划。
+                        </p>
+
+                        <p class="history">
+                            根据第三方调研公司艾瑞的数据，优酷土豆集团在PC端和移动端全平台各项数据持续占据视频行业绝对领先优势，截止2014年3月，土豆每月独立访问用户数量增长到2.43亿。2013年土豆在移动端的增长也非常迅猛，2013年三季度，土豆移动端获得了高速增长，月均覆盖用户较当年3月增长11倍，平均增长率超过40%；月均视频播放量增长23倍，月平均增幅达60%
+                        </p>
+                    </div>
+                </div>
+                <!--  -->
             </div>
         </main>
 
@@ -659,68 +559,3 @@
     </body>
 
 </html>
-
-
-<!-- 
-            @media (min-width: 800px) {
-                .box-logo {
-                    width: 80%;
-                    margin: 0 auto;
-                    display: flex;
-                    justify-content: space-between;
-                }
-            }
-
-            .box-logo {
-                width: 80%;
-                margin: 0 auto;
-            }
-
-            .company1,
-            .company2,
-            .company3,
-            .company4,
-            .company5 {
-                width: 17.5rem;
-                height: 6rem;
-                zoom: .8;
-            }
-
-            .company1 {
-                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat -2%;
-            }
-
-            .company2 {
-                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat 23%;
-            }
-
-            .company3 {
-                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat 50%;
-            }
-
-            .company4 {
-                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat 77%;
-            }
-
-            .company5 {
-                background: url("./images/src/技能树首页雪碧_04.jpg") no-repeat 102%;
-            }
-
-            .main-four {
-                width: 100%;
-                background-color: white;
-                padding: 2px;
-            }
-
-            .main-four a {
-                width: 100%;
-                padding: 5.5rem 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .main-four a:hover {
-                box-shadow: 0 0 10px 2px #999999;
-            }
- -->

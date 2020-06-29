@@ -17,17 +17,6 @@
                 padding: 0;
             }
 
-            /*css public start*/
-            .floatfix {
-                *zoom: 1;
-            }
-
-            .floatfix:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-
             .slider-contaner {
                 width: 100%;
                 position: relative;
@@ -56,15 +45,14 @@
             }
 
             .focus-container li {
-                width: 1rem;
-                height: 1rem;
+                width: 2rem;
+                height: 2rem;
                 border-radius: 50%;
                 float: left;
                 margin: 0 .2rem;
                 background: #fff;
             }
 
-            /* 轮播焦点 */
             .focus-item {
                 width: 100%;
                 height: 100%;
@@ -96,7 +84,7 @@
             /*设置动画，请根据实际需要修改秒数*/
             .slider-item,
             .focus-item {
-                animation-duration: 15s;
+                animation-duration: 20s;
             }
 
             .slider-item1,
@@ -106,12 +94,22 @@
 
             .slider-item2,
             .focus-item2 {
-                animation-delay: 4s;
+                animation-delay: 3s;
             }
 
             .slider-item3,
             .focus-item3 {
-                animation-delay: 10s;
+                animation-delay: 7s;
+            }
+
+            .slider-item4,
+            .focus-item4 {
+                animation-delay: 11s;
+            }
+
+            .slider-item5,
+            .focus-item5 {
+                animation-delay: 15s;
             }
 
             @keyframes fade {
@@ -120,13 +118,18 @@
                     z-index: 2;
                 }
 
-                25% {
+                5% {
                     opacity: 1;
                     z-index: 1;
                 }
 
-                50% {
-                    opacity: 0.5;
+                20% {
+                    opacity: 1;
+                    z-index: 1;
+                }
+
+                25% {
+                    opacity: 0;
                     z-index: 0;
                 }
 
@@ -149,6 +152,14 @@
                 background-image: url("./images/新建文件夹/飞机11.jpg");
             }
 
+            .slider-item4 {
+                background-image: url("./images/22.jpg");
+            }
+
+            .slider-item5 {
+                background-image: url("./images/新建文件夹/技能树首页_09.jpg");
+            }
+
             /*设置图片的高度，请根据具体需要修改百分比，响应式及时修改此值*/
             .slider,
             .slider-item {
@@ -165,9 +176,9 @@
             }
 
             .banner-left {
-                width: 1.2rem;
-                height: 1.35rem;
-                background-image: url("./images/任务13.jpg");
+                width: .2rem;
+                height: .35rem;
+                background-image: url(../image/beijing.png);
                 background-repeat: no-repeat;
                 background-size: cover;
                 z-index: 999;
@@ -176,11 +187,12 @@
             .banner-right {
                 width: .2rem;
                 height: .35rem;
-                background-image: url("./images/任务13.jpg");
+                background-image: url(../image/beijing.png);
                 background-repeat: no-repeat;
                 background-size: cover;
                 z-index: 999;
             }
+
         </style>
     </head>
 
@@ -194,6 +206,8 @@
                 <li class="slider-item slider-item1"></li>
                 <li class="slider-item slider-item2"></li>
                 <li class="slider-item slider-item3"></li>
+                <li class="slider-item slider-item4"></li>
+                <li class="slider-item slider-item5"></li>
             </ul>
             <div class="focus-container">
                 <ul class="floatfix">
@@ -205,6 +219,12 @@
                     </li>
                     <li>
                         <div class="focus-item focus-item3"></div>
+                    </li>
+                    <li>
+                        <div class="focus-item focus-item4"></div>
+                    </li>
+                    <li>
+                        <div class="focus-item focus-item5"></div>
                     </li>
                 </ul>
             </div>

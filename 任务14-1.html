@@ -5,11 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>响应式技能树首页</title>
+        <title>技能树首页</title>
+        <!-- <link rel="stylesheet" href="./style.css/css8-1.css"> -->
         <style>
             * {
-                padding: 0;
                 margin: 0;
+                padding: 0;
             }
 
             html {
@@ -27,6 +28,10 @@
             h2 {
                 font-size: 2rem;
                 text-align: center;
+            }
+
+            a:hover {
+                color: white;
             }
 
             /* head */
@@ -175,6 +180,7 @@
                 padding: 0;
             }
 
+            /*css public start*/
             .floatfix {
                 *zoom: 1;
             }
@@ -185,7 +191,6 @@
                 clear: both;
             }
 
-            /*slider start*/
             .slider-contaner {
                 width: 100%;
                 position: relative;
@@ -253,7 +258,7 @@
             /*设置动画，请根据实际需要修改秒数*/
             .slider-item,
             .focus-item {
-                animation-duration: 20s;
+                animation-duration: 15s;
             }
 
             .slider-item1,
@@ -263,22 +268,12 @@
 
             .slider-item2,
             .focus-item2 {
-                animation-delay: 3s;
+                animation-delay: 4s;
             }
 
             .slider-item3,
             .focus-item3 {
-                animation-delay: 7s;
-            }
-
-            .slider-item4,
-            .focus-item4 {
-                animation-delay: 11s;
-            }
-
-            .slider-item5,
-            .focus-item5 {
-                animation-delay: 15s;
+                animation-delay: 10s;
             }
 
             @keyframes fade {
@@ -287,18 +282,13 @@
                     z-index: 2;
                 }
 
-                5% {
-                    opacity: 1;
-                    z-index: 1;
-                }
-
-                20% {
-                    opacity: 1;
-                    z-index: 1;
-                }
-
                 25% {
-                    opacity: 0;
+                    opacity: 1;
+                    z-index: 1;
+                }
+
+                50% {
+                    opacity: 0.5;
                     z-index: 0;
                 }
 
@@ -310,23 +300,15 @@
 
             /*设置背景，响应式请利用媒体查询根据断点修改路径*/
             .slider-item1 {
-                background-image: url("./images/src/技能树首页_背景0.jpg");
+                background-image: url("./images/新建文件夹/风景11.jpg");
             }
 
             .slider-item2 {
-                background-image: url("./images/src/jnshu1.jpg");
+                background-image: url("./images/新建文件夹/风景2.jpg");
             }
 
             .slider-item3 {
-                background-image: url("../images/src/jnshu2.jpg");
-            }
-
-            .slider-item4 {
-                background-image: url("./images/src/jnshu3.jpg");
-            }
-
-            .slider-item5 {
-                background-image: url("./images/src/飞机.jpgg");
+                background-image: url("./images/新建文件夹/飞机11.jpg");
             }
 
             /*设置图片的高度，请根据具体需要修改百分比，响应式及时修改此值*/
@@ -345,9 +327,9 @@
             }
 
             .banner-left {
-                width: .2rem;
-                height: .35rem;
-                background-image: url(../image/beijing.png);
+                width: 1.2rem;
+                height: 1.35rem;
+                background-image: url("./images/任务13.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
                 z-index: 999;
@@ -356,7 +338,7 @@
             .banner-right {
                 width: .2rem;
                 height: .35rem;
-                background-image: url(../image/beijing.png);
+                background-image: url("./images/任务13.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
                 z-index: 999;
@@ -781,6 +763,7 @@
                 text-align: center;
             }
         </style>
+
     </head>
 
     <body>
@@ -820,7 +803,7 @@
                 </div>
             </nav>
         </header>
-
+        <!--  -->
         <main>
             <section class="slider-contaner">
                 <div class="banner-arrow">
@@ -831,8 +814,6 @@
                     <li class="slider-item slider-item1"></li>
                     <li class="slider-item slider-item2"></li>
                     <li class="slider-item slider-item3"></li>
-                    <li class="slider-item slider-item4"></li>
-                    <li class="slider-item slider-item5"></li>
                 </ul>
                 <div class="focus-container">
                     <ul class="floatfix">
@@ -844,12 +825,6 @@
                         </li>
                         <li>
                             <div class="focus-item focus-item3"></div>
-                        </li>
-                        <li>
-                            <div class="focus-item focus-item4"></div>
-                        </li>
-                        <li>
-                            <div class="focus-item focus-item5"></div>
                         </li>
                     </ul>
                 </div>
@@ -1058,6 +1033,7 @@
             </div>
             <p class="copyright">Copyright © 2015技能树 www.jnshu.com All Rights Reserved | 京ICP备13005880号</p>
         </footer>
+
     </body>
 
 </html>
