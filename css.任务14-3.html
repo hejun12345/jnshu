@@ -7,7 +7,7 @@
 
         <title>职位列表</title>
         <style>
-            * {
+                * {
                 padding: 0;
                 margin: 0;
             }
@@ -319,7 +319,6 @@
                 /* 名称 周期时间 速度曲线 开始时间 次数 逆向 */
                 animation: myfirst 2s linear 0s 1 normal;
                 display: none;
-
             }
 
             .animation div {
@@ -493,7 +492,7 @@
                 <div class="vocation">
                     <div class="big-box">
                         <div class="word-and-photo">
-                            <img src="./images/src/职位列表_03.jpg" class="photo">
+                            <img src="./images/src/职位列表_03.jpg" class="photos">
                             <div>
                                 <p class="photo-one">Web前端工程师</p>
                                 <p class="photo-two">Web前端工程师,主要职责是利用(X)HTML/CSS/JavaSript/flash等各种Web技术进行产品的开发</p>
@@ -1231,3 +1230,436 @@
     </body>
 
 </html>
+
+<!-- 
+                * {
+                padding: 0;
+                margin: 0;
+            }
+
+            html {
+                font-size: 62.5%;
+            }
+
+            body {
+                background-color: #fafafa;
+            }
+
+            /* 导航栏 */
+            .navbar {
+                background-color: #29b078;
+                padding: 0;
+            }
+
+            .nav-box {
+                text-align: right;
+                width: 80%;
+                margin: 0 auto;
+                position: relative;
+            }
+
+            input {
+                display: none;
+            }
+
+            label {
+                display: none;
+            }
+
+            .btn-pic {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            .nav-pic {
+                position: absolute;
+                top: 25px;
+            }
+
+            .nav-list {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                /* flex-direction: row-reverse; */
+                justify-content: flex-end;
+            }
+
+            .nav-list li {
+                font-size: 1.6rem;
+                list-style: none;
+                margin-bottom: 4px;
+                padding: 4rem 2rem;
+            }
+
+            .nav-list li a {
+                text-decoration-line: none;
+                color: white;
+            }
+
+            .nav-list li:hover {
+                border-bottom: 4px solid white;
+                margin-bottom: 0;
+            }
+
+            @media (max-width:768px) {
+                .nav-list {
+                    display: none;
+                }
+
+                input:checked~.nav-list {
+                    display: block;
+                }
+
+                label {
+                    display: inline-block;
+                    margin: 4rem 1rem;
+                }
+
+                input:checked~.nav-list li {
+                    clear: both;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .navbar {
+                    background-color: #29b078;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            @media (max-width: 250px) {
+                .nav-pic {
+                    display: none;
+                }
+            }
+
+            /* nav-center */
+            .nav-center {
+                width: 80%;
+                margin: 0rem auto;
+                display: flex;
+                flex-flow: row wrap;
+                align-content: flex-start;
+            }
+
+            .nav-center div {
+                box-sizing: border-box;
+                flex: 0 0 100%;
+            }
+
+            .nav-boxa {
+                padding: 2rem 0;
+                border-bottom: 1px solid #d0d6d9;
+                font-weight: bold;
+                font-size: 1.6rem;
+            }
+
+            .nav-boxb {
+                padding: 2rem 0;
+                border-bottom: 1px solid #edf1f2;
+            }
+
+            h3 {
+                width: 100%;
+                padding: 2rem 0;
+                margin-bottom: 5rem;
+                border-bottom: 1px solid #d0d6d9;
+                font-weight: bold;
+                font-size: 1.6rem;
+            }
+
+            a span {
+                margin: 0 5px;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover {
+                color: white;
+                background-color: #29b078;
+            }
+
+            /* 表格内容 */
+            .main-two {
+                width: 80%;
+                margin: 3rem auto;
+                display: flex;
+                flex-flow: row wrap;
+                align-content: flex-start;
+            }
+
+            .vocation {
+                box-sizing: border-box;
+                flex: 0 0 32%;
+                margin: 2rem 0;
+            }
+
+            .vocation:nth-of-type(3n-1) {
+                margin: 2rem 2%;
+            }
+
+            .big-box {
+                position: relative;
+                border: 1px solid #def1f2;
+                background-color: white;
+                overflow: hidden
+            }
+
+            .word-and-photo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 1rem;
+            }
+
+            .photo {
+                zoom: .7;
+                margin-right: 10px;
+            }
+
+            .photo-one {
+                font-size: initial;
+            }
+
+            .photo-two {
+                /* 换行 */
+                word-break: break-all;
+            }
+
+            .wrapper {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-auto-rows: minmax(40px, auto);
+            }
+
+            .wrapper div {
+                border: 1px solid #def1f2;
+                color: #a1a1a1;
+                display: flex;
+                align-items: center;
+                /* 清除网格边框 */
+                margin-left: -1px;
+                margin-top: -1px;
+            }
+
+            .wrapper div p {
+                /* grid内左右间距 */
+                padding: 0 5px;
+            }
+
+            .wrapper p {
+                margin: 0;
+                padding: 0;
+            }
+
+            .pic {
+                margin-left: 5px;
+            }
+
+            .box-one {
+                grid-column: 1/4;
+                grid-row: 1;
+                display: flex;
+            }
+
+            .box-two {
+                grid-column: 4/7;
+                grid-row: 1;
+            }
+
+            .box-three {
+                grid-column: 1/4;
+                grid-row: 2/3;
+            }
+
+            .box-four {
+                grid-column: 4/7;
+                grid-row: 2/3;
+            }
+
+            .box-five {
+                grid-column: 1/3;
+                grid-row: 3/6;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .box-six {
+                grid-column: 3/7;
+                grid-row: 3/4;
+            }
+
+            .box-seven {
+                grid-column: 3/7;
+                grid-row: 4/5;
+            }
+
+            .box-eight {
+                grid-column: 3/7;
+                grid-row: 5/6;
+            }
+
+            .box-six,
+            .box-seven,
+            .box-eight {
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem;
+            }
+
+            .box-nine {
+                grid-column: 1/7;
+                grid-row: 6/7;
+                font-size: 16px;
+            }
+
+            .box-ten {
+                grid-column: 1/7;
+                grid-row: 7/8;
+            }
+
+            .black span {
+                color: red;
+            }
+
+            .black {
+                color: black;
+            }
+
+            /* 动画效果 */
+            .animation {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                margin: 0;
+                background-color: black;
+                opacity: .6;
+                /* 名称 周期时间 速度曲线 开始时间 次数 逆向 */
+                animation: myfirst 2s linear 0s 1 normal;
+                display: none;
+
+            }
+
+            .animation div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 10px;
+                font-size: 16px;
+                color: white;
+            }
+
+            @keyframes myfirst {
+                0% {
+                    left: 100%;
+                }
+
+                25% {
+                    left: 75%;
+                }
+
+                50% {
+                    left: 50%;
+                }
+
+                75% {
+                    left: 25%;
+                }
+
+                100% {
+                    left: 0px;
+                }
+            }
+
+            .vocation:hover .animation {
+                display: block;
+            }
+
+            @media (max-width: 768px) {
+                .vocation {
+                    box-sizing: border-box;
+                    flex: 0 0 100%;
+                }
+
+                .vocation:nth-of-type(3n-1) {
+                    margin: 0;
+                }
+            }
+
+            /* footer */
+            footer {
+                background-color: #26a26f;
+                color: white;
+                font-size: 1.6rem;
+            }
+
+            .foot {
+                width: 80%;
+                margin: 0 auto;
+                padding: 3rem;
+                display: flex;
+                flex-flow: row wrap;
+                align-content: flex-start;
+            }
+
+            .foot-box {
+                box-sizing: border-box;
+                flex: 0 0 33%;
+            }
+
+            .foot-left {
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .web1,
+            .web2 {
+                padding-top: 3rem;
+                font-size: 1.4rem;
+            }
+
+            .web1 a {
+                text-align: left;
+                margin: 0 1rem;
+                color: white;
+            }
+
+            .web1 a:nth-child(1) {
+                margin-left: 0;
+            }
+
+            .web2 div {
+                margin-bottom: 1rem;
+            }
+
+            .web2 a {
+                margin-right: 2rem;
+                color: white;
+            }
+
+            .web2 a:hover {
+                border-bottom: 1px solid white;
+            }
+
+            .web3 {
+                text-align: center;
+            }
+
+            @media (max-width: 800px) {
+                .foot-box {
+                    flex: 0 0 100%;
+                }
+            }
+
+            .copyright {
+                text-align: center;
+            }
+ -->

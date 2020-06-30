@@ -7,25 +7,24 @@
         <title>Document</title>
         <style>
             div {
-                width: 200px;
-                height: 200px;
-                background-color: skyblue;
-
+                width: 80%;
+                margin: 0 auto;
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin: 0 10px;
-                font-size: 16px;
-                color: white;
+                flex-flow: row wrap;
+                align-content: flex-start;
+            }
+
+            div a {
+                box-sizing: border-box;
+                flex: 0 0 50%;
             }
         </style>
     </head>
 
     <body>
         <div>
-            <p>阿凡达金卡</p>
-            <p>阿凡达金卡阿萨大大大</p>
+            <a>阿凡达金卡</a>
+            <a>阿凡达金卡阿萨大大大</a>
         </div>
     </body>
 
