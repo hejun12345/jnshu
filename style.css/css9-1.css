@@ -13,7 +13,6 @@ body {
 
 a {
     text-decoration: none !important;
-    color: white;
 }
 
 h4 {
@@ -21,7 +20,6 @@ h4 {
     font-size: 1.8rem;
 }
 
-/*  */
 .img-wrap {
     margin: 1rem 0;
     font-size: 1.6rem;
@@ -104,6 +102,7 @@ h4 {
     border-bottom: 4px solid #29b078;
     font-size: 2rem;
     text-align: center;
+    color: white;
 }
 
 .nav-link:hover {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -11,70 +12,84 @@ body {
   background-color: #eff0f4;
 }
 
-body a {
+a {
   text-decoration: none;
 }
 
 header {
-  background-color: #68cdd5;
-  font-size: 3.6rem;
+  background-color: #199be0;
+  font-size: 3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 5rem;
   line-height: 5rem;
   margin-bottom: 1.5rem;
   padding: 2rem;
 }
 
-header p {
+header .first-pic {
+  zoom: 3;
+  margin-right: 1rem;
+}
+
+header .nav {
   margin: 0 1vw 0 1vw;
 }
 
-header p a {
+header .nav a {
   color: #ffffff;
 }
 
-header .one,
-header .two {
-  font-size: 3.2rem;
+main {
+  margin-bottom: 20rem;
 }
 
-main .top {
-  margin-bottom: 1.5rem;
-}
-
-main .buttom {
-  margin-bottom: 7rem;
-}
-
-main div {
+main .up,
+main .down {
   background-color: #ffffff;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
 }
 
-main div img {
+main .up .pic1,
+main .down .pic1 {
   vertical-align: middle;
-  border-right: 1px solid #eff0f4;
+  border-right: 1px solid #eaedee;
   padding: 0 1rem 0 1rem;
   zoom: 2;
 }
 
-main div input {
+main .up input,
+main .down input {
+  width: 100%;
   outline: none;
   height: 10rem;
   line-height: 10rem;
   margin-left: 10px;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   border: none;
-  width: calc(100% - 10vw);
+}
+
+main .down {
+  background-color: #ffffff;
+  margin-bottom: 7rem;
+}
+
+main .big {
+  text-align: center;
 }
 
 main button {
-  width: 100%;
+  width: 98%;
   height: 10rem;
   background-color: #68cdd5;
+  border-radius: 5px;
   border: none;
-  font-size: 3.6rem;
-  color: #ffffff;
+  font-size: 3rem;
   margin-bottom: 1.5rem;
 }
 
@@ -82,14 +97,81 @@ main button a {
   color: #ffffff;
 }
 
-main .footer {
-  float: right;
-  font-size: 3.2rem;
-  margin-right: 1.6rem;
+main .login {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.4rem;
+  margin: 0 1%;
 }
 
-@media screen and (max-width: 768px) {
-  img {
-    display: none;
-  }
+main .login a {
+  color: #999999;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999999;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.box-words {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.box-words .words {
+  font-size: 3rem;
+  color: #999999;
+}
+
+.box-words .words::after {
+  position: absolute;
+  top: 50%;
+  margin-left: 1rem;
+  content: "";
+  display: inline-block;
+  width: 20%;
+  height: 1px;
+  padding: 0px;
+  background-color: #D5D5D5;
+  overflow: hidden;
+}
+
+.box-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-pic .box-p {
+  text-align: center;
+  font-size: 2rem;
+  color: #999999;
+}
+
+.box-pic .box-p .pic-css1,
+.box-pic .box-p .pic-css2,
+.box-pic .box-p .pic-css3 {
+  display: inline-block;
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+.box-pic .box-p .pic-css1 {
+  background: url("../images/src/task11-1雪碧.jpg") no-repeat 0%;
+}
+
+.box-pic .box-p .pic-css2 {
+  background: url("../images/src/task11-1雪碧.jpg") no-repeat 50%;
+  margin: 0 5rem;
+}
+
+.box-pic .box-p .pic-css3 {
+  background: url("../images/src/task11-1雪碧.jpg") no-repeat 100%;
 }

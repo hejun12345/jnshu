@@ -5,11 +5,69 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="SASS/css.任务11.scss">
         <link rel="stylesheet" href="css/css.任务11.css">
         <style>
-            /* 
-            * {
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <img src="./images/src/task11-1.jpg" class="first-pic">
+            <p class="nav"><a href="">登录</a></p>
+        </header>
+
+        <main>
+            <div class="up">
+                <img src="./images/src/登陆_01.png" class="pic1">
+                <input type="text" placeholder="请输入手机号码" maxlength="10">
+            </div>
+            <div class="down">
+                <img src="./images/src/登陆_02.png" class="pic1">
+                <input type="password" placeholder="请输入密码" maxlength="10">
+            </div>
+
+            <div class="big">
+                <button>
+                    <a href="">登&nbsp;录</a>
+                </button>
+            </div>
+
+            <div class="login">
+                <a href="#" class="">立即注册</a>
+                <a href="#" class="">忘记密码？</a>
+            </div>
+        </main>
+
+        <footer>
+            <div class="box-words">
+                <p class="words">第三方账号登录</p>
+            </div>
+
+            <div class="box-pic">
+                <div class="box-p">
+                    <a href="" class="pic-css1"></a>
+                    <p>微信登录</p>
+                </div>
+                <div class="box-p">
+                    <a href="" class="pic-css2"></a>
+                    <p>微博登录</p>
+                </div>
+                <div class="box-p">
+                    <a href="" class="pic-css3"></a>
+                    <p>QQ登录</p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+    </body>
+
+</html>
+
+<!-- 
+                * {
                 margin: 0;
                 padding: 0;
             }
@@ -22,15 +80,24 @@
                 background-color: #eff0f4;
             }
 
+            a {
+                text-decoration: none;
+            }
+
             header {
-                background-color: #68cdd5;
-                font-size: 3.6rem;
+                background-color: #199be0;
+                font-size: 3rem;
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
                 height: 5rem;
                 line-height: 5rem;
                 margin-bottom: 1.5rem;
                 padding: 2rem;
+            }
+
+            .first-pic {
+                zoom: 3;
+                margin-right: 1rem;
             }
 
             .nav {
@@ -38,26 +105,30 @@
             }
 
             .nav a {
-                text-decoration: none;
                 color: #ffffff;
             }
 
-            .one,
-            .two {
-                font-size: 3.2rem;
+            main {
+                margin-bottom: 20rem;
             }
 
-            .top {
+            .up,
+            .down {
                 background-color: #ffffff;
                 margin-bottom: 1.5rem;
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                border-bottom: 1px solid #e6e6e6;
             }
 
-            .buttom {
+            .down {
                 background-color: #ffffff;
                 margin-bottom: 7rem;
             }
 
-            img {
+            .pic1 {
                 vertical-align: middle;
                 border-right: 1px solid #eaedee;
                 padding: 0 1rem 0 1rem;
@@ -65,57 +136,109 @@
             }
 
             input {
+                width: 100%;
                 outline: none;
                 height: 10rem;
                 line-height: 10rem;
                 margin-left: 10px;
-                font-size: 3.2rem;
+                font-size: 2.4rem;
                 border: none;
-                width: calc(100% - 92px);
+            }
+
+            input:-ms-input-placeholder,
+            textarea:-ms-input-placeholder {
+                color: #999999;
+            }
+
+            input::-webkit-input-placeholder,
+            textarea::-webkit-input-placeholder {
+                color: #999999;
+            }
+
+            .big {
+                text-align: center;
             }
 
             button {
-                width: 100%;
+                width: 98%;
                 height: 10rem;
                 background-color: #68cdd5;
+                border-radius: 5px;
                 border: none;
-                font-size: 3.6rem;
-                color: #ffffff;
+                font-size: 3rem;
                 margin-bottom: 1.5rem;
             }
 
-            .footer {
-                float: right;
-                font-size: 3.2rem;
-                margin-right: 1.6rem;
+            button a {
+                color: #ffffff;
             }
-            */
-        </style>
-    </head>
 
-    <body>
-        <header>
-            <p class="nav one"><a href="">注册</a></p>
-            <p class="nav"><a href="">登录</a></p>
-            <p class="nav one"><a href="">关闭</a></p>
-        </header>
+            .login {
+                display: flex;
+                justify-content: space-between;
+                font-size: 2.4rem;
+                margin: 0 1%;
+            }
 
-        <main>
-            <div class="top">
-                <img src="./images/src/登陆_01.png" class="pic1">
-                <input type="text" placeholder="请输入手机号码" maxlength="10">
-            </div>
-            <div class="buttom">
-                <img src="./images/src/登陆_02.png" class="pic2">
-                <input type="text" placeholder="请输入密码" maxlength="10">
-            </div>
+            .login a {
+                color: #999999;
+            }
 
-            <button><a href="">登&nbsp;录</a></button>
-            <a href="#" class="footer">忘记密码</a>
-        </main>
+            .box-words {
+                position: relative;
+                height: 100%;
+                text-align: center;
+                margin-bottom: 3rem;
+            }
 
-    </body>
+            .words {
+                font-size: 3rem;
+                color: #999999;
+            }
 
-    </body>
+            .words::after {
+                position: absolute;
+                top: 50%;
+                margin-left: 1rem;
+                content: "";
+                display: inline-block;
+                width: 20%;
+                height: 1px;
+                padding: 0px;
+                background-color: #D5D5D5;
+                overflow: hidden;
+            }
 
-</html>
+            .box-pic {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .box-p {
+                text-align: center;
+                font-size: 2rem;
+                color: #999999;
+            }
+
+            .pic-css1,
+            .pic-css2,
+            .pic-css3 {
+                display: inline-block;
+                height: 4.5rem;
+                width: 4.5rem;
+            }
+
+            .pic-css1 {
+                background: url("./images/src/task11-1雪碧.jpg") no-repeat 0%;
+            }
+
+            .pic-css2 {
+                background: url("./images/src/task11-1雪碧.jpg") no-repeat 50%;
+                margin: 0 5rem;
+            }
+
+            .pic-css3 {
+                background: url("./images/src/task11-1雪碧.jpg") no-repeat 100%;
+            }
+ -->

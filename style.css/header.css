@@ -1,0 +1,135 @@
+.nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .nav div {
+    box-sizing: border-box;
+    flex: 0 0 50%;
+    padding: 0.5rem;
+  }
+  
+  .nav .nav-word {
+    display: flex;
+    align-items: center;
+    color: #29b078;
+  }
+  
+  .nav .Navbar1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1%;
+  }
+  
+  .nav .Navbar1 .Navbar1-b,
+  .nav .Navbar1 .Navbar2-b,
+  .nav .Navbar1 .Navbar3-b {
+    background: url("../images/src/技能树首页雪碧_01.jpg") no-repeat -1%;
+    height: 2.6rem;
+    width: 2.6rem;
+    border: none;
+  }
+  
+  .nav .Navbar1 .Navbar2-b {
+    background: url("../images/src/技能树首页雪碧_01.jpg") no-repeat 50%;
+    margin: 0 2vw;
+  }
+  
+  .nav .Navbar1 .Navbar3-b {
+    background: url("../images/src/技能树首页雪碧_01.jpg") no-repeat 100%;
+    margin-right: 1rem;
+  }
+  
+  /* 导航栏 */
+  .navbar {
+    background-color: #29b078;
+    padding: 0;
+  }
+  
+  .navbar .nav-box {
+    text-align: right;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .navbar .nav-box input {
+    display: none;
+  }
+  
+  .navbar .nav-box label {
+    display: none;
+  }
+  
+  .navbar .nav-box label .picss {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .navbar .nav-box .nav-pic {
+    position: absolute;
+    top: 25px;
+  }
+  
+  .nav-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: flex-end;
+  }
+  
+  .nav-list li {
+    list-style: none;
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+    padding: 4rem 2rem;
+  }
+  
+  .nav-list li a {
+    text-decoration-line: none;
+    color: white;
+  }
+  
+  .nav-list li:hover {
+    border-bottom: 4px solid white;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      background-color: #29b078;
+      width: 100%;
+      height: auto;
+    }
+    input:checked ~ .nav-list {
+      display: block;
+    }
+    input:checked ~ .nav-list li {
+      clear: both;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .navbar > .nav-box > label {
+      display: inline-block;
+      margin: 4rem 1rem;
+    }
+    .nav-list {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 250px) {
+    .nav-pic {
+      display: none;
+    }
+  }

@@ -103,7 +103,7 @@ img {
   border-bottom: 1px solid #e1e5e7;
   display: flex;
   align-items: center;
-  height: 10rem;
+  padding: 2rem 0;
   word-break: keep-all;
 }
 

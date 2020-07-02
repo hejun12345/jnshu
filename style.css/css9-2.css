@@ -18,11 +18,16 @@ body {
 
 /*  */
 .img-wrap {
-    margin: 10px 0;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+
+.img-wrap a {
+    margin-right: 1rem;
 }
 
 .ff {
-    margin-left: -20px;
+    margin-left: -2rem;
 }
 
 .first {
@@ -89,10 +94,12 @@ body {
 .nav-link {
     height: 100%;
     line-height: 100%;
-    padding: 3rem 0;
+    padding: 3rem 3rem;
     border-top: 4px solid #29b078;
     border-bottom: 4px solid #29b078;
     font-size: 2rem;
+    text-align: center;
+    color: white;
 }
 
 .nav-link:hover {
@@ -103,12 +110,6 @@ body {
     .navbar-brand img {
         display: none;
     }
-}
-
-.nav-pic {
-    background: url("../images/src/战略合作企业_02.jpg");
-    background-size: cover;
-    height: 250px;
 }
 
 /* main */

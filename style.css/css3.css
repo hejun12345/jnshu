@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #68cdd5;
+    font-size: 62.5%;
+    color: #ffffff;
+}
+
+.box1 {
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    
+}
+
+.box3 {
+    text-align: left;
+    font-size: 1.6rem;
+    margin-bottom: 10em;
+    line-height: 200%;
+    padding: 0 10vw 0 10vw;
+}
+
+.box4 {
+    float: left;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-left: 10vw;
+}
+
+.box5 {
+    float: right;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-right: 10vw;
+}

@@ -9,7 +9,39 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="HandheldFriendly" content="true">
         <title>Document</title>
+        <link rel="stylesheet" href="./style.css/css4.css">
         <style>
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <p class="nav one"><a href="">注册</a></p>
+            <p class="nav"><a href="">登录</a></p>
+            <p class="nav one"><a href="">关闭</a></p>
+        </header>
+
+        <main>
+            <div class="top">
+                <img src="./images/src/登陆_01.png">
+                <input type="text" placeholder="请输入手机号码" maxlength="10">
+            </div>
+            <div class="buttom">
+                <img src="./images/src/登陆_02.png">
+                <input type="password" placeholder="请输入密码" maxlength="10">
+            </div>
+            <button>登&nbsp;录</button>
+            <a href="#" class="footer">忘记密码</a>
+        </main>
+
+    </body>
+
+    </body>
+
+</html>
+
+<!-- 
             * {
                 margin: 0;
                 padding: 0;
@@ -43,48 +75,49 @@
                 color: #ffffff;
             }
 
-            .one,
-            .two {
+            .one {
                 font-size: 3.2rem;
             }
 
-            /*  
-        .main {
-            display: flex;
-            flex-wrap: wrap;
-            align-content: space-between;
-        }
-*/
+            /*  */
             .top {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                border-bottom: 1px solid #e6e6e6;
                 background-color: #ffffff;
                 margin-bottom: 1.5rem;
             }
 
             .buttom {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                border-bottom: 1px solid #e6e6e6;
                 background-color: #ffffff;
                 margin-bottom: 10rem;
             }
 
-            /* img.input对齐 */
+            /* img.input */
             img {
-                vertical-align: middle;
+                /* vertical-align: middle; */
+                /* height: 3rem; */
+                /* width: 3rem; */
+                border-right: 1px solid #eaedee;
+                padding: 0 1rem 0 1rem;
+                zoom: 2;
             }
-
             input {
                 /* 去掉蓝色边框 */
+                width: 100%;
                 outline: none;
                 height: 10rem;
                 line-height: 10rem;
                 border: none;
                 margin-left: 10px;
-                width: calc(100% - 10vw);
                 font-size: 3.2rem;
-            }
-
-            img {
-                border-right: 1px solid #eaedee;
-                padding: 0 1rem 0 1rem;
-                zoom: 2;
             }
 
             button {
@@ -102,32 +135,4 @@
                 font-size: 3.2rem;
                 margin-right: 1.6rem;
             }
-        </style>
-    </head>
-
-    <body>
-        <header>
-            <p class="nav one"><a href="">注册</a></p>
-            <p class="nav"><a href="">登录</a></p>
-            <p class="nav one"><a href="">关闭</a></p>
-        </header>
-
-        <main>
-            <div class="top">
-                <img src="./images/src/登陆_01.png">
-                <input type="text" placeholder="请输入手机号码" maxlength="10">
-            </div>
-            <div class="buttom">
-                <img src="./images/src/登陆_02.png">
-                <input type="text" placeholder="请输入密码" maxlength="10">
-            </div>
-
-            <button>登&nbsp;录</button>
-            <a href="#" class="footer">忘记密码</a>
-        </main>
-
-    </body>
-
-    </body>
-
-</html>
+ -->

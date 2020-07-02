@@ -67,8 +67,9 @@ body {
 }
 
 audio {
-    zoom: 0.3;
-    opacity: .3;
+    width: 10rem;
+    zoom: 1;
+    opacity: 0;
 }
 
 .boxa {

@@ -12,87 +12,158 @@ html {
 }
 
 body {
-    background-color: $bgcolor1;
-    a {
-        text-decoration: none;
-    }
+    background-color: #eff0f4;
 }
 
+a {
+    text-decoration: none;
+}
 
 header {
-    background-color: $bgcolor2;
-    font-size: 3.6rem;
+    background-color: #199be0;
+    font-size: 3rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 5rem;
     line-height: 5rem;
     margin-bottom: 1.5rem;
     padding: 2rem;
-    p {
+    .first-pic {
+        zoom: 3;
+        margin-right: 1rem;
+    }
+    .nav {
         margin: 0 1vw 0 1vw;
         a {
-            color: $textcolor;
+            color: #ffffff;
         }
-    }
-    .one,
-    .two {
-        font-size: 3.2rem;
     }
 }
 
 main {
-    .top {
+    margin-bottom: 20rem;
+    .up,
+    .down {
+        background-color: #ffffff;
         margin-bottom: 1.5rem;
-    }
-    
-    .buttom {
-        margin-bottom: 7rem;
-    }
-
-    div {
-        background-color: $textcolor;
-
-        img {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid #e6e6e6;
+        .pic1 {
             vertical-align: middle;
-            border-right: 1px solid $bgcolor1;
+            border-right: 1px solid #eaedee;
             padding: 0 1rem 0 1rem;
             zoom: 2;
         }
-
         input {
+            width: 100%;
             outline: none;
             height: 10rem;
             line-height: 10rem;
             margin-left: 10px;
-            font-size: 3.2rem;
+            font-size: 2.4rem;
             border: none;
-            width: calc(100% - 10vw);
         }
     }
+    .down {
+        background-color: #ffffff;
+        margin-bottom: 7rem;
 
+    }
+    .big {
+        text-align: center;
+    }
     button {
-        width: 100%;
+        width: 98%;
         height: 10rem;
-        background-color: $bgcolor2;
+        background-color: #68cdd5;
+        border-radius: 5px;
         border: none;
-        font-size: 3.6rem;
-        color: $textcolor;
+        font-size: 3rem;
         margin-bottom: 1.5rem;
         a {
-            color: $textcolor;
+            color: #ffffff;
         }
     }
-
-    .footer {
-        float: right;
-        font-size: 3.2rem;
-        margin-right: 1.6rem;
+    .login {
+        display: flex;
+        justify-content: space-between;
+        font-size: 2.4rem;
+        margin: 0 1%;
+        a {
+            color: #999999;
+        }
+        
     }
 }
 
-@media screen and (max-width: 768px) {
-    img {
-        display: none;
-    }
-
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #999999;
 }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #999999;
+}
+
+.box-words {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+    .words {
+        font-size: 3rem;
+        color: #999999;
+        &::after {
+            position: absolute;
+            top: 50%;
+            margin-left: 1rem;
+            content: "";
+            display: inline-block;
+            width: 20%;
+            height: 1px;
+            padding: 0px;
+            background-color: #D5D5D5;
+            overflow: hidden;
+        }
+    }
+}
+
+.box-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .box-p {
+        text-align: center;
+        font-size: 2rem;
+        color: #999999;
+        .pic-css1,
+        .pic-css2,
+        .pic-css3 {
+            display: inline-block;
+            height: 4.5rem;
+            width: 4.5rem;
+        }
+        .pic-css1 {
+            background: url("../images/src/task11-1雪碧.jpg") no-repeat 0%;
+        }
+        
+        .pic-css2 {
+            background: url("../images/src/task11-1雪碧.jpg") no-repeat 50%;
+            margin: 0 5rem;
+        }
+        
+        .pic-css3 {
+            background: url("../images/src/task11-1雪碧.jpg") no-repeat 100%;
+        }
+    }
+}
+
+
+
+
+
+

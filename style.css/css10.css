@@ -1,0 +1,367 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* 清除p默认样式 */
+p {
+    margin-bottom: 0;
+}
+
+.nav-head {
+    background-color: #1d7ad9;
+    font-size: 1.6rem;
+}
+
+.nav-side {
+    color: white;
+}
+
+.text-right {
+    letter-spacing: -999px;
+}
+
+.text-right button {
+    color: white;
+    width: 5.5rem;
+    height: 100%;
+    background-color: #1d7ad9;
+    border: none;
+    letter-spacing: 0;
+}
+
+button a {
+    display: inline-block;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0;
+    border-left: 1px solid white;
+    font-size: 1.6rem;
+}
+
+.nav-tel-word {
+    padding: 1rem 0;
+    margin-bottom: 0;
+}
+
+.text-right a:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width:578px) {
+    .text-right {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* middile */
+.nav-middile {
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+    font-size: 2rem;
+}
+
+.nav-item2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item-one {
+    border-radius: 5px;
+    margin-left: 3rem;
+    box-shadow: 2px 2px 5px #e6e6e6;
+}
+
+
+/*  */
+input[type='radio'].radio {
+    /* opacity: 0; */
+    display: inline-block;
+    /* height: 20px; */
+}
+
+label.radio {
+    background: url("./images/src/定制箱_02.jpg") no-repeat;
+    background-position: left center;
+
+    /* height: 2rem; */
+    padding-left: 2.5rem;
+}
+
+input[type='radio'].radio:checked+.radio {
+    background: url("./images/src/定制箱_03.jpg") no-repeat;
+    background-position: left center;
+}
+
+
+/* one */
+main {
+    font-size: 1.8rem;
+}
+
+.box-one {
+    /* border: 1px solid yellowgreen; */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4.8rem;
+    color: #cccccc;
+}
+
+.small-box {
+    padding: 0 2rem;
+    border-top: 4px solid #cccccc;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50px;
+    background-color: #cccccc;
+    color: white;
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    margin-left: -1rem;
+    font-size: 1rem;
+}
+
+.small-box p {
+    margin: 2rem 0;
+}
+
+.small-box:hover {
+    border-top: 4px solid #ff7f02;
+    color: #ff7f02;
+}
+
+.small-box:hover .one {
+    background-color: #ff7f02;
+}
+
+h4 {
+    font-size: 2.2rem;
+}
+
+@media (max-width: 768px) {
+    .small-box {
+        width: 100%;
+    }
+}
+
+/* two */
+.box-two {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    color: #1d7ae9;
+}
+
+.pic-sprite {
+    display: inline-block;
+    background: url("../images/定制箱_雪碧.jpg")no-repeat 0 2px;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 1rem;
+}
+
+/*  */
+input {
+    outline: none;
+    -webkit-appearance: none;
+}
+
+label {
+    margin: 0 3rem;
+}
+
+/* three */
+.box-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: #fbfcff;
+    padding: 1.5rem;
+}
+
+.ui-select {
+    min-width: 12rem;
+    height: 4rem;
+    line-height: 4rem;
+    color: #999999;
+    position: relative;
+    border: 1px solid #e8e8e8;
+}
+
+select {
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.word-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-down {
+    width: 2.5rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d7ad9;
+    margin-left: 1rem;
+    border-radius: 10%;
+}
+
+.down {
+    width: 0;
+    height: 0;
+    border-width: 7px;
+    margin-top: 7px;
+    border-style: solid dashed dashed dashed;
+    border-color: white transparent transparent transparent;
+}
+
+/* four */
+.box-four {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 10px 0;
+    font-size: 1.8rem;
+    color: #1d7ae9;
+}
+
+.pic-sprite2 {
+    display: inline-block;
+    background: url("../images/定制箱_雪碧.jpg")no-repeat -1px 41%;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 1rem;
+}
+
+/* five */
+.box-five {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fbfcff;
+}
+
+.number {
+    width: 7rem;
+    height: 3rem;
+    margin: 8px 0;
+}
+
+/* six */
+.box-six {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    color: #1d7ae9;
+}
+
+.pic-sprite3 {
+    display: inline-block;
+    background: url("../images/定制箱_雪碧.jpg")no-repeat -1px 100%;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 10px;
+}
+
+/* seven */
+.box-seven {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0;
+    background-color: #fbfcff;
+    padding: 1.5rem;
+}
+
+/* eight */
+.box-eight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxs-eight {
+    width: 18rem;
+    margin: 14rem 0;
+    border: none;
+}
+
+.boxs-eight a {
+    font-size: 2.4rem;
+    border-radius: 5px;
+    color: white;
+    background-color: #e15053;
+}
+
+/* footer */
+.web-last {
+    background-color: #f9f9f9;
+    color: #999999;
+    font-size: 1.5rem;
+}
+
+.last-box1 {
+    font-size: 1.8rem;
+}
+
+.last-box2 p a {
+    display: inline-block;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    color: #999999;
+}
+
+.last-box3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.last-box3 p a {
+    display: inline-block;
+}
+
+.last-p {
+    text-align: center;
+    color: white;
+    background-color: #1d7ad9;
+}
