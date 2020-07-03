@@ -119,13 +119,13 @@ main {
   color: #999999;
 }
 
-.wrapper .picture .pic-c {
+.wrapper .picture .pic-date {
   width: 2.5rem;
   height: 2.5rem;
   background: url("../images/src/task5-2_雪碧.jpg") no-repeat 0 0;
 }
 
-.wrapper .picture .photo {
+.wrapper .picture .pic-add {
   width: 2.5rem;
   height: 2.5rem;
   background: url("../images/src/task5-2_雪碧.jpg") no-repeat 0 99%;

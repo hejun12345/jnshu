@@ -9,12 +9,12 @@ html {
 
 /* header */
 header {
-    height: 8rem;
-    line-height: 8rem;
+    height: 4.4rem;
+    line-height: 4.4rem;
     color: #ffffff;
     background-color: #5FC0CD;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 
 header a {
@@ -29,36 +29,36 @@ header a {
     background-size: cover;
     display: flex;
     align-items: center;
-    height: 33rem;
+    height: 16.5rem;
     color: white;
 }
 
 /* main one */
 .box1 {
     background: url("../images/src/task5-1_02.png") no-repeat;
-    height: 17rem;
-    width: 17rem;
+    height: 8.5rem;
+    width: 8.5rem;
     background-size: cover;
-    margin: 0 2rem 0 2rem;
+    margin: 0 1rem 0 1rem;
     border-radius: 100px;
 }
 
 .box2 {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
 }
 
 .box3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .two {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .row1 {
-    padding-left: 4%;
+    padding-left: 1.5rem;
     border-bottom: 1px solid #e1e5e7;
-    height: 10rem;
+    height: 5rem;
     display: flex;
     align-items: center;
 }
@@ -77,6 +77,22 @@ p {
     margin: 0 1em 0 1em;
 }
 
+.row2,
+.row3,
+.row4 {
+    margin-left: 1.5rem;
+    border-bottom: 1px solid #e1e5e7;
+    display: flex;
+    align-items: center;
+    /*  */
+    word-break: keep-all;
+}
+
+.row2,
+.row3 {
+    height: 5rem;
+}
+
 .row3,
 .row4 {
     color: #999999;
@@ -84,18 +100,7 @@ p {
 
 .row4 {
     margin-bottom: 22rem;
-}
-
-.row2,
-.row3,
-.row4 {
-    margin-left: 4%;
-    border-bottom: 1px solid #e1e5e7;
-    display: flex;
-    align-items: center;
-    height: 10rem;
-    /*  */
-    word-break: keep-all;
+    padding: 1.8rem 0;
 }
 
 .red {
@@ -111,17 +116,17 @@ footer {
     display: flex;
     width: 100%;
     position: fixed;
-    bottom: 4rem;
+    bottom: 2rem;
     margin: 0 4%;
 }
 
 .text,
 .phone {
     width: 44%;
-    height: 8rem;
+    height: 4.4rem;
     border: 1px solid #5FC0CD;
     font-size: 100%;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 0 1%;
 }
 

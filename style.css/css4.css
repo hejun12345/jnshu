@@ -13,13 +13,13 @@ body {
 
 header {
     background-color: #68cdd5;
-    font-size: 3.6rem;
+    font-size: 1.8rem;
     display: flex;
     justify-content: space-between;
-    height: 5rem;
-    line-height: 5rem;
-    margin-bottom: 1.5rem;
-    padding: 2rem;
+    height: 4.4rem;
+    line-height: 4.4rem;
+    margin-bottom: 0.9rem;
+    padding: 0.1rem;
 }
 
 .nav {
@@ -32,7 +32,7 @@ header {
 }
 
 .one {
-    font-size: 3.2rem;
+    font-size: 1.6rem;
 }
 
 /*  */
@@ -43,7 +43,7 @@ header {
     align-items: center;
     border-bottom: 1px solid #e6e6e6;
     background-color: #ffffff;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.7rem;
 }
 
 .buttom {
@@ -53,7 +53,7 @@ header {
     align-items: center;
     border-bottom: 1px solid #e6e6e6;
     background-color: #ffffff;
-    margin-bottom: 10rem;
+    margin-bottom: 3.5rem;
 }
 
 /* img.input */
@@ -63,17 +63,16 @@ img {
     /* width: 3rem; */
     border-right: 1px solid #eaedee;
     padding: 0 1rem 0 1rem;
-    zoom: 2;
 }
 input {
     /* 去掉蓝色边框 */
     width: 100%;
     outline: none;
-    height: 10rem;
-    line-height: 10rem;
+    height: 5rem;
+    line-height: 5rem;
     border: none;
-    margin-left: 10px;
-    font-size: 3.2rem;
+    margin-left: 1rem;
+    font-size: 1.6rem;
 }
 
 input:-ms-input-placeholder,
@@ -88,16 +87,16 @@ textarea::-webkit-input-placeholder {
 
 button {
     width: 100%;
-    height: 10rem;
+    height: 5rem;
     background-color: #68cdd5;
     border: none;
-    font-size: 3.6rem;
+    font-size: 1.8rem;
     color: #ffffff;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .footer {
     float: right;
-    font-size: 3.2rem;
+    font-size: 1.6rem;
     margin-right: 1.6rem;
 }

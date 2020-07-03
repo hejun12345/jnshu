@@ -5,44 +5,109 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="./style.css/css6.css">
         <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
 
+            a {
+                text-decoration: none;
+            }
+
+            html {
+                font-size: 62.5%;
+            }
+
+            main {
+                padding-top: 170px;
+            }
+
+            .wrapper {
+                padding-left: 2.5rem;
+                border-bottom: 1px solid #e1e5e7;
+            }
+
+            .wrapper:nth-last-child(1) {
+                margin-bottom: 200px;
+            }
+
+            .picture {
+                display: flex;
+                align-items: center;
+                font-size: 2.6rem;
+                margin: 1rem 0;
+                color: #999999;
+            }
+
+            .pic-date {
+                width: 2.5rem;
+                height: 2.5rem;
+                background: url("./images/src/task5-2_雪碧.jpg") no-repeat 0 0;
+            }
+
+            .pic-add {
+                width: 2.5rem;
+                height: 2.5rem;
+                background: url("./images/src/task5-2_雪碧.jpg") no-repeat 0 99%;
+            }
+
+            .word1 {
+                margin-left: 1rem;
+            }
+
+            .page {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 2.6rem;
+                margin-left: 3.5rem;
+            }
+
+            .page div {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .blush {
+                color: red;
+            }
+
+            .triangle {
+                position: relative;
+                height: 0px;
+                width: 0px;
+                border-top: 14px solid transparent;
+                border-left: 15px solid #5fc0cd;
+                border-bottom: 15px solid transparent;
+                margin: 0 2rem;
+            }
+
+            .triangle:after {
+                content: '';
+                position: absolute;
+                top: -13px;
+                left: -18px;
+                border-top: 13px solid transparent;
+                border-left: 14px solid #ffffff;
+                border-bottom: 14px solid transparent;
+            }
+            .box-word1::before {
+                width: 2.5rem;
+                height: 2.5rem;
+                content: "";
+            }
+            .box-word2 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
         </style>
     </head>
 
     <body>
-        <header>
-            <div class="head">
-                <button class="left"><a href="./css.任务5.html">找雇主</a></button>
-                <button class="right"><a href="#">找护工</a></button>
-                <a href="#" class="img"><img src="./images/src/task5-2_01.jpg"></a>
-            </div>
-            <div class="navbar">
-                <div>
-                    <select class="sel">
-                        <option value="" class="a">所在地</option>
-                        <option value="" class="a">阳光花园</option>
-                        <option value="" class="a">乐山小区</option>
-                    </select>
-                </div>
-                <div>
-                    <select class="center">
-                        <option value="" class="a">食宿</option>
-                        <option value="">500/月</option>
-                        <option value="">1k/月</option>
-                    </select>
-                </div>
-                <div>
-                    <select class="sel">
-                        <option value="">病人情况</option>
-                        <option value="">轻</option>
-                        <option value="">重</option>
-                    </select>
-                </div>
-
-            </div>
-        </header>
         <main>
             <div class="wrapper">
                 <div class="picture">
@@ -134,20 +199,6 @@
                 </div>
             </div>
         </main>
-
-        <footer>
-            <div>
-                <span class="pic-first"></span>
-                <button class="words">首页</button>
-            </div>
-            <div class="two">
-                <button class="pic-center"></button>
-            </div>
-            <div>
-                <span class="pic-last"></span>
-                <button class="words3">我的</button>
-            </div>
-        </footer>
     </body>
 
 </html>
