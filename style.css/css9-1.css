@@ -102,7 +102,7 @@ h4 {
     border-bottom: 4px solid #29b078;
     font-size: 2rem;
     text-align: center;
-    color: white;
+    color: white !important;
 }
 
 .nav-link:hover {

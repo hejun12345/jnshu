@@ -18,16 +18,11 @@ body {
 
 /*  */
 .img-wrap {
-    margin: 1rem 0;
-    font-size: 1.6rem;
-}
-
-.img-wrap a {
-    margin-right: 1rem;
+    margin: 10px 0;
 }
 
 .ff {
-    margin-left: -2rem;
+    margin-left: -20px;
 }
 
 .first {
@@ -48,6 +43,7 @@ body {
     height: 2.6rem;
     width: 2.6rem;
     border: none;
+    margin: 0 2rem;
 }
 
 .Navbar3-b {
@@ -89,17 +85,16 @@ body {
 .nav-item {
     display: inline-block;
     white-space: nowrap;
+    padding: 0 1rem;
 }
 
 .nav-link {
     height: 100%;
     line-height: 100%;
-    padding: 3rem 3rem;
+    padding: 3rem;
     border-top: 4px solid #29b078;
     border-bottom: 4px solid #29b078;
-    font-size: 2rem;
-    text-align: center;
-    color: white;
+    color: white !important;
 }
 
 .nav-link:hover {
@@ -110,6 +105,12 @@ body {
     .navbar-brand img {
         display: none;
     }
+}
+
+.nav-pic {
+    background: url("../images/src/战略合作企业_02.jpg");
+    background-size: cover;
+    height: 250px;
 }
 
 /* main */
@@ -126,6 +127,7 @@ body {
     align-items: center;
     border: 1px solid #e6e6e6;
     padding: 2rem 0;
+    background-color: white;
 }
 
 .company li {
@@ -140,19 +142,6 @@ body {
     text-align: center;
 }
 
-li:hover span {
-    background: #f9a372;
-
-}
-
-li:hover div {
-    color: #ff640c;
-}
-
-li div {
-    width: 8rem;
-}
-
 .company li a {
     width: 100%;
     color: #29b078;
@@ -161,20 +150,35 @@ li div {
     justify-content: center;
 }
 
+li div {
+    width: 8rem;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    margin-bottom: 0;
+}
 .dot {
-    float: left;
-    width: 5px;
-    height: 5px;
     border: 1px solid #ff640c;
     border-radius: 50px;
     margin-right: 0.5rem;
     padding: 0.5rem;
 }
 
+li:hover span {
+    background: #f9a372;
+}
+
+li:hover div {
+    color: #ff640c;
+}
+
 /* main two */
 .cont {
     border: 1px solid #e6e6e6;
     color: #999999;
+    background-color: white;
 }
 
 .contect1 {
@@ -221,7 +225,6 @@ li div {
 footer {
     background-color: #26a26f;
     color: white;
-
 }
 
 .row-last {
