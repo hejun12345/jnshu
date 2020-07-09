@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            html {
+                font-size: 62.5%;
+            }
+
+            main {
+                display: flex;
+                justify-content: center;
+            }
+
+            .ui-select {
+                width: 100%;
+                height: 4rem;
+                line-height: 4rem;
+                color: #999999;
+                position: relative;
+                border: 1px solid #e8e8e8;
+            }
+
+            select {
+                width: 100%;
+                height: 4rem;
+                line-height: 4rem;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .word-down {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .icon-down {
+                width: 2.5rem;
+                height: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 1rem;
+                border-radius: 10%;
+                background-color: #1d7ad9;
+            }
+
+            .down {
+                width: 0;
+                height: 0;
+                border-width: 7px;
+                margin-top: 7px;
+                border-style: solid dashed dashed dashed;
+                border-color: black transparent transparent transparent;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <div class="ui-select">
+                <p class="word-down">
+                    <span>查看详情</span>
+                    <i class="icon-down">
+                        <i class="down"></i>
+                    </i>
+                </p>
+                <select name="" id="">
+                    <option value="1">对口箱</option>
+                    <option value="2">飞机盒</option>
+                    <option value="3">天地盖</option>
+                </select>
+            </div>
+
+            <div class="ui-select">
+                <p class="word-down">
+                    <span>查看详情</span>
+                    <i class="icon-down">
+                        <i class="down"></i>
+                    </i>
+                </p>
+                <select name="" id="">
+                    <option value="1">对口箱</option>
+                    <option value="2">飞机盒</option>
+                    <option value="3">天地盖</option>
+                </select>
+            </div>
+
+            <div class="ui-select">
+                <p class="word-down">
+                    <span>查看详情</span>
+                    <i class="icon-down">
+                        <i class="down"></i>
+                    </i>
+                </p>
+                <select name="" id="">
+                    <option value="1">对口箱</option>
+                    <option value="2">飞机盒</option>
+                    <option value="3">天地盖</option>
+                </select>
+            </div>
+        </main>
+    </body>
+
+</html>

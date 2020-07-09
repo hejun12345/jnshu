@@ -43,6 +43,7 @@ label {
   position: absolute;
   padding: 2rem;
   transition: 0.2s ease-out;
+  zoom: .5;
 }
 
 /*侧边栏,初始位置为-xrem，即隐藏效果*/
@@ -64,7 +65,7 @@ aside ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding: 1rem 1%;
   border-bottom: 1px solid #f0f0f0;
 }
@@ -76,8 +77,8 @@ aside ul li .pic-word {
 
 aside ul li .pic-word span {
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-right: 1rem;
 }
 
@@ -95,10 +96,6 @@ aside ul li .pic-word .sprite3 {
 
 aside ul li .pic-word .sprite4 {
   background: url("../images/任务13雪碧.jpg") no-repeat 0 100%;
-}
-
-aside ul li .pic-word title {
-  font-size: 2rem;
 }
 
 .triangle {
@@ -125,7 +122,7 @@ aside ul li .pic-word title {
 }
 
 .bg-box .bg-blue {
-  height: 7.2rem;
+  height: 4.4rem;
   background-color: #29bde0;
 }
 
@@ -135,15 +132,15 @@ aside ul li .pic-word title {
 
 .bg-box .word-photo {
   width: 90%;
-  height: 11rem;
-  line-height: 11rem;
+  height: 6rem;
+  line-height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
   padding: 1rem 0;
   margin: 2.6rem auto;
-  font-size: 3.4rem;
+  font-size: 1.7rem;
 }
 
 .bg-box .word-photo .word1 {
@@ -157,7 +154,7 @@ aside ul li .pic-word title {
 .bg-box .word-photo a {
   margin-right: 1vw;
   color: #e7e7e7;
-  font-size: 4rem;
+  font-size: 2rem;
   zoom: 2;
   border-left: 10px solid #f0f0f0;
 }
@@ -167,25 +164,25 @@ aside ul li .pic-word title {
   width: 90%;
   background-color: #ffffff;
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 1.2rem;
 }
 
 .bg-box .game .game-one {
-  height: 9rem;
-  line-height: 9rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
   border-bottom: 2px solid #fdd793;
   color: #fbb435;
-  font-size: 3.7rem;
+  font-size: 1.9rem;
   text-align: center;
 }
 
 .bg-box .game .game-start {
   display: inline-block;
   width: 80%;
-  height: 13rem;
-  line-height: 13rem;
-  font-size: 3.2rem;
-  margin: 3rem 0;
+  height: 6.5rem;
+  line-height: 6.5rem;
+  font-size: 1.6rem;
+  margin: 1.5rem 0;
   color: white;
   background-color: #69d1e9;
   border: none;
@@ -195,7 +192,7 @@ aside ul li .pic-word title {
 .bg-box .game .game-item {
   font-size: 0;
   line-height: 0;
-  border-width: 30px;
+  border-width: 15px;
   border-color: #fbb435;
   border-right-width: 0;
   border-style: dashed;
@@ -203,7 +200,7 @@ aside ul li .pic-word title {
   border-top-color: transparent;
   border-bottom-color: transparent;
   position: absolute;
-  margin-top: 6.5rem;
+  margin-top: 3rem;
   margin-left: 1%;
 }
 
@@ -216,9 +213,9 @@ aside ul li .pic-word title {
 
 .bg-box .game .pointer a {
   float: left;
-  width: 2rem;
-  height: 2rem;
-  margin: 0 5px;
+  width: 1rem;
+  height: 1rem;
+  margin: 0.5rem;
   border-radius: 5rem;
   background-color: #a6a6a6;
 }

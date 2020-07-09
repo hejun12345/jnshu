@@ -8,7 +8,60 @@
         <link rel="stylesheet" href="./css/css.任务12-2.css">
 
         <style>
+            .nav-select {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 4rem;
+                border: 1px solid #e8e8e8;
+            }
 
+            .ui-select {
+                display: flex;
+                align-items: center;
+                position: relative;
+                width: 100%;
+                height: 4rem;
+                line-height: 4rem;
+                color: #999999;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap
+            }
+
+            .ui-select div {
+                width: 100%;
+                height: 3rem;
+                line-height: 3rem;
+                border-right: 1px solid #e8e8e8;
+            }
+
+            select {
+                width: 100%;
+                height: 4rem;
+                line-height: 4rem;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .word-down {
+                display: flex;
+                justify-content: center;
+            }
+
+            span::after {
+                position: absolute;
+                top: 50%;
+                right: 1rem;
+                content: "";
+                height: 0px;
+                width: 0px;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid black;
+            }
         </style>
     </head>
 
@@ -20,6 +73,47 @@
                 <a href="#" class="nav-pic"><img src="./images/src/task5-2_01.jpg"></a>
             </div>
 
+            <div class="nav-select">
+                <div class="ui-select">
+                    <div>
+                        <p class="word-down">
+                            <span>查看详情</span>
+                        </p>
+                    </div>
+                    <select name="" id="">
+                        <option value="1">对口箱</option>
+                        <option value="2">飞机盒</option>
+                        <option value="3">天地盖</option>
+                    </select>
+                </div>
+    
+                <div class="ui-select">
+                    <div>
+                        <p class="word-down">
+                            <span>查看详情</span>
+                        </p>
+                    </div>
+                    <select name="" id="">
+                        <option value="1">对口箱</option>
+                        <option value="2">飞机盒</option>
+                        <option value="3">天地盖</option>
+                    </select>
+                </div>
+    
+                <div class="ui-select">
+                    <div>
+                        <p class="word-down">
+                            <span>查看详情</span>
+                        </p>
+                    </div>
+                    <select name="" id="">
+                        <option value="1">对口箱</option>
+                        <option value="2">飞机盒</option>
+                        <option value="3">天地盖</option>
+                    </select>
+                </div>
+            </div>
+            <!-- 
             <div class="navbar">
                 <div class="navbar-text">
                     <select class="navbar-s1">
@@ -43,6 +137,7 @@
                     </select>
                 </div>
             </div>
+             -->
         </header>
 
         <main>

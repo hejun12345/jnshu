@@ -4,7 +4,6 @@ $color3: #e1e5e7;
 $color4: #999999;
 $color5: black;
 
-
 * {
     margin: 0;
     padding: 0;
@@ -15,12 +14,12 @@ html {
 }
 
 header {
-    height: 8rem;
-    line-height: 8rem;
+    height: 4.4rem;
+    line-height: 4.4rem;
     color: $color1;
     background-color: $color2;
     text-align: center;
-    font-size: 3.6rem;
+    font-size: 1.8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +39,7 @@ header {
             bottom: 20px solid transparent;
         }
         margin-left: 1vw;
-
+        zoom: .5;
         &:after {
             content: '';
             position: absolute;
@@ -54,52 +53,47 @@ header {
         }
     }
 }
-    
-img {
-    zoom: 2;
-}
 
 .wrapper-one {
     background: url("../images/src/task5-1_01.png") no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
-    height: 33rem;
+    height: 16.5rem;
     color: $color1;
     font-size: 3.6rem;
 
     .wrapper-box1 {
         background: url("../images/src/task5-1_02.png") no-repeat;
-        height: 17rem;
-        width: 17rem;
+        height: 8.5rem;
+        width: 8.5rem;
         background-size: cover;
         margin: 0 2rem 0 2rem;
         border-radius: 100px;
     }
 
     .wrapper-box2 {
-
+        font-size: 1.6rem;
         .word1 {
-            font-size: 2.8rem;
+            font-size: 1.4rem;
         }
     
         .word2 {
-            font-size: 2.4rem;
+            font-size: 1.2rem;
         }
     }
 }
 
 .wrapper-two {
-    font-size: 3.2rem;
-
+    font-size: 1.6rem;
     div p {
         margin: 0 1em 0 1em;
     }
 
     .row1 {
-        padding-left: 4%;
+        padding-left: 1.5rem;
         border-bottom: 1px solid $color3;
-        height: 10rem;
+        height: 5rem;
         display: flex;
         align-items: center;
         .skill {
@@ -111,7 +105,7 @@ img {
     .row2,
     .row3,
     .row4 {
-    margin-left: 4%;
+    margin-left: 1.5rem;
     border-bottom: 1px solid $color3;
     display: flex;
     align-items: center;
@@ -120,7 +114,7 @@ img {
     }
 
     .row2 .house {
-        margin-right: 1em;
+        margin-right: 1rem;
     }
 
     .row3 {
@@ -138,7 +132,7 @@ img {
         color: $color4;
         .facial {
             color: $color5;
-            font-size: 2.4rem;
+            font-size: 1.4rem;
         }
     }
 }
@@ -147,18 +141,17 @@ footer {
     display: flex;
     width: 100%;
     position: fixed;
-    bottom: 4rem;
+    bottom: 2rem;
     margin: 0 4%;
-    font-size: 3.4rem;
 
     .text,
     .phone {
         width: 44%;
-        height: 8rem;
+        height: 4.4rem;
         border: 1px solid $color2;
-        font-size: 100%;
         border-radius: 5px;
         margin: 0 1%;
+    font-size: 1.8rem;
     }
 
     .text {
