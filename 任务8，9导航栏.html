@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <title>Document</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            html {
+                font-size: 62.5%;
+            }
+
+            body {
+                background-color: #fafafa;
+            }
+
+            a {
+                text-decoration: none !important;
+            }
+
+            h4 {
+                text-align: center;
+                font-size: 1.8rem;
+            }
+
+            .img-wrap {
+                margin: 1rem 0;
+                font-size: 1.6rem;
+            }
+
+            .img-wrap a {
+                margin-right: 1rem;
+            }
+
+            .ff {
+                margin-left: -2rem;
+            }
+
+            .first {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .Navbar1-b {
+                background: url("./images/src/技能树首页雪碧_01.jpg") no-repeat 0%;
+                height: 2.6rem;
+                width: 2.6rem;
+                border: none;
+            }
+
+            .Navbar2-b {
+                background: url("./images/src/技能树首页雪碧_01.jpg") no-repeat 50%;
+                height: 2.6rem;
+                width: 2.6rem;
+                border: none;
+            }
+
+            .Navbar3-b {
+                background: url("./images/src/技能树首页雪碧_01.jpg") no-repeat 100%;
+                height: 2.6rem;
+                width: 2.6rem;
+                border: none;
+            }
+
+            /* 导航栏 */
+            .header-nav-wrap {
+                background-color: #29b078;
+                line-height: 100%;
+            }
+
+            .navbar {
+                margin: 0;
+                padding: 0;
+                background-color: #29b078;
+                width: 100%;
+                line-height: 100%;
+            }
+
+            #navbarSupportedContent {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+
+            .navbar-toggler {
+                border: none;
+                padding: 0;
+            }
+
+            /* 
+            .navbar-nav {
+                display: flex;
+                justify-content: space-between;
+            }
+             */
+            .nav-item {
+                /* display: inline-block; */
+                /* white-space: nowrap; */
+                padding: 0 1rem;
+                border-top: 4px solid #29b078;
+                border-bottom: 4px solid #29b078;
+            }
+
+            .nav-link {
+                height: 100%;
+                line-height: 100%;
+                padding: 3rem 0;
+                font-size: 1.6rem;
+                text-align: center;
+                color: white !important;
+            }
+
+            .nav-item:hover {
+                border-bottom: 4px solid white;
+            }
+
+            @media (max-width: 250px) {
+                .navbar-brand img {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <div class="row ff">
+                    <div class="col-md-4 first">
+                        <span class="tel-word">咨询电话：00000000000</span>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="img-wrap" style="text-align: right;">
+                            <a href=""><button class="Navbar1-b"></button></a>
+                            <a href=""><button class="Navbar2-b"></button></a>
+                            <a href=""><button class="Navbar3-b"></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-nav-wrap nav">
+                <div class="container">
+                    <div class="row" style="width: 100%;">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="#"><img src="./images/src/战略合作企业_01.jpg"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <img src="./images/src/jnshu按钮.jpg" alt="">
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="mr-auto"></div>
+                                <ul class="navbar-nav mr-right">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./css.任务9-1.html">首页</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./css.任务9-2.html">职业</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./css.任务9-3.html">推荐</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">关于</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+    </body>
+
+</html>

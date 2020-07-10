@@ -17,12 +17,17 @@ body {
 }
 
 /*  */
-.img-wrap {
-    margin: 10px 0;
+.ff {
+    margin-left: -2rem;
+    font-size: 1.4rem;
 }
 
-.ff {
-    margin-left: -20px;
+.img-wrap {
+    margin: 1rem 0;
+}
+
+.img-wrap a {
+    margin-right: 1rem;
 }
 
 .first {
@@ -43,7 +48,6 @@ body {
     height: 2.6rem;
     width: 2.6rem;
     border: none;
-    margin: 0 2rem;
 }
 
 .Navbar3-b {
@@ -78,28 +82,22 @@ body {
     padding: 0;
 }
 
-.navbar-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
 .nav-item {
-    display: inline-block;
-    white-space: nowrap;
+    padding: 0 1rem;
+    border-top: 4px solid #29b078;
+    border-bottom: 4px solid #29b078;
 }
 
 .nav-link {
     height: 100%;
     line-height: 100%;
-    padding: 3rem 3rem;
-    border-top: 4px solid #29b078;
-    border-bottom: 4px solid #29b078;
-    font-size: 2rem;
+    padding: 3rem 0;
+    font-size: 1.6rem;
     text-align: center;
     color: white !important;
 }
 
-.nav-link:hover {
+.nav-item:hover {
     border-bottom: 4px solid white;
 }
 
@@ -108,7 +106,6 @@ body {
         display: none;
     }
 }
-
 .nav-pic {
     background: url("../images/src/战略合作企业_02.jpg");
     background-size: cover;
@@ -178,6 +175,7 @@ li:hover div {
 
 /* main two */
 .cont {
+    font-size: 1.4rem;
     border: 1px solid #e6e6e6;
     color: #999999;
     background-color: white;
@@ -227,6 +225,7 @@ li:hover div {
 footer {
     background-color: #26a26f;
     color: white;
+    font-size: 1.6rem;
 }
 
 .row-last {
@@ -241,6 +240,7 @@ footer {
 .web1,
 .web2 {
     padding-top: 3rem;
+    font-size: 1.4rem;
 }
 
 .web1 {
